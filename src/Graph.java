@@ -1,13 +1,16 @@
 
 public class Graph {
 
-	private Graph INSTANCE;
-	
-	public Graph getGraph() {
-		if(INSTANCE == null) {
-			INSTANCE = new Graph();
-		}
-		return INSTANCE;
+	public void calculerCheminMinimisantNombreTroncons(String string, String string2, String string3) {
+		// TODO Auto-generated method stub
+		
 	}
+
+	public void calculerCheminMinimisantTempsTransport(String string, String string2, String string3) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
 	
 }
