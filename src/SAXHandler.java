@@ -71,7 +71,7 @@ public class SAXHandler extends DefaultHandler{
 
 
 	public Graph getGraph() {
-		return new Graph(troncons, lignes);
+		return new Graph(troncons, lignes, null);
 	}
 
 
