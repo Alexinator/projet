@@ -1,34 +1,57 @@
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Deque;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 public class Graph {
 
-	private Set<Troncon> troncons;
-	private Set<Ligne> lignes;
 	private Map<String, Set<Troncon>> arcs;
 
-	public Graph(Set<Troncon> troncons, Set<Ligne> lignes, Map<String, Set<Troncon>> map) {
+	public Graph(Set<Troncon> troncons) {
 		super();
-		this.troncons = troncons;
-		this.lignes = lignes;
-		this.arcs = map;
+		this.arcs = new HashMap<String, Set<Troncon>>();
+		for (Troncon troncon : troncons) {
+			if (!arcs.containsKey(troncon.getDepart())) {
+				arcs.put(troncon.getDepart(), new HashSet<Troncon>());
+			}
+			arcs.get(troncon.getDepart()).add(troncon);
+		}
 	}
 
 	public void calculerCheminMinimisantNombreTroncons(String stationDepart, String stationArrivee, String fichier) {
-		Deque<String> sommets = new ArrayDeque<String>();
-		bfsNombreTroncons(stationDepart, stationArrivee, sommets);
-	}
-	
-	public void bfsNombreTroncons(String stationDepart, String stationArrivee, Deque<String> sommets) {
-		for(Troncon arc : arcs.get(stationDepart)) {
-			//sommets.add(arc.getArrivee());
-			if(arc.getArrivee().equals(stationArrivee)) {
-				System.out.println("arrivé à " + arc.getArrivee());
+		Deque<String> bfsFile = new ArrayDeque<String>();
+		Set<String> sommets = new HashSet<String>();
+		Map<String, Troncon> chemin = new HashMap<String, Troncon>();
+		List<Troncon> liste = new ArrayList<Troncon>();
+		bfsFile.add(stationDepart);
+		sommets.add(stationDepart);
+		while (!bfsFile.isEmpty()) {
+			String station = bfsFile.remove();
+			for (Troncon troncon : arcs.get(station)) {
+				if (!sommets.contains(troncon.getArrivee())) {
+					sommets.add(troncon.getArrivee());
+					bfsFile.add(troncon.getArrivee());
+					chemin.put(troncon.getArrivee(), troncon);
+				}
+				if (troncon.getArrivee().equals(stationArrivee)) {
+					System.out.println(chemin.size());
+					Troncon dernier = chemin.get(stationArrivee);
+					System.out.println(dernier);
+					while (dernier != null) {
+						liste.add(dernier);
+						dernier = chemin.get(dernier.getDepart());
+					}
+					System.out.println(liste.size());
+					for (Troncon t : liste) {
+						System.out.println(t.toString());
+					}
+					return;
+				}
 			}
-			bfsNombreTroncons(arc.getArrivee(), stationArrivee, sommets);
 		}
 	}
 
