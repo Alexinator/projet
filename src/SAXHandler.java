@@ -20,11 +20,13 @@ public class SAXHandler extends DefaultHandler {
 
 	@Override
 	public void endDocument() throws SAXException {
+		// TODO Auto-generated method stub
 		super.endDocument();
 	}
 
 	@Override
 	public void startDocument() throws SAXException {
+		// TODO Auto-generated method stub
 		super.startDocument();
 		this.troncons = new HashSet<Troncon>();
 		this.stops = new HashMap<String, String>();
@@ -33,6 +35,7 @@ public class SAXHandler extends DefaultHandler {
 
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
+		// TODO Auto-generated method stub
 		super.characters(ch, start, length);
 		if (isStop) {
 			isStop = false;
@@ -42,6 +45,7 @@ public class SAXHandler extends DefaultHandler {
 
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+		// TODO Auto-generated method stub
 		super.startElement(uri, localName, qName, attributes);
 		if (qName.equalsIgnoreCase("ligne")) {
 			this.ligne = new Ligne(attributes.getValue("nom"), attributes.getValue("source"),
@@ -60,6 +64,7 @@ public class SAXHandler extends DefaultHandler {
 
 	@Override
 	public void endElement(String uri, String localName, String qName) throws SAXException {
+		// TODO Auto-generated method stub
 		super.endElement(uri, localName, qName);
 	}
 
