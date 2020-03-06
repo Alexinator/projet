@@ -26,7 +26,7 @@ public class Graph {
 		Deque<String> bfsFile = new ArrayDeque<String>();
 		Set<String> sommets = new HashSet<String>();
 		Map<String, Troncon> chemin = new HashMap<String, Troncon>();
-		List<Troncon> liste = new ArrayList<Troncon>();
+		Deque<Troncon> pile = new ArrayDeque<Troncon>();
 		bfsFile.add(stationDepart);
 		sommets.add(stationDepart);
 		while (!bfsFile.isEmpty()) {
@@ -38,17 +38,13 @@ public class Graph {
 					chemin.put(troncon.getArrivee(), troncon);
 				}
 				if (troncon.getArrivee().equals(stationArrivee)) {
-					System.out.println(chemin.size());
 					Troncon dernier = chemin.get(stationArrivee);
-					System.out.println(dernier);
 					while (dernier != null) {
-						liste.add(dernier);
+						pile.push(dernier);
 						dernier = chemin.get(dernier.getDepart());
 					}
-					System.out.println(liste.size());
-					for (Troncon t : liste) {
-						System.out.println(t.toString());
-					}
+					while(!pile.isEmpty())
+							System.out.println(pile.pop());
 					return;
 				}
 			}
