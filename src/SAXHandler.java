@@ -1,3 +1,5 @@
+import java.util.Set;
+
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -6,6 +8,9 @@ import org.xml.sax.helpers.DefaultHandler;
 public class SAXHandler extends DefaultHandler{
 	
 	private Graph graph;
+	private Set<Troncon> troncons;
+	private Set<Stop> stops;
+	private Set<Ligne> lignes;
 
 	@Override
 	public void endDocument() throws SAXException {
@@ -42,8 +47,7 @@ public class SAXHandler extends DefaultHandler{
 
 
 	public Graph getGraph() {
-		// TODO Auto-generated method stub
-		return null;
+		return new Graph(troncons, stops, lignes);
 	}
 
 
