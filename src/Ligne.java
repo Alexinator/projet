@@ -1,6 +1,5 @@
 
 public class Ligne {
-
 	private String nom;
 	private String source;
 	private String destination;
@@ -29,5 +28,11 @@ public class Ligne {
 	}
 	public int getAttenteMoyenne() {
 		return attenteMoyenne;
+	}
+	
+	@Override
+	public String toString() {
+		return "Ligne [nom=" + nom + ", source=" + source + ", destination=" + destination + ", type=" + type
+				+ ", attenteMoyenne=" + attenteMoyenne + "]";
 	}
 }

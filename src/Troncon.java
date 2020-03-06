@@ -25,6 +25,10 @@ public class Troncon {
 	public int getDuree() {
 		return duree;
 	}
+	@Override
+	public String toString() {
+		return "Troncon [ligne=" + ligne.toString() + ", depart=" + depart + ", arrivee=" + arrivee + ", duree=" + duree + "]";
+	}
 	
 	
 }
