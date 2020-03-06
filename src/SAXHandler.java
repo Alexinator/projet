@@ -11,17 +11,20 @@ public class SAXHandler extends DefaultHandler{
 		super.endDocument();
 	}
 
-	@Override
-	public void startPrefixMapping(String prefix, String uri) throws SAXException {
-		// TODO Auto-generated method stub
-		super.startPrefixMapping(prefix, uri);
-	}
 
 	@Override
-	public void endPrefixMapping(String prefix) throws SAXException {
+	public void startDocument() throws SAXException {
 		// TODO Auto-generated method stub
-		super.endPrefixMapping(prefix);
+		super.startDocument();
 	}
+
+
+	@Override
+	public void characters(char[] ch, int start, int length) throws SAXException {
+		// TODO Auto-generated method stub
+		super.characters(ch, start, length);
+	}
+
 
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
