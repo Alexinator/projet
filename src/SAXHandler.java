@@ -9,7 +9,7 @@ public class SAXHandler extends DefaultHandler{
 	
 	private Graph graph;
 	private Set<Troncon> troncons;
-	private Set<Stop> stops;
+	private Set<Station> stations;
 	private Set<Ligne> lignes;
 
 	@Override
@@ -47,7 +47,7 @@ public class SAXHandler extends DefaultHandler{
 
 
 	public Graph getGraph() {
-		return new Graph(troncons, stops, lignes);
+		return new Graph(troncons, stations, lignes);
 	}
 
 

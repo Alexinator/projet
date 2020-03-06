@@ -2,11 +2,11 @@
 public class Troncon {
 
 	private Ligne ligne;
-	private Stop depart;
-	private Stop arrivee;
+	private String depart;
+	private String arrivee;
 	private int duree;
 	
-	public Troncon(Ligne ligne, Stop depart, Stop arrivee, int duree) {
+	public Troncon(Ligne ligne, String depart, String arrivee, int duree) {
 		super();
 		this.ligne = ligne;
 		this.depart = depart;
@@ -16,10 +16,10 @@ public class Troncon {
 	public Ligne getLigne() {
 		return ligne;
 	}
-	public Stop getDepart() {
+	public String getDepart() {
 		return depart;
 	}
-	public Stop getArrivee() {
+	public String getArrivee() {
 		return arrivee;
 	}
 	public int getDuree() {

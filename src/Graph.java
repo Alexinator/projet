@@ -3,15 +3,15 @@ import java.util.Set;
 public class Graph {
 	
 	private Set<Troncon> troncons;
-	private Set<Stop> stops;
+	private Set<Station> stops;
 	private Set<Ligne> lignes;
 
 	//private Map<String, Set<Stop>> stops;
 
-	public Graph(Set<Troncon> troncons, Set<Stop> stops, Set<Ligne> lignes) {
+	public Graph(Set<Troncon> troncons, Set<Station> stations, Set<Ligne> lignes) {
 		super();
 		this.troncons = troncons;
-		this.stops = stops;
+		this.stops = stations;
 		this.lignes = lignes;
 	}
 
