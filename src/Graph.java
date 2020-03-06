@@ -6,6 +6,8 @@ public class Graph {
 	private Set<Stop> stops;
 	private Set<Ligne> lignes;
 
+	//private Map<String, Set<Stop>> stops;
+
 	public Graph(Set<Troncon> troncons, Set<Stop> stops, Set<Ligne> lignes) {
 		super();
 		this.troncons = troncons;
