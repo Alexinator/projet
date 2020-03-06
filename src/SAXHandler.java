@@ -4,6 +4,8 @@ import org.xml.sax.helpers.DefaultHandler;
 
 
 public class SAXHandler extends DefaultHandler{
+	
+	private Graph graph;
 
 	@Override
 	public void endDocument() throws SAXException {
