@@ -43,6 +43,8 @@ public class Graph {
 						pile.push(dernier);
 						dernier = chemin.get(dernier.getDepart());
 					}
+
+					System.out.println(pile.size());
 					while(!pile.isEmpty())
 							System.out.println(pile.pop());
 					return;
