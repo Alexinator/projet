@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import org.xml.sax.Attributes;
@@ -7,15 +10,20 @@ import org.xml.sax.helpers.DefaultHandler;
 
 public class SAXHandler extends DefaultHandler{
 	
-	private Graph graph;
 	private Set<Troncon> troncons;
-	private Set<Station> stations;
+	private Map<String,String> stops;
 	private Set<Ligne> lignes;
+	
+	private boolean isStop = false;
+	
+	private String stationName;
+	private Ligne ligne;
 
 	@Override
 	public void endDocument() throws SAXException {
 		// TODO Auto-generated method stub
 		super.endDocument();
+		System.out.println("\nEnd document");
 	}
 
 
@@ -23,6 +31,10 @@ public class SAXHandler extends DefaultHandler{
 	public void startDocument() throws SAXException {
 		// TODO Auto-generated method stub
 		super.startDocument();
+		System.out.println("Start document\n");
+		this.troncons = new HashSet<Troncon>();
+		this.stops = new HashMap<String,String>();
+		this.lignes = new HashSet<Ligne>();
 	}
 
 
@@ -30,6 +42,10 @@ public class SAXHandler extends DefaultHandler{
 	public void characters(char[] ch, int start, int length) throws SAXException {
 		// TODO Auto-generated method stub
 		super.characters(ch, start, length);
+		if(isStop) {
+			isStop = false;
+			this.stops.put(new String(ch,start,length),this.stationName);
+		}
 	}
 
 
@@ -37,6 +53,21 @@ public class SAXHandler extends DefaultHandler{
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
 		// TODO Auto-generated method stub
 		super.startElement(uri, localName, qName, attributes);
+		if(qName.equalsIgnoreCase("ligne")) {
+			this.ligne = new Ligne(attributes.getValue("nom"),attributes.getValue("source"),attributes.getValue("destination"),
+					attributes.getValue("type"),Integer.parseInt(attributes.getValue("attenteMoyenne")));
+			this.lignes.add(ligne);
+		}
+		else if(qName.equalsIgnoreCase("station")) {
+			this.stationName = attributes.getValue("nom");
+		}
+		else if(qName.equalsIgnoreCase("troncon")) {
+			this.troncons.add(new Troncon(this.ligne,  this.stops.get(attributes.getValue("depart")),
+					this.stops.get(attributes.getValue("arrivee")), Integer.parseInt(attributes.getValue("duree"))));
+		}
+		else if(qName.equalsIgnoreCase("stop")) {
+			isStop = true;
+		}
 	}
 
 	@Override
@@ -47,7 +78,7 @@ public class SAXHandler extends DefaultHandler{
 
 
 	public Graph getGraph() {
-		return new Graph(troncons, stations, lignes);
+		return new Graph(troncons, lignes);
 	}
 
 
