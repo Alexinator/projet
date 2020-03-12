@@ -27,7 +27,7 @@ public class Troncon {
 	}
 	@Override
 	public String toString() {
-		return "Troncon depart=" + depart + ", arrivee=" + arrivee + ", duree=" + duree + "]";
+		return "Troncon [ligne=" + ligne.toString() + ", depart=" + depart + ", arrivee=" + arrivee + ", duree=" + duree + "]";
 	}
 	
 	

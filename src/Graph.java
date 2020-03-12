@@ -12,8 +12,9 @@ import java.util.Set;
 public class Graph {
 
 	private Map<String, Set<Troncon>> arcs;
-	
-	//TODO rajouter des mï¿½thodes pour ajouter des troncons et stations (appellï¿½es via le saxhandler)
+
+	// TODO rajouter des mï¿½thodes pour ajouter des troncons et stations
+	// (appellï¿½es via le saxhandler)
 
 	public Graph(Set<Troncon> troncons) {
 		super();
@@ -27,7 +28,7 @@ public class Graph {
 	}
 
 	/**
-	 * Calcule le chemin minimisant le nombre de troncons en fonction d'un point de départ
+	 * Calcule le chemin minimisant le nombre de troncons en fonction d'un point de dï¿½part
 	 * et d'une arrivee.
 	 * 
 	 * @param stationDepart: la station de depart
@@ -55,7 +56,7 @@ public class Graph {
 						pile.push(dernier);
 						dernier = chemin.get(dernier.getDepart());
 					}
-					ecrireXML(pile,fichier);
+					ecrireXML(pile, fichier);
 					return;
 				}
 			}
@@ -98,23 +99,26 @@ public class Graph {
 		while(!pile.isEmpty()){
 			troncon = pile.pop(); 
 			duree += troncon.getDuree();
-			if(!lignes.contains(troncon.getLigne())) {
+			if (!lignes.contains(troncon.getLigne())) {
 				lignes.add(troncon.getLigne());
 				duree += troncon.getLigne().getAttenteMoyenne();
 			}
-			if(!troncon.getLigne().equals(lignePrecedente)) {
-				body += "<deplacement arrivee=\""+troncon.getArrivee()+"\" attenteMoyenne=\""+troncon.getLigne().getAttenteMoyenne()+"\""
-						+ " depart=\""+troncon.getDepart()+"\" direction=\""+troncon.getLigne().getDestination()+"\" duree=\""+troncon.getDuree()+"\" nbTroncon=\""+nbr+"\">"+troncon.getLigne().getNom()+"</deplacement>\n";
+			if (!troncon.getLigne().equals(lignePrecedente)) {
+				body += "<deplacement arrivee=\"" + troncon.getArrivee() + "\" attenteMoyenne=\""
+						+ troncon.getLigne().getAttenteMoyenne() + "\"" + " depart=\"" + troncon.getDepart()
+						+ "\" direction=\"" + troncon.getLigne().getDestination() + "\" duree=\"" + troncon.getDuree()
+						+ "\" nbTroncon=\"" + nbr + "\">" + troncon.getLigne().getNom() + "</deplacement>\n";
 			}
 			nbr++;
 			lignePrecedente = troncon.getLigne();
 		}
-			
-		String header = "<trajet depart=\""+depart+"\" destination=\""+arrivee+"\" duree=\""+duree+"\" nbTroncons=\""+nbTroncons+"\">\n";
+
+		String header = "<trajet depart=\"" + depart + "\" destination=\"" + arrivee + "\" duree=\"" + duree
+				+ "\" nbTroncons=\"" + nbTroncons + "\">\n";
 		String fin = "</trajet>";
 		try {
 			PrintWriter writer = new PrintWriter(fichier);
-			writer.write(debut+header+body+fin);
+			writer.write(debut + header + body + fin);
 			writer.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
