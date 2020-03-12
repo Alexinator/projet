@@ -13,8 +13,8 @@ public class Graph {
 
 	private Map<String, Set<Troncon>> arcs;
 
-	// TODO rajouter des m�thodes pour ajouter des troncons et stations
-	// (appell�es via le saxhandler)
+	// TODO rajouter des methodes pour ajouter des troncons et stations
+	// (appellees via le saxhandler)
 
 	public Graph(Set<Troncon> troncons) {
 		super();
@@ -28,7 +28,7 @@ public class Graph {
 	}
 
 	/**
-	 * Calcule le chemin minimisant le nombre de troncons en fonction d'un point de d�part
+	 * Calcule le chemin minimisant le nombre de troncons en fonction d'un point de depart
 	 * et d'une arrivee.
 	 * 
 	 * @param stationDepart: la station de depart
