@@ -26,6 +26,14 @@ public class Graph {
 		}
 	}
 
+	/**
+	 * Calcule le chemin minimisant le nombre de troncons en fonction d'un point de départ
+	 * et d'une arrivee.
+	 * 
+	 * @param stationDepart: la station de depart
+	 * @param stationArrivee: la station d'arrivee
+	 * @param fichier: le chemin du fichier XML
+	 */
 	public void calculerCheminMinimisantNombreTroncons(String stationDepart, String stationArrivee, String fichier) {
 		Deque<String> bfsFile = new ArrayDeque<String>();
 		Set<String> sommets = new HashSet<String>();
@@ -54,18 +62,30 @@ public class Graph {
 		}
 	}
 
-	public void calculerCheminMinimisantTempsTransport(String string, String string2, String string3) {
+	/**
+	 * Calcule le chemin minimisant au maximum le temps passe dans les transports en fonction 
+	 * d'un point de depart et d'un point d'arrivee.
+	 * 
+	 * @param stationDepart: la station de depart
+	 * @param stationArrivee: la station d'arrivee
+	 * @param fichier: le chemin du fichier XML
+	 */
+	public void calculerCheminMinimisantTempsTransport(String stationDepart, String stationArrivee, String fichier) {
 		// TODO Auto-generated method stub
 
 	}
 	
 	
-	private void ecrireXML(Deque<Troncon> pile,String fichier) {
-		String string = "";		
+	/**
+	 * Ecrit le fichier XML en fonction des troncons recus.
+	 * 
+	 * @param pile: l'ensemble des troncons 
+	 * @param fichier: le chemin du fichier XML
+	 */
+	private void ecrireXML(Deque<Troncon> pile,String fichier) {	
 		String depart = pile.peekFirst().getDepart();
 		String arrivee = pile.peekLast().getArrivee();
 		String debut = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n";
-				//+ 
 		
 		int duree = 0;
 		int nbTroncons = pile.size();
@@ -73,8 +93,10 @@ public class Graph {
 		Ligne lignePrecedente = null;
 		int nbr = 1;
 		String body = "";
+		Troncon troncon = null;
+		
 		while(!pile.isEmpty()){
-			Troncon troncon = pile.pop(); 
+			troncon = pile.pop(); 
 			duree += troncon.getDuree();
 			if(!lignes.contains(troncon.getLigne())) {
 				lignes.add(troncon.getLigne());
@@ -95,10 +117,7 @@ public class Graph {
 			writer.write(debut+header+body+fin);
 			writer.close();
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
-
 }
