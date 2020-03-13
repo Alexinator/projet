@@ -1,0 +1,42 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT stib (stations,lignes)>
+<!ATTLIST stib
+  xmlns:xsi CDATA #FIXED 'http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation CDATA #REQUIRED
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT stations (station)+>
+<!ATTLIST stations
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT lignes (ligne)+>
+<!ATTLIST lignes
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT station (stop)+>
+<!ATTLIST station
+  nom CDATA #REQUIRED
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT ligne (troncon)+>
+<!ATTLIST ligne
+  nom NMTOKEN #REQUIRED
+  source CDATA #REQUIRED
+  destination CDATA #REQUIRED
+  type NMTOKEN #REQUIRED
+  attenteMoyenne CDATA #REQUIRED
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT stop (#PCDATA)>
+<!ATTLIST stop
+  longitude CDATA #REQUIRED
+  latitude CDATA #REQUIRED
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT troncon EMPTY>
+<!ATTLIST troncon
+  depart NMTOKEN #REQUIRED
+  arrivee NMTOKEN #REQUIRED
+  duree CDATA #REQUIRED
+  xmlns CDATA #FIXED ''>
