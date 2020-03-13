@@ -99,6 +99,7 @@ public class Graph {
 							}
 							stations.remove(tronconSuivant.getArrivee());
 							dureestemps.remove(tronconSuivant.getArrivee());
+							troncons.remove(tronconSuivant);
 						}
 						
 						dureestemps.put(tronconSuivant.getArrivee(), dureeTotale);
