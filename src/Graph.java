@@ -72,41 +72,49 @@ public class Graph {
 	 * @param fichier: le chemin du fichier XML
 	 */
 	public void calculerCheminMinimisantTempsTransport(String stationDepart, String stationArrivee, String fichier) {
-		// TODO Auto-generated method stub
-
 		Map<String,Integer> dureesdefinitives = new HashMap<String, Integer>();
 		Map<String,Integer> dureestemps = new HashMap<String, Integer>();
 		Set<String> stationsdejavisitees = new HashSet<String>();
 		Deque<Troncon> troncons = new ArrayDeque<Troncon>();
+		Deque<String> stations = new ArrayDeque<String>();
 		
-		dureesdefinitives.put(stationDepart, 0);
-		stationsdejavisitees.add(stationDepart);
+		dureestemps.put(stationDepart, 0);
+		stations.add(stationDepart);
 		
 		String positionActuelle = stationDepart;
-		Troncon lePlusCourt = null;
 		
 		while(!positionActuelle.equals(stationArrivee)) {
+			positionActuelle = stations.removeFirst();
+			dureesdefinitives.put(positionActuelle, dureestemps.remove(positionActuelle));
 			for(Troncon troncon : arcs.get(positionActuelle)) {
-				System.out.println(troncon.getArrivee()+" : "+stationsdejavisitees.contains(troncon.getArrivee()));
 				if(!stationsdejavisitees.contains(troncon.getArrivee())) {
-					dureestemps.put(troncon.getArrivee(), troncon.getDuree());
+					int dureeTotale = dureesdefinitives.get(positionActuelle) + troncon.getDuree();
+					for(Troncon tronconSuivant : arcs.get(troncon.getDepart())) {
+						if(dureesdefinitives.containsKey(tronconSuivant.getArrivee())) {
+							continue;
+						}
+						if(dureestemps.containsKey(tronconSuivant.getArrivee())) {
+							if(dureestemps.get(tronconSuivant.getArrivee()) <= dureeTotale) {
+								continue;
+							}
+							stations.remove(tronconSuivant.getArrivee());
+							dureestemps.remove(tronconSuivant.getArrivee());
+						}
+						
+						dureestemps.put(tronconSuivant.getArrivee(), dureeTotale);
+						stations.add(tronconSuivant.getArrivee());
+						troncons.add(tronconSuivant);
+					}
 					stationsdejavisitees.add(troncon.getArrivee());
-					if(lePlusCourt == null) {
-						lePlusCourt = troncon;
-					}
-					if(troncon.getDuree() < lePlusCourt.getDuree()) {
-						lePlusCourt = troncon;
-					}
 				}
 			}
+		}
+		
+		System.out.println(dureesdefinitives.get("ALMA"));
+		
+		for(String s : dureesdefinitives.keySet()) {
 			
-			System.out.println(lePlusCourt);
-			
-			positionActuelle = lePlusCourt.getArrivee();
-			troncons.add(lePlusCourt);
-			dureesdefinitives.put(lePlusCourt.getArrivee(), lePlusCourt.getDuree());
-			dureestemps.remove(lePlusCourt.getArrivee());
-			lePlusCourt = null;
+			//System.out.println(s+" : "+dureesdefinitives.get(s));
 		}
 		
 		System.out.println("fini");
