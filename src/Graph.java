@@ -74,6 +74,43 @@ public class Graph {
 	public void calculerCheminMinimisantTempsTransport(String stationDepart, String stationArrivee, String fichier) {
 		// TODO Auto-generated method stub
 
+		Map<String,Integer> dureesdefinitives = new HashMap<String, Integer>();
+		Map<String,Integer> dureestemps = new HashMap<String, Integer>();
+		Set<String> stationsdejavisitees = new HashSet<String>();
+		Deque<Troncon> troncons = new ArrayDeque<Troncon>();
+		
+		dureesdefinitives.put(stationDepart, 0);
+		stationsdejavisitees.add(stationDepart);
+		
+		String positionActuelle = stationDepart;
+		Troncon lePlusCourt = null;
+		
+		while(!positionActuelle.equals(stationArrivee)) {
+			for(Troncon troncon : arcs.get(positionActuelle)) {
+				System.out.println(troncon.getArrivee()+" : "+stationsdejavisitees.contains(troncon.getArrivee()));
+				if(!stationsdejavisitees.contains(troncon.getArrivee())) {
+					dureestemps.put(troncon.getArrivee(), troncon.getDuree());
+					stationsdejavisitees.add(troncon.getArrivee());
+					if(lePlusCourt == null) {
+						lePlusCourt = troncon;
+					}
+					if(troncon.getDuree() < lePlusCourt.getDuree()) {
+						lePlusCourt = troncon;
+					}
+				}
+			}
+			
+			System.out.println(lePlusCourt);
+			
+			positionActuelle = lePlusCourt.getArrivee();
+			troncons.add(lePlusCourt);
+			dureesdefinitives.put(lePlusCourt.getArrivee(), lePlusCourt.getDuree());
+			dureestemps.remove(lePlusCourt.getArrivee());
+			lePlusCourt = null;
+		}
+		
+		System.out.println("fini");
+		
 	}
 	
 	

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<trajet depart="MALIBRAN" destination="ALMA" duree="101" nbTroncons="12">
-<deplacement arrivee="BLYCKAERTS" attenteMoyenne="32" depart="MALIBRAN" direction="GARE CENTRALE" duree="1" nbTroncon="1">N10</deplacement>
-<deplacement arrivee="LUXEMBOURG" attenteMoyenne="5" depart="IDALIE" direction="PORTE DE NAMUR" duree="2" nbTroncon="3">34</deplacement>
-<deplacement arrivee="SCHUMAN" attenteMoyenne="6" depart="LUXEMBOURG" direction="BRUSSELS AIRPORT" duree="6" nbTroncon="4">12</deplacement>
-<deplacement arrivee="MERODE" attenteMoyenne="7" depart="SCHUMAN" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="5">5</deplacement>
-<deplacement arrivee="MONTGOMERY" attenteMoyenne="18" depart="MERODE" direction="MONTGOMERY" duree="3" nbTroncon="6">61</deplacement>
-<deplacement arrivee="JOSEPH.-CHARLOTTE" attenteMoyenne="8" depart="MONTGOMERY" direction="STOCKEL" duree="2" nbTroncon="7">1</deplacement>
+<trajet depart="MALIBRAN" destination="ALMA" duree="25" nbTroncons="12">
+<deplacement arrivee="BLYCKAERTS" attenteMoyenne="0" depart="MALIBRAN" direction="GARE CENTRALE" duree="1" nbTroncon="1">N10</deplacement>
+<deplacement arrivee="LUXEMBOURG" attenteMoyenne="0" depart="IDALIE" direction="PORTE DE NAMUR" duree="2" nbTroncon="3">34</deplacement>
+<deplacement arrivee="SCHUMAN" attenteMoyenne="0" depart="LUXEMBOURG" direction="BRUSSELS AIRPORT" duree="6" nbTroncon="4">12</deplacement>
+<deplacement arrivee="MERODE" attenteMoyenne="0" depart="SCHUMAN" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="5">5</deplacement>
+<deplacement arrivee="MONTGOMERY" attenteMoyenne="0" depart="MERODE" direction="MONTGOMERY" duree="3" nbTroncon="6">61</deplacement>
+<deplacement arrivee="JOSEPH.-CHARLOTTE" attenteMoyenne="0" depart="MONTGOMERY" direction="STOCKEL" duree="2" nbTroncon="7">1</deplacement>
 </trajet>
