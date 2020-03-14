@@ -76,6 +76,7 @@ public class Graph {
 		Map<String, Integer> dureesdefinitives = new HashMap<String, Integer>();
 		Map<String, Integer> dureestemps = new HashMap<String, Integer>();
 		Map<String, List<Troncon>> chemin = new HashMap<String, List<Troncon>>();
+		Deque<Troncon> pile = new ArrayDeque<Troncon>();
 
 		dureestemps.put(stationDepart, 0);
 		String positionActuelle = stationDepart;
@@ -115,14 +116,11 @@ public class Graph {
 			}
 		}
 
-		int duree = 0;
 		for(Troncon troncon : chemin.get(stationArrivee)) {
 			System.out.println(troncon);
-			duree += troncon.getDuree();
+			pile.add(troncon);
 		}
-		
-		System.out.println("duree pour aller jusqu'a alma: "+duree);
-		// ecrireXML(troncons, fichier);
+		ecrireXML(pile, fichier);
 
 	}
 
@@ -157,6 +155,8 @@ public class Graph {
 						+ troncon.getLigne().getAttenteMoyenne() + "\"" + " depart=\"" + troncon.getDepart()
 						+ "\" direction=\"" + troncon.getLigne().getDestination() + "\" duree=\"" + troncon.getDuree()
 						+ "\" nbTroncon=\"" + nbr + "\">" + troncon.getLigne().getNom() + "</deplacement>\n";
+				nbr = 1;
+				duree = 0;
 			}
 			nbr++;
 			lignePrecedente = troncon.getLigne();
