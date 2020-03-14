@@ -1,589 +1,446 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<trajet depart="FLAGEY" destination="STOCKEL" duree="1070" nbTroncons="599">
-<deplacement arrivee="BIARRITZ" attenteMoyenne="0" depart="FLAGEY" direction="FORT-JACO" duree="1" nbTroncon="1">N10</deplacement>
-<deplacement arrivee="ETANGS D'IXELLES" attenteMoyenne="0" depart="FLAGEY" direction="MONTGOMERY" duree="2" nbTroncon="2">T81</deplacement>
-<deplacement arrivee="MUSEE D'IXELLES" attenteMoyenne="0" depart="FLAGEY" direction="GARE CENTRALE" duree="1" nbTroncon="3">N10</deplacement>
-<deplacement arrivee="DAUTZENBERG" attenteMoyenne="0" depart="FLAGEY" direction="MARIUS RENARD" duree="2" nbTroncon="4">81</deplacement>
-<deplacement arrivee="WERY" attenteMoyenne="0" depart="FLAGEY" direction="BORDET STATION" duree="1" nbTroncon="5">59</deplacement>
-<deplacement arrivee="LEVURE" attenteMoyenne="0" depart="FLAGEY" direction="MONTGOMERY" duree="2" nbTroncon="6">81</deplacement>
-<deplacement arrivee="IDALIE" attenteMoyenne="0" depart="BLYCKAERTS" direction="DE BROUCKERE" duree="2" nbTroncon="7">71</deplacement>
-<deplacement arrivee="GERMOIR" attenteMoyenne="0" depart="BLYCKAERTS" direction="WIENER" duree="2" nbTroncon="8">N08</deplacement>
-<deplacement arrivee="VARIA" attenteMoyenne="0" depart="BLYCKAERTS" direction="AMBIORIX" duree="2" nbTroncon="9">60</deplacement>
-<deplacement arrivee="BAILLI" attenteMoyenne="0" depart="VLEURGAT" direction="LOUISE" duree="2" nbTroncon="10">T93</deplacement>
-<deplacement arrivee="VAN EYCK" attenteMoyenne="0" depart="VLEURGAT" direction="VANDERKINDERE" duree="2" nbTroncon="11">T7</deplacement>
-<deplacement arrivee="ABBAYE" attenteMoyenne="0" depart="VLEURGAT" direction="LEGRAND" duree="2" nbTroncon="12">93</deplacement>
-<deplacement arrivee="FLAGEY" attenteMoyenne="0" depart="VLEURGAT" direction="HEYSEL" duree="3" nbTroncon="13">T7</deplacement>
-<deplacement arrivee="WASHINGTON" attenteMoyenne="0" depart="VLEURGAT" direction="UCCLE CALEVOET" duree="2" nbTroncon="14">60</deplacement>
-<deplacement arrivee="BUYL" attenteMoyenne="0" depart="GEO BERNIER" direction="DELTA" duree="3" nbTroncon="15">71</deplacement>
-<deplacement arrivee="QUART.ST-BONIFACE" attenteMoyenne="0" depart="FERNAND COCQ" direction="GARE CENTRALE" duree="1" nbTroncon="16">N09</deplacement>
-<deplacement arrivee="VANNE" attenteMoyenne="0" depart="FERNAND COCQ" direction="FOREST (BERVOETS)" duree="2" nbTroncon="17">54</deplacement>
-<deplacement arrivee="DEFACQZ" attenteMoyenne="0" depart="BAILLI" direction="SCHAERBEEK GARE" duree="1" nbTroncon="18">T92</deplacement>
-<deplacement arrivee="TRINITE" attenteMoyenne="0" depart="BAILLI" direction="FOREST (BERVOETS)" duree="3" nbTroncon="19">54</deplacement>
-<deplacement arrivee="VLEURGAT" attenteMoyenne="0" depart="BAILLI" direction="LEGRAND" duree="2" nbTroncon="20">93</deplacement>
-<deplacement arrivee="VANNE" attenteMoyenne="0" depart="BAILLI" direction="TRONE" duree="2" nbTroncon="21">54</deplacement>
-<deplacement arrivee="JOURDAN" attenteMoyenne="0" depart="NATATION" direction="BORDET STATION" duree="2" nbTroncon="22">59</deplacement>
+<trajet depart="BLYCKAERTS" destination="ALMA" duree="771" nbTroncons="453">
+<deplacement arrivee="MALIBRAN" attenteMoyenne="0" depart="BLYCKAERTS" direction="UCCLE CALEVOET" duree="1" nbTroncon="1">60</deplacement>
+<deplacement arrivee="ETANGS D'IXELLES" attenteMoyenne="0" depart="FLAGEY" direction="HERRMANN-DEBROUX" duree="1" nbTroncon="2">N09</deplacement>
+<deplacement arrivee="BLYCKAERTS" attenteMoyenne="0" depart="IDALIE" direction="HERRMANN-DEBROUX" duree="1" nbTroncon="3">N09</deplacement>
+<deplacement arrivee="ETANGS" attenteMoyenne="0" depart="VARIA" direction="AMBIORIX" duree="2" nbTroncon="4">60</deplacement>
+<deplacement arrivee="RODIN" attenteMoyenne="0" depart="GERMOIR" direction="WIENER" duree="2" nbTroncon="5">N08</deplacement>
+<deplacement arrivee="GEO BERNIER" attenteMoyenne="0" depart="ETANGS D'IXELLES" direction="HEYSEL" duree="2" nbTroncon="6">T7</deplacement>
+<deplacement arrivee="FLAGEY" attenteMoyenne="0" depart="LEVURE" direction="BORDET STATION" duree="1" nbTroncon="7">59</deplacement>
+<deplacement arrivee="FLAGEY" attenteMoyenne="0" depart="BIARRITZ" direction="GARE CENTRALE" duree="1" nbTroncon="8">N10</deplacement>
+<deplacement arrivee="FLAGEY" attenteMoyenne="0" depart="MUSEE D'IXELLES" direction="HERRMANN-DEBROUX" duree="1" nbTroncon="9">N09</deplacement>
+<deplacement arrivee="FLAGEY" attenteMoyenne="0" depart="WERY" direction="HOPITAL ETTERBEEK-IXELLES" duree="3" nbTroncon="10">59</deplacement>
+<deplacement arrivee="BAILLI" attenteMoyenne="0" depart="DAUTZENBERG" direction="MARIUS RENARD" duree="1" nbTroncon="11">T81</deplacement>
+<deplacement arrivee="IDALIE" attenteMoyenne="0" depart="MUSEUM" direction="PORTE DE NAMUR" duree="2" nbTroncon="12">80</deplacement>
+<deplacement arrivee="TREVES" attenteMoyenne="0" depart="LUXEMBOURG" direction="ANDROMEDE" duree="1" nbTroncon="13">27</deplacement>
+<deplacement arrivee="PORTE DE NAMUR" attenteMoyenne="0" depart="LONDRES" direction="GARE CENTRALE" duree="2" nbTroncon="14">N06</deplacement>
+<deplacement arrivee="LEMAN" attenteMoyenne="0" depart="ETANGS" direction="MAES" duree="2" nbTroncon="15">80</deplacement>
+<deplacement arrivee="FROISSART" attenteMoyenne="0" depart="JOURDAN" direction="AMBIORIX" duree="2" nbTroncon="16">60</deplacement>
+<deplacement arrivee="GERMOIR" attenteMoyenne="0" depart="RODIN" direction="GARE CENTRALE" duree="1" nbTroncon="17">N08</deplacement>
+<deplacement arrivee="LA CHASSE" attenteMoyenne="0" depart="EGLISE ST-ANTOINE" direction="MONTGOMERY" duree="1" nbTroncon="18">81</deplacement>
+<deplacement arrivee="BUYL" attenteMoyenne="0" depart="GEO BERNIER" direction="HEYSEL" duree="1" nbTroncon="19">T7</deplacement>
+<deplacement arrivee="LEVURE" attenteMoyenne="0" depart="HOP. ETT.-IXELLES" direction="BORDET STATION" duree="2" nbTroncon="20">59</deplacement>
+<deplacement arrivee="VAN EYCK" attenteMoyenne="0" depart="VLEURGAT" direction="HEROS" duree="2" nbTroncon="21">38</deplacement>
+<deplacement arrivee="MUSEE D'IXELLES" attenteMoyenne="0" depart="FERNAND COCQ" direction="DELTA" duree="2" nbTroncon="22">71</deplacement>
 <deplacement arrivee="ETANGS" attenteMoyenne="0" depart="NATATION" direction="BORDET STATION" duree="2" nbTroncon="23">59</deplacement>
-<deplacement arrivee="BLYCKAERTS" attenteMoyenne="0" depart="GERMOIR" direction="GARE CENTRALE" duree="2" nbTroncon="24">N08</deplacement>
-<deplacement arrivee="RODIN" attenteMoyenne="0" depart="GERMOIR" direction="WIENER" duree="2" nbTroncon="25">N08</deplacement>
-<deplacement arrivee="EGLISE ST-ANTOINE" attenteMoyenne="0" depart="GERMOIR" direction="MONTGOMERY" duree="2" nbTroncon="26">81</deplacement>
-<deplacement arrivee="TREVES" attenteMoyenne="0" depart="LUXEMBOURG" direction="BRUSSELS AIRPORT" duree="1" nbTroncon="27">21</deplacement>
-<deplacement arrivee="SCIENCE" attenteMoyenne="0" depart="LUXEMBOURG" direction="GARE DU MIDI" duree="2" nbTroncon="28">27</deplacement>
-<deplacement arrivee="SCHUMAN" attenteMoyenne="0" depart="LUXEMBOURG" direction="BRUSSELS AIRPORT" duree="6" nbTroncon="29">12</deplacement>
-<deplacement arrivee="ETANGS" attenteMoyenne="0" depart="MUSEUM" direction="SAINTE-ANNE" duree="2" nbTroncon="30">34</deplacement>
-<deplacement arrivee="JOURDAN" attenteMoyenne="0" depart="MUSEUM" direction="MAES" duree="1" nbTroncon="31">80</deplacement>
-<deplacement arrivee="PORTE DE NAMUR" attenteMoyenne="0" depart="LONDRES" direction="GARE CENTRALE" duree="2" nbTroncon="32">N06</deplacement>
-<deplacement arrivee="HOP. ETT.-IXELLES" attenteMoyenne="0" depart="LEVURE" direction="HOPITAL ETTERBEEK-IXELLES" duree="2" nbTroncon="33">59</deplacement>
-<deplacement arrivee="FLAGEY" attenteMoyenne="0" depart="LEVURE" direction="BORDET STATION" duree="1" nbTroncon="34">59</deplacement>
-<deplacement arrivee="DELPORTE" attenteMoyenne="0" depart="RODIN" direction="WIENER" duree="2" nbTroncon="35">N08</deplacement>
-<deplacement arrivee="LA CHASSE" attenteMoyenne="0" depart="EGLISE ST-ANTOINE" direction="MONTGOMERY" duree="1" nbTroncon="36">81</deplacement>
-<deplacement arrivee="PARC LEOPOLD" attenteMoyenne="0" depart="JOURDAN" direction="MAES" duree="2" nbTroncon="37">80</deplacement>
-<deplacement arrivee="MUSEUM" attenteMoyenne="0" depart="JOURDAN" direction="GARE CENTRALE" duree="2" nbTroncon="38">N06</deplacement>
-<deplacement arrivee="FROISSART" attenteMoyenne="0" depart="JOURDAN" direction="AMBIORIX" duree="2" nbTroncon="39">60</deplacement>
-<deplacement arrivee="NATATION" attenteMoyenne="0" depart="JOURDAN" direction="HOPITAL ETTERBEEK-IXELLES" duree="2" nbTroncon="40">59</deplacement>
-<deplacement arrivee="LEMAN" attenteMoyenne="0" depart="ETANGS" direction="MAES" duree="2" nbTroncon="41">80</deplacement>
-<deplacement arrivee="FETIS" attenteMoyenne="0" depart="ETANGS" direction="SAINTE-ANNE" duree="2" nbTroncon="42">34</deplacement>
-<deplacement arrivee="STEPHANIE" attenteMoyenne="0" depart="DEFACQZ" direction="SCHAERBEEK GARE" duree="2" nbTroncon="43">T92</deplacement>
-<deplacement arrivee="JANSON" attenteMoyenne="0" depart="DEFACQZ" direction="MARIUS RENARD" duree="3" nbTroncon="44">T81</deplacement>
-<deplacement arrivee="MA CAMPAGNE" attenteMoyenne="0" depart="TRINITE" direction="FOREST (BERVOETS)" duree="3" nbTroncon="45">54</deplacement>
-<deplacement arrivee="FERNAND COCQ" attenteMoyenne="0" depart="VANNE" direction="FERNAND COCQ" duree="2" nbTroncon="46">70</deplacement>
-<deplacement arrivee="BASCULE" attenteMoyenne="0" depart="PATTON" direction="HEROS" duree="1" nbTroncon="47">38</deplacement>
-<deplacement arrivee="CAMBRE-ETOILE" attenteMoyenne="0" depart="LEGRAND" direction="HEYSEL" duree="3" nbTroncon="48">7</deplacement>
-<deplacement arrivee="LEGRAND" attenteMoyenne="0" depart="LEGRAND" direction="SCHAERBEEK GARE" duree="1" nbTroncon="49">T92</deplacement>
-<deplacement arrivee="GEORGES BRUGMANN" attenteMoyenne="0" depart="LEPOUTRE" direction="UCCLE CALEVOET" duree="2" nbTroncon="50">60</deplacement>
-<deplacement arrivee="PATTON" attenteMoyenne="0" depart="VAN EYCK" direction="HEROS" duree="1" nbTroncon="51">38</deplacement>
-<deplacement arrivee="ETTERBEEK GARE" attenteMoyenne="0" depart="ROFFIAEN" direction="HEYSEL" duree="2" nbTroncon="52">7</deplacement>
-<deplacement arrivee="JEANNE" attenteMoyenne="0" depart="ULB" direction="VANDERKINDERE" duree="1" nbTroncon="53">T7</deplacement>
-<deplacement arrivee="CIM. D'IXELLES" attenteMoyenne="0" depart="ULB" direction="DELTA" duree="3" nbTroncon="54">71</deplacement>
-<deplacement arrivee="SOLBOSCH" attenteMoyenne="0" depart="ULB" direction="BOONDAEL GARE" duree="1" nbTroncon="55">25</deplacement>
-<deplacement arrivee="ROFFIAEN" attenteMoyenne="0" depart="BUYL" direction="HEYSEL" duree="1" nbTroncon="56">7</deplacement>
-<deplacement arrivee="ULB" attenteMoyenne="0" depart="BUYL" direction="DELTA" duree="2" nbTroncon="57">71</deplacement>
-<deplacement arrivee="GEO BERNIER" attenteMoyenne="0" depart="BUYL" direction="GARE CENTRALE" duree="1" nbTroncon="58">N09</deplacement>
-<deplacement arrivee="CAMBRE-ETOILE" attenteMoyenne="0" depart="BUYL" direction="LOUISE" duree="2" nbTroncon="59">8</deplacement>
-<deplacement arrivee="LONDRES" attenteMoyenne="0" depart="PORTE DE NAMUR" direction="FORT-JACO" duree="2" nbTroncon="60">N10</deplacement>
-<deplacement arrivee="LOUISE" attenteMoyenne="0" depart="PORTE DE NAMUR" direction="FORT-JACO" duree="2" nbTroncon="61">T92</deplacement>
-<deplacement arrivee="TRONE" attenteMoyenne="0" depart="PORTE DE NAMUR" direction="ELISABETH" duree="1" nbTroncon="62">6</deplacement>
-<deplacement arrivee="LOUISE" attenteMoyenne="0" depart="STEPHANIE" direction="SCHAERBEEK GARE" duree="2" nbTroncon="63">92</deplacement>
-<deplacement arrivee="FAIDER" attenteMoyenne="0" depart="STEPHANIE" direction="FORT-JACO" duree="2" nbTroncon="64">92</deplacement>
+<deplacement arrivee="TRINITE" attenteMoyenne="0" depart="BAILLI" direction="MARIUS RENARD" duree="2" nbTroncon="24">81</deplacement>
+<deplacement arrivee="PARC LEOPOLD" attenteMoyenne="0" depart="TREVES" direction="ANDROMEDE" duree="2" nbTroncon="25">27</deplacement>
+<deplacement arrivee="FROISSART" attenteMoyenne="0" depart="SCHUMAN" direction="LUXEMBOURG" duree="2" nbTroncon="27">21</deplacement>
+<deplacement arrivee="TRONE" attenteMoyenne="0" depart="PORTE DE NAMUR" direction="SAINTE-ANNE" duree="2" nbTroncon="28">34</deplacement>
+<deplacement arrivee="LOUIS HAP" attenteMoyenne="0" depart="LEMAN" direction="KONKEL" duree="1" nbTroncon="29">36</deplacement>
+<deplacement arrivee="LA CHASSE" attenteMoyenne="0" depart="FETIS" direction="SAINTE-ANNE" duree="2" nbTroncon="30">34</deplacement>
+<deplacement arrivee="TOULOUSE" attenteMoyenne="0" depart="FROISSART" direction="GARE DU MIDI" duree="3" nbTroncon="31">27</deplacement>
+<deplacement arrivee="NERVIENS" attenteMoyenne="0" depart="PARC LEOPOLD" direction="ANDROMEDE" duree="3" nbTroncon="32">27</deplacement>
+<deplacement arrivee="RODIN" attenteMoyenne="0" depart="DELPORTE" direction="GARE CENTRALE" duree="2" nbTroncon="33">N08</deplacement>
+<deplacement arrivee="ACACIAS" attenteMoyenne="0" depart="LA CHASSE" direction="MONTGOMERY" duree="2" nbTroncon="34">81</deplacement>
+<deplacement arrivee="CAMBRE-ETOILE" attenteMoyenne="0" depart="BUYL" direction="VANDERKINDERE" duree="2" nbTroncon="35">7</deplacement>
+<deplacement arrivee="VLEURGAT" attenteMoyenne="0" depart="VAN EYCK" direction="GARE CENTRALE" duree="1" nbTroncon="36">N10</deplacement>
+<deplacement arrivee="LEGRAND" attenteMoyenne="0" depart="ABBAYE" direction="FORT-JACO" duree="2" nbTroncon="37">T92</deplacement>
+<deplacement arrivee="LEPOUTRE" attenteMoyenne="0" depart="WASHINGTON" direction="UCCLE CALEVOET" duree="2" nbTroncon="38">60</deplacement>
+<deplacement arrivee="FERNAND COCQ" attenteMoyenne="0" depart="VANNE" direction="TRONE" duree="2" nbTroncon="39">54</deplacement>
+<deplacement arrivee="PORTE DE NAMUR" attenteMoyenne="0" depart="QUART.ST-BONIFACE" direction="GARE CENTRALE" duree="1" nbTroncon="40">N10</deplacement>
+<deplacement arrivee="BAILLI" attenteMoyenne="0" depart="TRINITE" direction="MONTGOMERY" duree="3" nbTroncon="41">81</deplacement>
+<deplacement arrivee="BAILLI" attenteMoyenne="0" depart="DEFACQZ" direction="MUSEE DU TRAM" duree="1" nbTroncon="42">T93</deplacement>
+<deplacement arrivee="PORTE DE NAMUR" attenteMoyenne="0" depart="TRONE" direction="PORTE DE NAMUR" duree="2" nbTroncon="43">64</deplacement>
+<deplacement arrivee="MAELBEEK" attenteMoyenne="0" depart="LIVINGSTONE" direction="LUXEMBOURG" duree="1" nbTroncon="44">21</deplacement>
+<deplacement arrivee="MONTGOMERY" attenteMoyenne="0" depart="MERODE" direction="MONTGOMERY" duree="3" nbTroncon="45">61</deplacement>
+<deplacement arrivee="GUEUX" attenteMoyenne="0" depart="MICHEL-ANGE" direction="ANDROMEDE" duree="2" nbTroncon="46">27</deplacement>
+<deplacement arrivee="SCHUMAN" attenteMoyenne="0" depart="MAELBEEK" direction="STOCKEL" duree="1" nbTroncon="47">1</deplacement>
+<deplacement arrivee="SCHUMAN" attenteMoyenne="0" depart="AMBIORIX" direction="UCCLE CALEVOET" duree="2" nbTroncon="48">60</deplacement>
+<deplacement arrivee="GAULOIS" attenteMoyenne="0" depart="NERVIENS" direction="ANDROMEDE" duree="2" nbTroncon="49">27</deplacement>
+<deplacement arrivee="VICTOR HUGO" attenteMoyenne="0" depart="DIAMANT" direction="BRABANCONNE" duree="1" nbTroncon="50">28</deplacement>
+<deplacement arrivee="PORTE DE NAMUR" attenteMoyenne="0" depart="LOUISE" direction="FORT-JACO" duree="3" nbTroncon="51">N10</deplacement>
+<deplacement arrivee="LEMAN" attenteMoyenne="0" depart="LOUIS HAP" direction="SCHUMAN" duree="1" nbTroncon="52">36</deplacement>
+<deplacement arrivee="LEMAN" attenteMoyenne="0" depart="GAULOIS" direction="PORTE DE NAMUR" duree="2" nbTroncon="53">80</deplacement>
+<deplacement arrivee="TREVES" attenteMoyenne="0" depart="TOULOUSE" direction="LUXEMBOURG" duree="1" nbTroncon="54">21</deplacement>
+<deplacement arrivee="DELPORTE" attenteMoyenne="0" depart="ETTERBEEK GARE" direction="GRAND-PLACE" duree="2" nbTroncon="55">95</deplacement>
+<deplacement arrivee="LA CHASSE" attenteMoyenne="0" depart="ACACIAS" direction="MARIUS RENARD" duree="2" nbTroncon="56">81</deplacement>
+<deplacement arrivee="ROI VAINQUEUR" attenteMoyenne="0" depart="ONZE NOVEMBRE" direction="KONKEL" duree="1" nbTroncon="57">36</deplacement>
+<deplacement arrivee="ARSENAL" attenteMoyenne="0" depart="BUEDTS" direction="SAINTE-ANNE" duree="2" nbTroncon="58">34</deplacement>
+<deplacement arrivee="BUYL" attenteMoyenne="0" depart="CAMBRE-ETOILE" direction="HEYSEL" duree="2" nbTroncon="59">7</deplacement>
+<deplacement arrivee="JEANNE" attenteMoyenne="0" depart="ULB" direction="GARE CENTRALE" duree="1" nbTroncon="60">N09</deplacement>
+<deplacement arrivee="BUYL" attenteMoyenne="0" depart="ROFFIAEN" direction="VANDERKINDERE" duree="2" nbTroncon="61">7</deplacement>
+<deplacement arrivee="BASCULE" attenteMoyenne="0" depart="PATTON" direction="VANDERKINDERE" duree="1" nbTroncon="62">T7</deplacement>
+<deplacement arrivee="ABBAYE" attenteMoyenne="0" depart="LEGRAND" direction="SCHAERBEEK GARE" duree="2" nbTroncon="63">T92</deplacement>
+<deplacement arrivee="GEORGES BRUGMANN" attenteMoyenne="0" depart="LEPOUTRE" direction="FORT-JACO" duree="2" nbTroncon="64">N10</deplacement>
 <deplacement arrivee="MA CAMPAGNE" attenteMoyenne="0" depart="JANSON" direction="FORT-JACO" duree="2" nbTroncon="65">92</deplacement>
-<deplacement arrivee="MORIS" attenteMoyenne="0" depart="JANSON" direction="MARIUS RENARD" duree="2" nbTroncon="66">T81</deplacement>
-<deplacement arrivee="PRISON" attenteMoyenne="0" depart="MA CAMPAGNE" direction="HOMBORCH" duree="2" nbTroncon="67">N11</deplacement>
-<deplacement arrivee="DARWIN" attenteMoyenne="0" depart="MA CAMPAGNE" direction="FORT-JACO" duree="2" nbTroncon="68">92</deplacement>
-<deplacement arrivee="LEGRAND" attenteMoyenne="0" depart="ABBAYE" direction="MUSEE DU TRAM" duree="2" nbTroncon="69">T93</deplacement>
-<deplacement arrivee="LEPOUTRE" attenteMoyenne="0" depart="WASHINGTON" direction="UCCLE CALEVOET" duree="2" nbTroncon="70">60</deplacement>
-<deplacement arrivee="LUXEMBOURG" attenteMoyenne="0" depart="IDALIE" direction="GARE CENTRALE" duree="2" nbTroncon="71">38</deplacement>
-<deplacement arrivee="LONDRES" attenteMoyenne="0" depart="IDALIE" direction="GARE CENTRALE" duree="1" nbTroncon="72">N08</deplacement>
-<deplacement arrivee="ONZE NOVEMBRE" attenteMoyenne="0" depart="LA CHASSE" direction="KONKEL" duree="2" nbTroncon="73">36</deplacement>
-<deplacement arrivee="ACACIAS" attenteMoyenne="0" depart="LA CHASSE" direction="MONTGOMERY" duree="2" nbTroncon="74">81</deplacement>
-<deplacement arrivee="LOUIS HAP" attenteMoyenne="0" depart="LA CHASSE" direction="SCHUMAN" duree="2" nbTroncon="75">36</deplacement>
-<deplacement arrivee="BUEDTS" attenteMoyenne="0" depart="LA CHASSE" direction="SAINTE-ANNE" duree="2" nbTroncon="76">34</deplacement>
-<deplacement arrivee="NERVIENS" attenteMoyenne="0" depart="PARC LEOPOLD" direction="MAES" duree="2" nbTroncon="77">80</deplacement>
-<deplacement arrivee="MAELBEEK" attenteMoyenne="0" depart="PARC LEOPOLD" direction="BORDET STATION" duree="2" nbTroncon="78">59</deplacement>
-<deplacement arrivee="TRONE" attenteMoyenne="0" depart="TRONE" direction="GRAND-PLACE" duree="2" nbTroncon="79">95</deplacement>
-<deplacement arrivee="ARTS-LOI" attenteMoyenne="0" depart="TRONE" direction="ELISABETH" duree="1" nbTroncon="81">6</deplacement>
-<deplacement arrivee="GUEUX" attenteMoyenne="0" depart="MICHEL-ANGE" direction="GARE DU NORD" duree="1" nbTroncon="82">61</deplacement>
-<deplacement arrivee="TOULOUSE" attenteMoyenne="0" depart="FROISSART" direction="GARE DU MIDI" duree="3" nbTroncon="83">27</deplacement>
-<deplacement arrivee="VICTOR HUGO" attenteMoyenne="0" depart="DIAMANT" direction="BRABANCONNE" duree="1" nbTroncon="84">28</deplacement>
-<deplacement arrivee="COLONEL BOURG" attenteMoyenne="0" depart="DIAMANT" direction="KRAAINEM" duree="2" nbTroncon="85">79</deplacement>
-<deplacement arrivee="OPALE" attenteMoyenne="0" depart="DIAMANT" direction="LUXEMBOURG" duree="1" nbTroncon="86">21</deplacement>
-<deplacement arrivee="DIAMANT" attenteMoyenne="0" depart="DIAMANT" direction="BRUSSELS AIRPORT" duree="2" nbTroncon="87">21</deplacement>
-<deplacement arrivee="VERGOTE" attenteMoyenne="0" depart="DIAMANT" direction="KONKEL" duree="2" nbTroncon="88">28</deplacement>
-<deplacement arrivee="GEORGES HENRI" attenteMoyenne="0" depart="DIAMANT" direction="VANDERKINDERE" duree="2" nbTroncon="89">7</deplacement>
-<deplacement arrivee="MEISER" attenteMoyenne="0" depart="DIAMANT" direction="HEYSEL" duree="2" nbTroncon="90">7</deplacement>
-<deplacement arrivee="LEVIE" attenteMoyenne="0" depart="DIAMANT" direction="KRAAINEM" duree="2" nbTroncon="91">N05</deplacement>
-<deplacement arrivee="GENEVE" attenteMoyenne="0" depart="DIAMANT" direction="BRUSSELS AIRPORT" duree="7" nbTroncon="92">12</deplacement>
-<deplacement arrivee="AMBIORIX" attenteMoyenne="0" depart="LIVINGSTONE" direction="BRUSSELS AIRPORT" duree="3" nbTroncon="93">21</deplacement>
-<deplacement arrivee="GUTENBERG" attenteMoyenne="0" depart="LIVINGSTONE" direction="BORDET STATION" duree="2" nbTroncon="94">59</deplacement>
-<deplacement arrivee="MICHEL-ANGE" attenteMoyenne="0" depart="AMBIORIX" direction="GARE DU NORD" duree="1" nbTroncon="95">61</deplacement>
-<deplacement arrivee="WATERLOO WILSON" attenteMoyenne="0" depart="AMBIORIX" direction="GARE CENTRALE" duree="1" nbTroncon="96">N05</deplacement>
-<deplacement arrivee="LUTHER" attenteMoyenne="0" depart="AMBIORIX" direction="MACHELEN" duree="2" nbTroncon="97">64</deplacement>
-<deplacement arrivee="LIVINGSTONE" attenteMoyenne="0" depart="AMBIORIX" direction="PORTE DE NAMUR" duree="3" nbTroncon="98">64</deplacement>
-<deplacement arrivee="AMBIORIX" attenteMoyenne="0" depart="AMBIORIX" direction="UCCLE CALEVOET" duree="2" nbTroncon="99">60</deplacement>
-<deplacement arrivee="GAULOIS" attenteMoyenne="0" depart="NERVIENS" direction="ANDROMEDE" duree="2" nbTroncon="100">27</deplacement>
-<deplacement arrivee="BREYDEL" attenteMoyenne="0" depart="NERVIENS" direction="GARE CENTRALE" duree="1" nbTroncon="101">N06</deplacement>
-<deplacement arrivee="MICHEL-ANGE" attenteMoyenne="0" depart="SCHUMAN" direction="BRUSSELS AIRPORT" duree="1" nbTroncon="102">21</deplacement>
-<deplacement arrivee="DIAMANT" attenteMoyenne="0" depart="SCHUMAN" direction="BRUSSELS AIRPORT" duree="8" nbTroncon="103">12</deplacement>
-<deplacement arrivee="LUXEMBOURG" attenteMoyenne="0" depart="SCHUMAN" direction="BRUSSELS CITY" duree="8" nbTroncon="104">12</deplacement>
-<deplacement arrivee="LIVINGSTONE" attenteMoyenne="0" depart="SCHUMAN" direction="PORTE DE NAMUR" duree="3" nbTroncon="105">80</deplacement>
-<deplacement arrivee="AMBIORIX" attenteMoyenne="0" depart="SCHUMAN" direction="AMBIORIX" duree="2" nbTroncon="106">60</deplacement>
-<deplacement arrivee="MERODE" attenteMoyenne="0" depart="SCHUMAN" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="107">5</deplacement>
-<deplacement arrivee="MONTGOMERY" attenteMoyenne="0" depart="MERODE" direction="MONTGOMERY" duree="2" nbTroncon="108">81</deplacement>
-<deplacement arrivee="THIEFFRY" attenteMoyenne="0" depart="MERODE" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="109">5</deplacement>
-<deplacement arrivee="PLACE ST-PIERRE" attenteMoyenne="0" depart="MERODE" direction="MARIUS RENARD" duree="2" nbTroncon="110">81</deplacement>
-<deplacement arrivee="CHEVALERIE" attenteMoyenne="0" depart="MERODE" direction="GARE DU NORD" duree="2" nbTroncon="111">61</deplacement>
-<deplacement arrivee="PETIT SABLON" attenteMoyenne="0" depart="LOUISE" direction="GARE CENTRALE" duree="2" nbTroncon="112">N06</deplacement>
-<deplacement arrivee="STEPHANIE" attenteMoyenne="0" depart="LOUISE" direction="LEGRAND" duree="2" nbTroncon="113">93</deplacement>
-<deplacement arrivee="HOTEL DES MONNAIES" attenteMoyenne="0" depart="LOUISE" direction="SIMONIS" duree="1" nbTroncon="114">2</deplacement>
-<deplacement arrivee="POELAERT" attenteMoyenne="0" depart="LOUISE" direction="STADE" duree="2" nbTroncon="115">93</deplacement>
-<deplacement arrivee="LOUISE" attenteMoyenne="0" depart="LOUISE" direction="FOREST (BERVOETS)" duree="3" nbTroncon="116">54</deplacement>
-<deplacement arrivee="ROFFIAEN" attenteMoyenne="0" depart="ETTERBEEK GARE" direction="VANDERKINDERE" duree="2" nbTroncon="118">7</deplacement>
-<deplacement arrivee="VUB" attenteMoyenne="0" depart="ETTERBEEK GARE" direction="ROGIER" duree="2" nbTroncon="119">25</deplacement>
-<deplacement arrivee="ARSENAL" attenteMoyenne="0" depart="ETTERBEEK GARE" direction="HERRMANN-DEBROUX" duree="3" nbTroncon="120">N09</deplacement>
-<deplacement arrivee="THYS" attenteMoyenne="0" depart="ETTERBEEK GARE" direction="GARE CENTRALE" duree="2" nbTroncon="121">N09</deplacement>
-<deplacement arrivee="ROI VAINQUEUR" attenteMoyenne="0" depart="ONZE NOVEMBRE" direction="KONKEL" duree="1" nbTroncon="122">36</deplacement>
-<deplacement arrivee="LOMBARDIE" attenteMoyenne="0" depart="MORIS" direction="MARIUS RENARD" duree="2" nbTroncon="123">81</deplacement>
-<deplacement arrivee="GOSSART" attenteMoyenne="0" depart="LONGCHAMP" direction="HEROS" duree="1" nbTroncon="124">38</deplacement>
-<deplacement arrivee="CAVELL" attenteMoyenne="0" depart="LONGCHAMP" direction="VANDERKINDERE" duree="3" nbTroncon="125">T7</deplacement>
-<deplacement arrivee="PETILLON" attenteMoyenne="0" depart="ARSENAL" direction="HEYSEL" duree="2" nbTroncon="127">7</deplacement>
-<deplacement arrivee="STRATEGIE" attenteMoyenne="0" depart="ARSENAL" direction="SAINTE-ANNE" duree="2" nbTroncon="128">34</deplacement>
-<deplacement arrivee="ARCADES" attenteMoyenne="0" depart="RELAIS" direction="WIENER" duree="1" nbTroncon="129">95</deplacement>
-<deplacement arrivee="CHIREC" attenteMoyenne="0" depart="FRAITEUR" direction="DELTA" duree="2" nbTroncon="130">71</deplacement>
-<deplacement arrivee="BRESIL" attenteMoyenne="0" depart="MARIE-JOSE" direction="ROODEBEEK" duree="2" nbTroncon="131">8</deplacement>
-<deplacement arrivee="RELAIS" attenteMoyenne="0" depart="CIM. D'IXELLES" direction="WIENER" duree="2" nbTroncon="132">N08</deplacement>
-<deplacement arrivee="FRAITEUR" attenteMoyenne="0" depart="CIM. D'IXELLES" direction="ADEPS" duree="2" nbTroncon="133">72</deplacement>
-<deplacement arrivee="MARIE-JOSE" attenteMoyenne="0" depart="SOLBOSCH" direction="TRANSVAAL" duree="2" nbTroncon="134">41</deplacement>
-<deplacement arrivee="ALBERT" attenteMoyenne="0" depart="PRISON" direction="FOREST (BERVOETS)" duree="2" nbTroncon="135">54</deplacement>
-<deplacement arrivee="MOLIERE" attenteMoyenne="0" depart="DARWIN" direction="FORT-JACO" duree="1" nbTroncon="136">92</deplacement>
-<deplacement arrivee="BARRIERE" attenteMoyenne="0" depart="LOMBARDIE" direction="MARIUS RENARD" duree="2" nbTroncon="137">T81</deplacement>
-<deplacement arrivee="TIMMERMANS" attenteMoyenne="0" depart="ALBERT" direction="DECROLY" duree="2" nbTroncon="138">48</deplacement>
-<deplacement arrivee="HORTA" attenteMoyenne="0" depart="ALBERT" direction="STADE" duree="2" nbTroncon="139">51</deplacement>
-<deplacement arrivee="JUPITER" attenteMoyenne="0" depart="ALBERT" direction="FOREST (BERVOETS)" duree="2" nbTroncon="140">54</deplacement>
-<deplacement arrivee="BERKENDAEL" attenteMoyenne="0" depart="ALBERT" direction="STALLE (P)" duree="2" nbTroncon="141">4</deplacement>
-<deplacement arrivee="MONT KEMMEL" attenteMoyenne="0" depart="ALBERT" direction="GRAND-PLACE" duree="1" nbTroncon="142">48</deplacement>
-<deplacement arrivee="VANDERKINDERE" attenteMoyenne="0" depart="MOLIERE" direction="FORT-JACO" duree="2" nbTroncon="143">92</deplacement>
-<deplacement arrivee="STALLAERT" attenteMoyenne="0" depart="GEORGES BRUGMANN" direction="UCCLE CALEVOET" duree="2" nbTroncon="144">60</deplacement>
-<deplacement arrivee="PARC" attenteMoyenne="0" depart="ARTS-LOI" direction="GARE DE L'OUEST" duree="2" nbTroncon="145">1</deplacement>
-<deplacement arrivee="MADOU" attenteMoyenne="0" depart="ARTS-LOI" direction="ELISABETH" duree="2" nbTroncon="146">2</deplacement>
-<deplacement arrivee="GARE CENTRALE" attenteMoyenne="0" depart="ROYALE" direction="GARE CENTRALE" duree="2" nbTroncon="147">N06</deplacement>
-<deplacement arrivee="GRAND SABLON" attenteMoyenne="0" depart="ROYALE" direction="GRAND-PLACE" duree="2" nbTroncon="148">95</deplacement>
-<deplacement arrivee="PALAIS" attenteMoyenne="0" depart="ROYALE" direction="CIMETIERE DE BRUXELLES" duree="2" nbTroncon="149">N04</deplacement>
-<deplacement arrivee="ARENBERG" attenteMoyenne="0" depart="GARE CENTRALE" direction="DE BROUCKERE" duree="3" nbTroncon="150">29</deplacement>
-<deplacement arrivee="GARE CENTRALE" attenteMoyenne="0" depart="GARE CENTRALE" direction="GARE CENTRALE" duree="1" nbTroncon="151">86</deplacement>
-<deplacement arrivee="BOZAR" attenteMoyenne="0" depart="GARE CENTRALE" direction="HEROS" duree="1" nbTroncon="152">38</deplacement>
-<deplacement arrivee="DE BROUCKERE" attenteMoyenne="0" depart="GARE CENTRALE" direction="GARE DE L'OUEST" duree="2" nbTroncon="153">1</deplacement>
-<deplacement arrivee="GRAND-PLACE" attenteMoyenne="0" depart="GRAND SABLON" direction="GRAND-PLACE" duree="3" nbTroncon="154">48</deplacement>
-<deplacement arrivee="CHAPELLE" attenteMoyenne="0" depart="GRAND SABLON" direction="PORTE DE HAL" duree="2" nbTroncon="155">30</deplacement>
-<deplacement arrivee="GRAND SABLON" attenteMoyenne="0" depart="PETIT SABLON" direction="DANSAERT" duree="2" nbTroncon="156">33</deplacement>
-<deplacement arrivee="TREURENBERG" attenteMoyenne="0" depart="PARC" direction="PEAGE" duree="1" nbTroncon="157">66</deplacement>
-<deplacement arrivee="PALAIS" attenteMoyenne="0" depart="PARC" direction="FORT-JACO" duree="2" nbTroncon="158">92</deplacement>
-<deplacement arrivee="CONGRES" attenteMoyenne="0" depart="PARC" direction="STADE" duree="2" nbTroncon="159">93</deplacement>
-<deplacement arrivee="PRESSE" attenteMoyenne="0" depart="MADOU" direction="GARE CENTRALE" duree="2" nbTroncon="160">N05</deplacement>
-<deplacement arrivee="BOTANIQUE" attenteMoyenne="0" depart="MADOU" direction="SCHAERBEEK GARE" duree="2" nbTroncon="161">T92</deplacement>
-<deplacement arrivee="QUETELET" attenteMoyenne="0" depart="MADOU" direction="BOURGET" duree="2" nbTroncon="162">65</deplacement>
-<deplacement arrivee="SAINT-JOSSE" attenteMoyenne="0" depart="MADOU" direction="CIMETIERE DE BRUXELLES" duree="2" nbTroncon="163">63</deplacement>
-<deplacement arrivee="WAPPERS" attenteMoyenne="0" depart="JAMBLINNE DE MEUX" direction="MONTGOMERY" duree="1" nbTroncon="164">61</deplacement>
-<deplacement arrivee="VICTOR HUGO" attenteMoyenne="0" depart="JAMBLINNE DE MEUX" direction="KONKEL" duree="1" nbTroncon="165">28</deplacement>
-<deplacement arrivee="PLASKY" attenteMoyenne="0" depart="JAMBLINNE DE MEUX" direction="KRAAINEM" duree="1" nbTroncon="166">N05</deplacement>
-<deplacement arrivee="CHASSEURS ARDEN." attenteMoyenne="0" depart="JAMBLINNE DE MEUX" direction="BRABANCONNE" duree="2" nbTroncon="167">28</deplacement>
-<deplacement arrivee="JAMBLINNE DE MEUX" attenteMoyenne="0" depart="CHASSEURS ARDEN." direction="MONTGOMERY" duree="2" nbTroncon="168">61</deplacement>
-<deplacement arrivee="BRABANCONNE" attenteMoyenne="0" depart="CHASSEURS ARDEN." direction="BRABANCONNE" duree="3" nbTroncon="169">28</deplacement>
-<deplacement arrivee="PLEIADES" attenteMoyenne="0" depart="CARENE" direction="KRAAINEM" duree="1" nbTroncon="170">79</deplacement>
-<deplacement arrivee="PADUWA" attenteMoyenne="0" depart="CARENE" direction="MAES" duree="3" nbTroncon="171">80</deplacement>
-<deplacement arrivee="MOMMAERTS" attenteMoyenne="0" depart="CARENE" direction="BRUSSELS AIRPORT" duree="1" nbTroncon="172">21</deplacement>
-<deplacement arrivee="HEYDENBERG" attenteMoyenne="0" depart="FEVRIER" direction="PORTE DE NAMUR" duree="2" nbTroncon="173">80</deplacement>
-<deplacement arrivee="RADIUM" attenteMoyenne="0" depart="PLASKY" direction="DE BROUCKERE" duree="2" nbTroncon="174">29</deplacement>
-<deplacement arrivee="MAX-PLASKY" attenteMoyenne="0" depart="PLASKY" direction="CIMETIERE DE BRUXELLES" duree="1" nbTroncon="175">63</deplacement>
-<deplacement arrivee="DEGROOFF" attenteMoyenne="0" depart="GEORGES HENRI" direction="ANDROMEDE" duree="2" nbTroncon="176">27</deplacement>
-<deplacement arrivee="ICHEC" attenteMoyenne="0" depart="MONTGOMERY" direction="ANDROMEDE" duree="1" nbTroncon="177">27</deplacement>
-<deplacement arrivee="LEOPOLD II" attenteMoyenne="0" depart="MONTGOMERY" direction="MUSEE DU TRAM" duree="1" nbTroncon="178">N06</deplacement>
-<deplacement arrivee="BOILEAU" attenteMoyenne="0" depart="MONTGOMERY" direction="VANDERKINDERE" duree="1" nbTroncon="179">7</deplacement>
-<deplacement arrivee="GJ MARTIN" attenteMoyenne="0" depart="MONTGOMERY" direction="TERVUREN STATION" duree="1" nbTroncon="180">44</deplacement>
-<deplacement arrivee="JOSEPH.-CHARLOTTE" attenteMoyenne="0" depart="MONTGOMERY" direction="STOCKEL" duree="2" nbTroncon="181">1</deplacement>
-<deplacement arrivee="MEUDON" attenteMoyenne="0" depart="DEGROOFF" direction="KONKEL" duree="2" nbTroncon="182">28</deplacement>
-<deplacement arrivee="CHAZAL" attenteMoyenne="0" depart="PATRIE" direction="BOURGET" duree="2" nbTroncon="183">65</deplacement>
-<deplacement arrivee="DAILLY" attenteMoyenne="0" depart="PATRIE" direction="PORTE DE NAMUR" duree="3" nbTroncon="184">64</deplacement>
-<deplacement arrivee="BIENFAITEURS" attenteMoyenne="0" depart="PATRIE" direction="GARE CENTRALE" duree="1" nbTroncon="185">N04</deplacement>
-<deplacement arrivee="FRANS COURTENS" attenteMoyenne="0" depart="LEOPOLD III" direction="CIMETIERE DE BRUXELLES" duree="1" nbTroncon="186">N04</deplacement>
-<deplacement arrivee="PENTATHLON" attenteMoyenne="0" depart="LEOPOLD III" direction="EUROCONTROL" duree="2" nbTroncon="187">62</deplacement>
-<deplacement arrivee="PATRIE" attenteMoyenne="0" depart="MEISER" direction="GARE CENTRALE" duree="1" nbTroncon="188">N04</deplacement>
-<deplacement arrivee="LEOPOLD III" attenteMoyenne="0" depart="MEISER" direction="CIMETIERE DE BRUXELLES" duree="2" nbTroncon="189">63</deplacement>
-<deplacement arrivee="LOISIRS" attenteMoyenne="0" depart="EVERE SHOPPING" direction="BRUSSELS AIRPORT" duree="1" nbTroncon="190">21</deplacement>
-<deplacement arrivee="DUNANT" attenteMoyenne="0" depart="EVERE SHOPPING" direction="PEAGE" duree="3" nbTroncon="191">66</deplacement>
-<deplacement arrivee="PENTATHLON" attenteMoyenne="0" depart="EVERE SHOPPING" direction="CIMETIERE DE JETTE" duree="2" nbTroncon="192">62</deplacement>
-<deplacement arrivee="CONSCIENCE" attenteMoyenne="0" depart="EVERE SHOPPING" direction="DE BROUCKERE" duree="3" nbTroncon="193">66</deplacement>
-<deplacement arrivee="LEKAERTS" attenteMoyenne="0" depart="EVERE SHOPPING" direction="EUROCONTROL" duree="2" nbTroncon="194">62</deplacement>
-<deplacement arrivee="BORDET STATION" attenteMoyenne="0" depart="DA VINCI" direction="ROGIER" duree="1" nbTroncon="195">55</deplacement>
-<deplacement arrivee="FUSEE" attenteMoyenne="0" depart="DA VINCI" direction="BOURGET" duree="1" nbTroncon="196">65</deplacement>
-<deplacement arrivee="BOURGET" attenteMoyenne="0" depart="DA VINCI" direction="BRUSSELS AIRPORT" duree="2" nbTroncon="197">12</deplacement>
-<deplacement arrivee="JULES BORDET" attenteMoyenne="0" depart="DA VINCI" direction="JULES BORDET" duree="3" nbTroncon="198">69</deplacement>
-<deplacement arrivee="MATISSE" attenteMoyenne="0" depart="DA VINCI" direction="LUXEMBOURG" duree="1" nbTroncon="199">21</deplacement>
-<deplacement arrivee="OPTIMISME" attenteMoyenne="0" depart="PAUL LEDUC" direction="CIMETIERE DE BRUXELLES" duree="1" nbTroncon="200">N04</deplacement>
-<deplacement arrivee="FRANS COURTENS" attenteMoyenne="0" depart="PAUL LEDUC" direction="GARE CENTRALE" duree="1" nbTroncon="201">63</deplacement>
-<deplacement arrivee="RTL HOUSE" attenteMoyenne="0" depart="PAUL LEDUC" direction="LUXEMBOURG" duree="2" nbTroncon="202">21</deplacement>
-<deplacement arrivee="HOUWAERT" attenteMoyenne="0" depart="SAINT-JOSSE" direction="BORDET STATION" duree="2" nbTroncon="203">59</deplacement>
-<deplacement arrivee="VINCOTTE" attenteMoyenne="0" depart="CLOVIS" direction="HOF TEN BERG" duree="3" nbTroncon="204">29</deplacement>
-<deplacement arrivee="DAILLY" attenteMoyenne="0" depart="BRABANCONNE" direction="GARE DU NORD" duree="1" nbTroncon="206">61</deplacement>
-<deplacement arrivee="MARGUERITE" attenteMoyenne="0" depart="GUEUX" direction="GARE CENTRALE" duree="1" nbTroncon="207">N05</deplacement>
-<deplacement arrivee="JAMBLINNE DE MEUX" attenteMoyenne="0" depart="GUEUX" direction="CIMETIERE DE BRUXELLES" duree="1" nbTroncon="208">63</deplacement>
-<deplacement arrivee="CARENE" attenteMoyenne="0" depart="COLONEL BOURG" direction="KRAAINEM" duree="2" nbTroncon="209">79</deplacement>
-<deplacement arrivee="DIVIN SAUVEUR" attenteMoyenne="0" depart="COLONEL BOURG" direction="SCHUMAN" duree="1" nbTroncon="210">79</deplacement>
-<deplacement arrivee="FEVRIER" attenteMoyenne="0" depart="COLONEL BOURG" direction="PORTE DE NAMUR" duree="1" nbTroncon="211">80</deplacement>
-<deplacement arrivee="MAI" attenteMoyenne="0" depart="LEVIE" direction="HOF TEN BERG" duree="2" nbTroncon="212">29</deplacement>
-<deplacement arrivee="EVERE SHOPPING" attenteMoyenne="0" depart="GENEVE" direction="BRUSSELS AIRPORT" duree="1" nbTroncon="213">21</deplacement>
-<deplacement arrivee="DA VINCI" attenteMoyenne="0" depart="GENEVE" direction="BRUSSELS AIRPORT" duree="5" nbTroncon="214">12</deplacement>
-<deplacement arrivee="PAUL LEDUC" attenteMoyenne="0" depart="GENEVE" direction="LUXEMBOURG" duree="1" nbTroncon="215">21</deplacement>
-<deplacement arrivee="BOILEAU" attenteMoyenne="0" depart="THIEFFRY" direction="KONKEL" duree="1" nbTroncon="216">36</deplacement>
-<deplacement arrivee="PETILLON" attenteMoyenne="0" depart="THIEFFRY" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="217">5</deplacement>
-<deplacement arrivee="GJ MARTIN" attenteMoyenne="0" depart="ICHEC" direction="BAN-EIK" duree="2" nbTroncon="218">39</deplacement>
-<deplacement arrivee="JULES CESAR" attenteMoyenne="0" depart="LEOPOLD II" direction="BAN-EIK" duree="2" nbTroncon="219">39</deplacement>
-<deplacement arrivee="BARON DE CASTRO" attenteMoyenne="0" depart="BOILEAU" direction="KONKEL" duree="2" nbTroncon="220">36</deplacement>
-<deplacement arrivee="LEOPOLD II" attenteMoyenne="0" depart="GJ MARTIN" direction="TERVUREN STATION" duree="1" nbTroncon="221">44</deplacement>
-<deplacement arrivee="GRIBAUMONT" attenteMoyenne="0" depart="JOSEPH.-CHARLOTTE" direction="STOCKEL" duree="1" nbTroncon="222">1</deplacement>
-<deplacement arrivee="HANKAR" attenteMoyenne="0" depart="PETILLON" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="223">5</deplacement>
-<deplacement arrivee="PORTE DE HAL" attenteMoyenne="0" depart="PORTE DE HAL" direction="ANDROMEDE" duree="1" nbTroncon="224">27</deplacement>
-<deplacement arrivee="HOP. SAINT-PIERRE" attenteMoyenne="0" depart="PORTE DE HAL" direction="GARE CENTRALE" duree="2" nbTroncon="225">N12</deplacement>
-<deplacement arrivee="LEMONNIER" attenteMoyenne="0" depart="PORTE DE HAL" direction="GRAND-PLACE" duree="3" nbTroncon="226">30</deplacement>
-<deplacement arrivee="GARE DU MIDI" attenteMoyenne="0" depart="PORTE DE HAL" direction="GARE DU NORD" duree="2" nbTroncon="227">4</deplacement>
-<deplacement arrivee="PARVIS ST-GILLES" attenteMoyenne="0" depart="PORTE DE HAL" direction="CARREFOUR STALLE" duree="1" nbTroncon="228">N12</deplacement>
-<deplacement arrivee="HANKAR" attenteMoyenne="0" depart="STRATEGIE" direction="SAINTE-ANNE" duree="3" nbTroncon="229">34</deplacement>
-<deplacement arrivee="COMBAZ" attenteMoyenne="0" depart="BARRIERE" direction="DIEWEG" duree="2" nbTroncon="230">97</deplacement>
-<deplacement arrivee="GUILLAUME TELL" attenteMoyenne="0" depart="BARRIERE" direction="MARIUS RENARD" duree="2" nbTroncon="231">81</deplacement>
-<deplacement arrivee="CHURCHILL" attenteMoyenne="0" depart="CAVELL" direction="VANDERKINDERE" duree="1" nbTroncon="232">T7</deplacement>
-<deplacement arrivee="BRUNARD" attenteMoyenne="0" depart="CAVELL" direction="UCCLE CALEVOET" duree="2" nbTroncon="233">60</deplacement>
-<deplacement arrivee="RENE GOBERT" attenteMoyenne="0" depart="MONTJOIE" direction="HEROS" duree="1" nbTroncon="234">38</deplacement>
-<deplacement arrivee="LANGEVELD" attenteMoyenne="0" depart="BRUNARD" direction="UCCLE CALEVOET" duree="1" nbTroncon="236">60</deplacement>
-<deplacement arrivee="EGLISE ST-JULIEN" attenteMoyenne="0" depart="HANKAR" direction="SAINTE-ANNE" duree="1" nbTroncon="237">34</deplacement>
-<deplacement arrivee="DELTA" attenteMoyenne="0" depart="HANKAR" direction="HERRMANN-DEBROUX" duree="1" nbTroncon="238">5</deplacement>
-<deplacement arrivee="VANDER ELST" attenteMoyenne="0" depart="KEYM" direction="HEILIGENBORRE" duree="2" nbTroncon="239">17</deplacement>
-<deplacement arrivee="LOUTRIER" attenteMoyenne="0" depart="KEYM" direction="TRANSVAAL" duree="1" nbTroncon="240">41</deplacement>
-<deplacement arrivee="WATERMAEL GARE" attenteMoyenne="0" depart="KEYM" direction="HEROS" duree="2" nbTroncon="241">41</deplacement>
-<deplacement arrivee="BRILLANT" attenteMoyenne="0" depart="KEYM" direction="BEAULIEU" duree="1" nbTroncon="242">17</deplacement>
-<deplacement arrivee="BEAULIEU" attenteMoyenne="0" depart="DELTA" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="243">5</deplacement>
-<deplacement arrivee="CLESSE" attenteMoyenne="0" depart="DELTA" direction="ADEPS" duree="2" nbTroncon="244">72</deplacement>
-<deplacement arrivee="HIPPOD. BOITSFORT" attenteMoyenne="0" depart="BOONDAEL GARE" direction="ROODEBEEK" duree="2" nbTroncon="245">8</deplacement>
-<deplacement arrivee="FUTAIE" attenteMoyenne="0" depart="BOONDAEL GARE" direction="TRANSVAAL" duree="2" nbTroncon="246">41</deplacement>
-<deplacement arrivee="MONTANA" attenteMoyenne="0" depart="GENDARMES" direction="HEROS" duree="1" nbTroncon="247">41</deplacement>
-<deplacement arrivee="RESERVOIR" attenteMoyenne="0" depart="GENDARMES" direction="TRANSVAAL" duree="1" nbTroncon="248">41</deplacement>
-<deplacement arrivee="BOONDAEL GARE" attenteMoyenne="0" depart="HIPPOD. BOITSFORT" direction="LOUISE" duree="2" nbTroncon="249">8</deplacement>
-<deplacement arrivee="COCCINELLES" attenteMoyenne="0" depart="HIPPOD. BOITSFORT" direction="ROODEBEEK" duree="1" nbTroncon="250">8</deplacement>
-<deplacement arrivee="KEYM" attenteMoyenne="0" depart="ARCADES" direction="WIENER" duree="2" nbTroncon="251">95</deplacement>
-<deplacement arrivee="DELTA" attenteMoyenne="0" depart="CHIREC" direction="ADEPS" duree="2" nbTroncon="252">72</deplacement>
-<deplacement arrivee="BOONDAEL GARE" attenteMoyenne="0" depart="BRESIL" direction="TRANSVAAL" duree="1" nbTroncon="253">41</deplacement>
-<deplacement arrivee="GENDARMES" attenteMoyenne="0" depart="BRESIL" direction="HEROS" duree="4" nbTroncon="254">41</deplacement>
-<deplacement arrivee="HIPPOD. BOITSFORT" attenteMoyenne="0" depart="BRESIL" direction="HEROS" duree="4" nbTroncon="255">41</deplacement>
-<deplacement arrivee="MOLIERE-LONGCHAMP" attenteMoyenne="0" depart="TIMMERMANS" direction="GARE DE LINKEBEEK" duree="2" nbTroncon="256">37</deplacement>
-<deplacement arrivee="ALTITUDE CENT" attenteMoyenne="0" depart="JUPITER" direction="VAN HAELEN" duree="1" nbTroncon="257">51</deplacement>
-<deplacement arrivee="TOURNOI" attenteMoyenne="0" depart="JUPITER" direction="FOREST (BERVOETS)" duree="2" nbTroncon="258">54</deplacement>
-<deplacement arrivee="LAINE" attenteMoyenne="0" depart="MONT KEMMEL" direction="GRAND-PLACE" duree="1" nbTroncon="259">48</deplacement>
-<deplacement arrivee="MESSIDOR" attenteMoyenne="0" depart="VANDERKINDERE" direction="STALLE (P)" duree="2" nbTroncon="260">4</deplacement>
-<deplacement arrivee="ROCHEFORT" attenteMoyenne="0" depart="COMBAZ" direction="DIEWEG" duree="1" nbTroncon="261">97</deplacement>
-<deplacement arrivee="BETHLEEM" attenteMoyenne="0" depart="GUILLAUME TELL" direction="MARIUS RENARD" duree="1" nbTroncon="262">81</deplacement>
-<deplacement arrivee="COGHEN" attenteMoyenne="0" depart="MOLIERE-LONGCHAMP" direction="GARE DE LINKEBEEK" duree="1" nbTroncon="263">37</deplacement>
-<deplacement arrivee="MOLIERE-LONGCHAMP" attenteMoyenne="0" depart="ALTITUDE CENT" direction="GRAND-PLACE" duree="2" nbTroncon="264">48</deplacement>
-<deplacement arrivee="COGHEN" attenteMoyenne="0" depart="ALTITUDE CENT" direction="VAN HAELEN" duree="2" nbTroncon="265">51</deplacement>
-<deplacement arrivee="DUDEN" attenteMoyenne="0" depart="ALTITUDE CENT" direction="DECROLY" duree="1" nbTroncon="266">48</deplacement>
-<deplacement arrivee="ROCHEFORT" attenteMoyenne="0" depart="LAINE" direction="GRAND-PLACE" duree="1" nbTroncon="267">48</deplacement>
-<deplacement arrivee="BOETENDAEL" attenteMoyenne="0" depart="MESSIDOR" direction="STALLE (P)" duree="2" nbTroncon="268">4</deplacement>
-<deplacement arrivee="ROGIER" attenteMoyenne="0" depart="BOTANIQUE" direction="ELISABETH" duree="1" nbTroncon="269">6</deplacement>
-<deplacement arrivee="GILLON" attenteMoyenne="0" depart="BOTANIQUE" direction="SCHAERBEEK GARE" duree="1" nbTroncon="270">T92</deplacement>
-<deplacement arrivee="RUE TRAVERSIERE" attenteMoyenne="0" depart="BOTANIQUE" direction="MONTGOMERY" duree="2" nbTroncon="271">61</deplacement>
-<deplacement arrivee="SAINTE-CATHERINE" attenteMoyenne="0" depart="DE BROUCKERE" direction="GARE DE L'OUEST" duree="1" nbTroncon="272">1</deplacement>
-<deplacement arrivee="BOURSE" attenteMoyenne="0" depart="DE BROUCKERE" direction="STALLE (P)" duree="2" nbTroncon="273">4</deplacement>
-<deplacement arrivee="BEGUINAGE" attenteMoyenne="0" depart="DE BROUCKERE" direction="HEYSEL" duree="1" nbTroncon="274">N18</deplacement>
-<deplacement arrivee="COMTE DE FLANDRE" attenteMoyenne="0" depart="SAINTE-CATHERINE" direction="GARE DE L'OUEST" duree="2" nbTroncon="275">1</deplacement>
-<deplacement arrivee="GARE DU NORD" attenteMoyenne="0" depart="ROGIER" direction="DA VINCI" duree="1" nbTroncon="276">55</deplacement>
-<deplacement arrivee="YSER" attenteMoyenne="0" depart="ROGIER" direction="ELISABETH" duree="2" nbTroncon="277">2</deplacement>
-<deplacement arrivee="SAINT-LOUIS" attenteMoyenne="0" depart="ROGIER" direction="MONTGOMERY" duree="2" nbTroncon="278">61</deplacement>
-<deplacement arrivee="ANNEESSENS" attenteMoyenne="0" depart="BOURSE" direction="FORT-JACO" duree="2" nbTroncon="279">N10</deplacement>
-<deplacement arrivee="DANSAERT" attenteMoyenne="0" depart="BOURSE" direction="BERCHEM STATION" duree="2" nbTroncon="280">N16</deplacement>
-<deplacement arrivee="SAINT-GERY" attenteMoyenne="0" depart="BOURSE" direction="DANSAERT" duree="2" nbTroncon="281">33</deplacement>
-<deplacement arrivee="YSER" attenteMoyenne="0" depart="BEGUINAGE" direction="HEYSEL" duree="2" nbTroncon="282">N18</deplacement>
-<deplacement arrivee="BIBLIOTHEQUE" attenteMoyenne="0" depart="GRAND-PLACE" direction="LOUISE" duree="1" nbTroncon="283">33</deplacement>
-<deplacement arrivee="JEU DE BALLE" attenteMoyenne="0" depart="CHAPELLE" direction="GARE DU MIDI" duree="3" nbTroncon="284">27</deplacement>
-<deplacement arrivee="SAINTE-MARIE" attenteMoyenne="0" depart="GILLON" direction="SCHAERBEEK GARE" duree="1" nbTroncon="285">T92</deplacement>
-<deplacement arrivee="LIMITE" attenteMoyenne="0" depart="RUE TRAVERSIERE" direction="MONTGOMERY" duree="1" nbTroncon="286">61</deplacement>
-<deplacement arrivee="MERIDIEN" attenteMoyenne="0" depart="RUE TRAVERSIERE" direction="PEAGE" duree="1" nbTroncon="287">66</deplacement>
-<deplacement arrivee="BRAEMT" attenteMoyenne="0" depart="HOUWAERT" direction="HOPITAL ETTERBEEK-IXELLES" duree="2" nbTroncon="288">59</deplacement>
-<deplacement arrivee="STEURS" attenteMoyenne="0" depart="HOUWAERT" direction="MONTGOMERY" duree="2" nbTroncon="289">61</deplacement>
-<deplacement arrivee="GEEFS" attenteMoyenne="0" depart="HOUWAERT" direction="BORDET STATION" duree="2" nbTroncon="290">59</deplacement>
-<deplacement arrivee="PATRIE" attenteMoyenne="0" depart="DAILLY" direction="MACHELEN" duree="2" nbTroncon="291">64</deplacement>
-<deplacement arrivee="VINCOTTE" attenteMoyenne="0" depart="DAILLY" direction="DE BROUCKERE" duree="2" nbTroncon="292">29</deplacement>
-<deplacement arrivee="RADIUM" attenteMoyenne="0" depart="DAILLY" direction="HOF TEN BERG" duree="1" nbTroncon="293">29</deplacement>
-<deplacement arrivee="CLAYS" attenteMoyenne="0" depart="DAILLY" direction="GARE DU NORD" duree="1" nbTroncon="294">61</deplacement>
-<deplacement arrivee="ANDROMEDE" attenteMoyenne="0" depart="CAPRICORNE" direction="KRAAINEM" duree="2" nbTroncon="295">79</deplacement>
-<deplacement arrivee="CIM. DE BRUXELLES" attenteMoyenne="0" depart="ARTEMIS" direction="PEAGE" duree="2" nbTroncon="296">66</deplacement>
-<deplacement arrivee="DE LOMBAERDE" attenteMoyenne="0" depart="CICERON" direction="SAINT-VINCENT" duree="1" nbTroncon="297">45</deplacement>
-<deplacement arrivee="GULLEDELLE" attenteMoyenne="0" depart="CICERON" direction="ROODEBEEK" duree="2" nbTroncon="298">45</deplacement>
-<deplacement arrivee="VERHEYLEWEGHEN" attenteMoyenne="0" depart="SPEECKAERT" direction="KRAAINEM" duree="1" nbTroncon="299">N05</deplacement>
-<deplacement arrivee="MONTALD" attenteMoyenne="0" depart="MEUDON" direction="KONKEL" duree="2" nbTroncon="300">28</deplacement>
-<deplacement arrivee="ZEPHYR" attenteMoyenne="0" depart="MEUDON" direction="ANDROMEDE" duree="1" nbTroncon="301">27</deplacement>
-<deplacement arrivee="TOMBERG" attenteMoyenne="0" depart="GRIBAUMONT" direction="STOCKEL" duree="1" nbTroncon="302">1</deplacement>
-<deplacement arrivee="SPEECKAERT" attenteMoyenne="0" depart="HEYDENBERG" direction="KRAAINEM" duree="1" nbTroncon="303">N05</deplacement>
-<deplacement arrivee="BICHON" attenteMoyenne="0" depart="JOSAPHAT" direction="MACHELEN" duree="1" nbTroncon="304">64</deplacement>
-<deplacement arrivee="LOUIS BERTRAND" attenteMoyenne="0" depart="HELIOTROPES" direction="HEYSEL" duree="1" nbTroncon="305">7</deplacement>
-<deplacement arrivee="ROBIANO" attenteMoyenne="0" depart="COTEAUX" direction="GARE CENTRALE" duree="3" nbTroncon="306">65</deplacement>
-<deplacement arrivee="HERMAN" attenteMoyenne="0" depart="COTEAUX" direction="BORDET STATION" duree="2" nbTroncon="307">59</deplacement>
-<deplacement arrivee="AZALEES" attenteMoyenne="0" depart="COTEAUX" direction="PEAGE" duree="3" nbTroncon="308">66</deplacement>
-<deplacement arrivee="JOSAPHAT" attenteMoyenne="0" depart="CHAZAL" direction="BOURGET" duree="1" nbTroncon="309">65</deplacement>
-<deplacement arrivee="HELIOTROPES" attenteMoyenne="0" depart="CHAZAL" direction="HEYSEL" duree="2" nbTroncon="310">7</deplacement>
-<deplacement arrivee="HOEDEMAEKERS" attenteMoyenne="0" depart="PERMEKE" direction="SAINT-VINCENT" duree="1" nbTroncon="311">45</deplacement>
-<deplacement arrivee="GUILLAUME" attenteMoyenne="0" depart="DUNANT" direction="PEAGE" duree="2" nbTroncon="312">66</deplacement>
-<deplacement arrivee="PERMEKE" attenteMoyenne="0" depart="LOISIRS" direction="BRUSSELS AIRPORT" duree="1" nbTroncon="313">21</deplacement>
-<deplacement arrivee="OUD KAPELLEKE" attenteMoyenne="0" depart="NOTRE-DAME" direction="MACHELEN" duree="2" nbTroncon="314">64</deplacement>
-<deplacement arrivee="KENNIS" attenteMoyenne="0" depart="KURTH" direction="DE BROUCKERE" duree="2" nbTroncon="315">66</deplacement>
-<deplacement arrivee="OUD KAPELLEKE" attenteMoyenne="0" depart="HOEDEMAEKERS" direction="SAINT-VINCENT" duree="2" nbTroncon="316">45</deplacement>
-<deplacement arrivee="NOTRE-DAME" attenteMoyenne="0" depart="HOEDEMAEKERS" direction="GARE CENTRALE" duree="1" nbTroncon="317">65</deplacement>
-<deplacement arrivee="FONSON" attenteMoyenne="0" depart="VAN CUTSEM" direction="DROGENBOS CHATEAU" duree="1" nbTroncon="318">32</deplacement>
-<deplacement arrivee="PAIX" attenteMoyenne="0" depart="OUD KAPELLEKE" direction="MACHELEN" duree="3" nbTroncon="319">64</deplacement>
-<deplacement arrivee="SAINT-VINCENT" attenteMoyenne="0" depart="VANDENHOVEN" direction="PORTE DE NAMUR" duree="1" nbTroncon="321">64</deplacement>
-<deplacement arrivee="HAREN-STIB" attenteMoyenne="0" depart="HAREN-ATELIER" direction="BORDET STATION" duree="1" nbTroncon="322">59</deplacement>
-<deplacement arrivee="MIDDELWEG" attenteMoyenne="0" depart="SABCA" direction="MAES" duree="1" nbTroncon="323">80</deplacement>
-<deplacement arrivee="BRUSSELS AIRPORT" attenteMoyenne="0" depart="BOURGET" direction="BRUSSELS AIRPORT" duree="8" nbTroncon="324">21</deplacement>
-<deplacement arrivee="EUROCONTROL" attenteMoyenne="0" depart="BOURGET" direction="EUROCONTROL" duree="1" nbTroncon="325">62</deplacement>
-<deplacement arrivee="BALE" attenteMoyenne="0" depart="FUSEE" direction="GARE CENTRALE" duree="1" nbTroncon="326">65</deplacement>
-<deplacement arrivee="DIABLOTINS" attenteMoyenne="0" depart="JULES BORDET" direction="PORTE DE NAMUR" duree="2" nbTroncon="327">80</deplacement>
-<deplacement arrivee="VILLON" attenteMoyenne="0" depart="DIABLOTINS" direction="PEAGE" duree="1" nbTroncon="328">66</deplacement>
-<deplacement arrivee="FERNAND LEGER" attenteMoyenne="0" depart="LEKAERTS" direction="BOURGET" duree="2" nbTroncon="329">65</deplacement>
-<deplacement arrivee="BOSSUET" attenteMoyenne="0" depart="STEURS" direction="GARE DU NORD" duree="2" nbTroncon="330">61</deplacement>
-<deplacement arrivee="FUSS" attenteMoyenne="0" depart="STEURS" direction="MONTGOMERY" duree="2" nbTroncon="331">61</deplacement>
-<deplacement arrivee="COTEAUX" attenteMoyenne="0" depart="GEEFS" direction="BORDET STATION" duree="2" nbTroncon="332">59</deplacement>
-<deplacement arrivee="FUSS" attenteMoyenne="0" depart="CLAYS" direction="GARE DU NORD" duree="2" nbTroncon="333">61</deplacement>
-<deplacement arrivee="CAPRICORNE" attenteMoyenne="0" depart="PLEIADES" direction="KRAAINEM" duree="1" nbTroncon="334">79</deplacement>
-<deplacement arrivee="ARTEMIS" attenteMoyenne="0" depart="PADUWA" direction="PEAGE" duree="1" nbTroncon="335">66</deplacement>
-<deplacement arrivee="GUILLAUME" attenteMoyenne="0" depart="PADUWA" direction="SAINT-VINCENT" duree="1" nbTroncon="336">45</deplacement>
-<deplacement arrivee="CICERON" attenteMoyenne="0" depart="PADUWA" direction="ROODEBEEK" duree="1" nbTroncon="337">45</deplacement>
-<deplacement arrivee="KURTH" attenteMoyenne="0" depart="CONSCIENCE" direction="DE BROUCKERE" duree="2" nbTroncon="338">66</deplacement>
-<deplacement arrivee="EVERE GARE" attenteMoyenne="0" depart="CONSCIENCE" direction="PEAGE" duree="1" nbTroncon="339">66</deplacement>
-<deplacement arrivee="VAN CUTSEM" attenteMoyenne="0" depart="BORDET STATION" direction="ROGIER" duree="1" nbTroncon="340">55</deplacement>
-<deplacement arrivee="OUD KAPELLEKE" attenteMoyenne="0" depart="BORDET STATION" direction="ROODEBEEK" duree="4" nbTroncon="341">45</deplacement>
-<deplacement arrivee="VANDENHOVEN" attenteMoyenne="0" depart="BORDET STATION" direction="HOPITAL ETTERBEEK-IXELLES" duree="1" nbTroncon="342">59</deplacement>
-<deplacement arrivee="HAREN-ATELIER" attenteMoyenne="0" depart="BORDET STATION" direction="BORDET STATION" duree="1" nbTroncon="343">59</deplacement>
-<deplacement arrivee="SABCA" attenteMoyenne="0" depart="BORDET STATION" direction="MAES" duree="2" nbTroncon="344">80</deplacement>
-<deplacement arrivee="ARBRE UNIQUE" attenteMoyenne="0" depart="OPTIMISME" direction="CIMETIERE DE BRUXELLES" duree="2" nbTroncon="345">63</deplacement>
-<deplacement arrivee="DREVE DE NIVELLES" attenteMoyenne="0" depart="BARON DE CASTRO" direction="KONKEL" duree="2" nbTroncon="346">36</deplacement>
-<deplacement arrivee="CHANT D'OISEAU" attenteMoyenne="0" depart="OCEAN ATLANTIQUE" direction="SCHUMAN" duree="2" nbTroncon="347">36</deplacement>
-<deplacement arrivee="MOSTINCK" attenteMoyenne="0" depart="OCEAN ATLANTIQUE" direction="KONKEL" duree="2" nbTroncon="348">36</deplacement>
-<deplacement arrivee="MUSEE DU TRAM" attenteMoyenne="0" depart="CHIEN VERT" direction="TERVUREN STATION" duree="2" nbTroncon="349">44</deplacement>
-<deplacement arrivee="MOUETTES" attenteMoyenne="0" depart="DREVE DE NIVELLES" direction="KONKEL" duree="1" nbTroncon="350">36</deplacement>
-<deplacement arrivee="OCEAN ATLANTIQUE" attenteMoyenne="0" depart="JULES CESAR" direction="SCHUMAN" duree="1" nbTroncon="351">36</deplacement>
-<deplacement arrivee="CHIEN VERT" attenteMoyenne="0" depart="JULES CESAR" direction="TERVUREN STATION" duree="2" nbTroncon="352">44</deplacement>
-<deplacement arrivee="MELARD" attenteMoyenne="0" depart="TOMBERG" direction="KONKEL" duree="1" nbTroncon="353">28</deplacement>
-<deplacement arrivee="MONTALD" attenteMoyenne="0" depart="TOMBERG" direction="BRABANCONNE" duree="1" nbTroncon="354">28</deplacement>
-<deplacement arrivee="ROODEBEEK" attenteMoyenne="0" depart="TOMBERG" direction="STOCKEL" duree="2" nbTroncon="355">1</deplacement>
-<deplacement arrivee="BODEGHEM" attenteMoyenne="0" depart="LEMONNIER" direction="BERCHEM STATION" duree="2" nbTroncon="356">82</deplacement>
-<deplacement arrivee="PTE D'ANDERLECHT" attenteMoyenne="0" depart="LEMONNIER" direction="MOORTEBEEK" duree="2" nbTroncon="357">46</deplacement>
-<deplacement arrivee="CLEMENCEAU" attenteMoyenne="0" depart="GARE DU MIDI" direction="ROI BAUDOUIN" duree="2" nbTroncon="358">6</deplacement>
-<deplacement arrivee="SUEDE" attenteMoyenne="0" depart="GARE DU MIDI" direction="DROGENBOS CHATEAU" duree="2" nbTroncon="359">32</deplacement>
-<deplacement arrivee="BARA" attenteMoyenne="0" depart="GARE DU MIDI" direction="MARIUS RENARD" duree="3" nbTroncon="360">81</deplacement>
-<deplacement arrivee="ELOY" attenteMoyenne="0" depart="GARE DU MIDI" direction="HUMANITE" duree="2" nbTroncon="361">78</deplacement>
-<deplacement arrivee="MANNEKEN-PIS" attenteMoyenne="0" depart="ANNEESSENS" direction="LOUISE" duree="2" nbTroncon="362">33</deplacement>
-<deplacement arrivee="CESAR DE PAEPE" attenteMoyenne="0" depart="ANNEESSENS" direction="WIENER" duree="2" nbTroncon="363">N08</deplacement>
-<deplacement arrivee="BOURSE" attenteMoyenne="0" depart="ANNEESSENS" direction="ESPLANADE" duree="1" nbTroncon="364">3</deplacement>
-<deplacement arrivee="PTE D'ANDERLECHT" attenteMoyenne="0" depart="BODEGHEM" direction="BERCHEM STATION" duree="1" nbTroncon="365">82</deplacement>
-<deplacement arrivee="BODEGHEM" attenteMoyenne="0" depart="PTE D'ANDERLECHT" direction="VAN HAELEN" duree="1" nbTroncon="367">51</deplacement>
-<deplacement arrivee="BUANDERIE" attenteMoyenne="0" depart="PTE D'ANDERLECHT" direction="GARE CENTRALE" duree="2" nbTroncon="368">N13</deplacement>
-<deplacement arrivee="LIVERPOOL" attenteMoyenne="0" depart="PTE D'ANDERLECHT" direction="WESTLAND SHOPPING" duree="2" nbTroncon="369">N13</deplacement>
-<deplacement arrivee="DELACROIX" attenteMoyenne="0" depart="CLEMENCEAU" direction="ROI BAUDOUIN" duree="2" nbTroncon="370">6</deplacement>
-<deplacement arrivee="ALBERT I" attenteMoyenne="0" depart="CLEMENCEAU" direction="WESTLAND SHOPPING" duree="2" nbTroncon="371">N13</deplacement>
-<deplacement arrivee="AVENUE DU ROI" attenteMoyenne="0" depart="SUEDE" direction="LOT STATION" duree="2" nbTroncon="372">50</deplacement>
-<deplacement arrivee="GOUJONS" attenteMoyenne="0" depart="SUEDE" direction="MARIUS RENARD" duree="4" nbTroncon="373">T81</deplacement>
-<deplacement arrivee="CONSEIL" attenteMoyenne="0" depart="BARA" direction="MARIUS RENARD" duree="3" nbTroncon="374">81</deplacement>
-<deplacement arrivee="VETERINAIRES" attenteMoyenne="0" depart="ELOY" direction="HUMANITE" duree="2" nbTroncon="375">78</deplacement>
-<deplacement arrivee="VANDROMME" attenteMoyenne="0" depart="EGLISE ST-JULIEN" direction="HERRMANN-DEBROUX" duree="1" nbTroncon="376">N09</deplacement>
-<deplacement arrivee="CLESSE" attenteMoyenne="0" depart="EGLISE ST-JULIEN" direction="SAINTE-ANNE" duree="2" nbTroncon="377">34</deplacement>
-<deplacement arrivee="BERTHELOT" attenteMoyenne="0" depart="ROCHEFORT" direction="STALLE P" duree="2" nbTroncon="378">N12</deplacement>
-<deplacement arrivee="HOUZEAU" attenteMoyenne="0" depart="LANGEVELD" direction="UCCLE CALEVOET" duree="2" nbTroncon="379">60</deplacement>
-<deplacement arrivee="HOP.STE-ELISABETH" attenteMoyenne="0" depart="FLORIDE" direction="TRANSVAAL" duree="2" nbTroncon="380">41</deplacement>
-<deplacement arrivee="FLORIDE" attenteMoyenne="0" depart="RENE GOBERT" direction="HEROS" duree="2" nbTroncon="381">38</deplacement>
-<deplacement arrivee="STATUAIRES" attenteMoyenne="0" depart="HOUZEAU" direction="VIVIER D'OIE" duree="2" nbTroncon="382">43</deplacement>
-<deplacement arrivee="OBSERVATOIRE" attenteMoyenne="0" depart="HOUZEAU" direction="GARE DE LINKEBEEK" duree="1" nbTroncon="383">37</deplacement>
-<deplacement arrivee="VALDUC" attenteMoyenne="0" depart="VANDROMME" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="384">N09</deplacement>
-<deplacement arrivee="ROODENBERG" attenteMoyenne="0" depart="CLESSE" direction="SAINTE-ANNE" duree="1" nbTroncon="385">34</deplacement>
-<deplacement arrivee="INVALIDES" attenteMoyenne="0" depart="CLESSE" direction="ULB" duree="2" nbTroncon="386">72</deplacement>
-<deplacement arrivee="LES 3 TILLEULS" attenteMoyenne="0" depart="CALYPSO 2000" direction="WIENER" duree="1" nbTroncon="387">N08</deplacement>
-<deplacement arrivee="ARCHIDUCS" attenteMoyenne="0" depart="HANNETONS" direction="TRANSVAAL" duree="2" nbTroncon="388">41</deplacement>
-<deplacement arrivee="DRIES" attenteMoyenne="0" depart="BIEN-FAIRE" direction="HEROS" duree="1" nbTroncon="389">41</deplacement>
-<deplacement arrivee="GARDON" attenteMoyenne="0" depart="TERCOIGNE" direction="BEAULIEU" duree="2" nbTroncon="390">17</deplacement>
-<deplacement arrivee="HERRMANN-DEBROUX" attenteMoyenne="0" depart="DEMEY" direction="SAINTE-ANNE" duree="1" nbTroncon="391">34</deplacement>
-<deplacement arrivee="VIGNETTE" attenteMoyenne="0" depart="DEMEY" direction="ULB" duree="1" nbTroncon="392">72</deplacement>
-<deplacement arrivee="BIEN-FAIRE" attenteMoyenne="0" depart="DRIES" direction="TRANSVAAL" duree="1" nbTroncon="393">41</deplacement>
-<deplacement arrivee="DELLEUR" attenteMoyenne="0" depart="BOITSFORT GARE" direction="ROODEBEEK" duree="1" nbTroncon="394">8</deplacement>
-<deplacement arrivee="CALYPSO 2000" attenteMoyenne="0" depart="VANDER ELST" direction="HEILIGENBORRE" duree="1" nbTroncon="395">17</deplacement>
-<deplacement arrivee="HANNETONS" attenteMoyenne="0" depart="LOUTRIER" direction="TRANSVAAL" duree="1" nbTroncon="396">41</deplacement>
-<deplacement arrivee="TERCOIGNE" attenteMoyenne="0" depart="BRILLANT" direction="BEAULIEU" duree="1" nbTroncon="397">17</deplacement>
-<deplacement arrivee="MICHIELS" attenteMoyenne="0" depart="BEAULIEU" direction="HEILIGENBORRE" duree="2" nbTroncon="398">17</deplacement>
-<deplacement arrivee="DEMEY" attenteMoyenne="0" depart="BEAULIEU" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="399">5</deplacement>
-<deplacement arrivee="DRIES" attenteMoyenne="0" depart="FUTAIE" direction="TRANSVAAL" duree="2" nbTroncon="400">41</deplacement>
-<deplacement arrivee="VERT CHASSEUR" attenteMoyenne="0" depart="MONTANA" direction="HEROS" duree="1" nbTroncon="401">41</deplacement>
-<deplacement arrivee="BOITSFORT GARE" attenteMoyenne="0" depart="COCCINELLES" direction="ROODEBEEK" duree="2" nbTroncon="402">8</deplacement>
-<deplacement arrivee="PEYO" attenteMoyenne="0" depart="COGHEN" direction="GARE DE LINKEBEEK" duree="2" nbTroncon="403">37</deplacement>
-<deplacement arrivee="ROOSENDAEL" attenteMoyenne="0" depart="COGHEN" direction="HOMBORCH" duree="1" nbTroncon="404">N11</deplacement>
-<deplacement arrivee="MYSTERE" attenteMoyenne="0" depart="DUDEN" direction="FOREST (BERVOETS)" duree="1" nbTroncon="405">54</deplacement>
-<deplacement arrivee="HEROS" attenteMoyenne="0" depart="BOETENDAEL" direction="STALLE (P)" duree="2" nbTroncon="406">4</deplacement>
-<deplacement arrivee="IMPRIMERIE" attenteMoyenne="0" depart="AVENUE DU ROI" direction="BOCKSTAEL" duree="1" nbTroncon="407">49</deplacement>
-<deplacement arrivee="COLLEGE ST-PIERRE" attenteMoyenne="0" depart="PEYO" direction="GARE DE LINKEBEEK" duree="2" nbTroncon="408">37</deplacement>
-<deplacement arrivee="BENS" attenteMoyenne="0" depart="ROOSENDAEL" direction="VAN HAELEN" duree="1" nbTroncon="409">51</deplacement>
-<deplacement arrivee="DOMAINE" attenteMoyenne="0" depart="MYSTERE" direction="DECROLY" duree="2" nbTroncon="410">48</deplacement>
-<deplacement arrivee="FOREST NATIONAL" attenteMoyenne="0" depart="MYSTERE" direction="FOREST (BERVOETS)" duree="2" nbTroncon="411">54</deplacement>
-<deplacement arrivee="WIELS" attenteMoyenne="0" depart="BERTHELOT" direction="DIEWEG" duree="2" nbTroncon="412">97</deplacement>
-<deplacement arrivee="GLOBE" attenteMoyenne="0" depart="HEROS" direction="CERIA" duree="2" nbTroncon="413">98</deplacement>
-<deplacement arrivee="HEROS" attenteMoyenne="0" depart="HEROS" direction="VIVIER D'OIE" duree="1" nbTroncon="414">43</deplacement>
-<deplacement arrivee="MARLOW" attenteMoyenne="0" depart="HEROS" direction="FORT-JACO" duree="2" nbTroncon="415">92</deplacement>
-<deplacement arrivee="WTC" attenteMoyenne="0" depart="GARE DU NORD" direction="VILVOORDE STATION" duree="1" nbTroncon="416">58</deplacement>
-<deplacement arrivee="THOMAS" attenteMoyenne="0" depart="GARE DU NORD" direction="ESPLANADE" duree="3" nbTroncon="417">3</deplacement>
-<deplacement arrivee="RIBAUCOURT" attenteMoyenne="0" depart="YSER" direction="ELISABETH" duree="2" nbTroncon="418">6</deplacement>
-<deplacement arrivee="NICOLAY" attenteMoyenne="0" depart="YSER" direction="HEYSEL" duree="1" nbTroncon="419">N18</deplacement>
-<deplacement arrivee="SAINCTELETTE" attenteMoyenne="0" depart="YSER" direction="STADE" duree="2" nbTroncon="420">51</deplacement>
-<deplacement arrivee="YPRES" attenteMoyenne="0" depart="YSER" direction="VAN HAELEN" duree="2" nbTroncon="421">51</deplacement>
-<deplacement arrivee="DE BERLAIMONT" attenteMoyenne="0" depart="SAINT-LOUIS" direction="null" duree="2" nbTroncon="422">73</deplacement>
-<deplacement arrivee="ROBIANO" attenteMoyenne="0" depart="SAINTE-MARIE" direction="SCHAERBEEK GARE" duree="2" nbTroncon="423">92</deplacement>
-<deplacement arrivee="LEFRANCQ" attenteMoyenne="0" depart="SAINTE-MARIE" direction="STADE" duree="1" nbTroncon="424">93</deplacement>
-<deplacement arrivee="ETANGS NOIRS" attenteMoyenne="0" depart="COMTE DE FLANDRE" direction="ERASME" duree="1" nbTroncon="425">5</deplacement>
-<deplacement arrivee="BEEKKANT" attenteMoyenne="0" depart="ETANGS NOIRS" direction="GARE DE L'OUEST" duree="2" nbTroncon="426">1</deplacement>
-<deplacement arrivee="AUTRIQUE" attenteMoyenne="0" depart="ETANGS NOIRS" direction="HUNDERENVELD" duree="3" nbTroncon="427">20</deplacement>
-<deplacement arrivee="BORNE" attenteMoyenne="0" depart="ETANGS NOIRS" direction="WESTLAND SHOPPING" duree="2" nbTroncon="428">89</deplacement>
-<deplacement arrivee="MERCHTEM" attenteMoyenne="0" depart="ETANGS NOIRS" direction="GARE DU NORD" duree="3" nbTroncon="429">20</deplacement>
-<deplacement arrivee="PICARD" attenteMoyenne="0" depart="RIBAUCOURT" direction="BOCKSTAEL" duree="3" nbTroncon="431">89</deplacement>
-<deplacement arrivee="ELISABETH" attenteMoyenne="0" depart="RIBAUCOURT" direction="ELISABETH" duree="2" nbTroncon="432">2</deplacement>
-<deplacement arrivee="JUBILE" attenteMoyenne="0" depart="RIBAUCOURT" direction="STADE" duree="1" nbTroncon="433">51</deplacement>
-<deplacement arrivee="WILLEBROEK" attenteMoyenne="0" depart="WTC" direction="HUNDERENVELD" duree="2" nbTroncon="434">20</deplacement>
-<deplacement arrivee="GLIBERT" attenteMoyenne="0" depart="WTC" direction="VILVOORDE STATION" duree="1" nbTroncon="435">47</deplacement>
-<deplacement arrivee="LIEDTS" attenteMoyenne="0" depart="THOMAS" direction="EUROCONTROL" duree="2" nbTroncon="436">62</deplacement>
-<deplacement arrivee="MASUI" attenteMoyenne="0" depart="THOMAS" direction="CIMETIERE DE JETTE" duree="2" nbTroncon="437">62</deplacement>
-<deplacement arrivee="PORTE DE NINOVE" attenteMoyenne="0" depart="PORTE DE FLANDRE" direction="MACHTENS" duree="2" nbTroncon="438">86</deplacement>
-<deplacement arrivee="TRIANGLE" attenteMoyenne="0" depart="PORTE DE FLANDRE" direction="BERCHEM STATION" duree="2" nbTroncon="439">N16</deplacement>
-<deplacement arrivee="PORTE DE FLANDRE" attenteMoyenne="0" depart="YPRES" direction="VAN HAELEN" duree="2" nbTroncon="441">51</deplacement>
-<deplacement arrivee="COTEAUX" attenteMoyenne="0" depart="ROBIANO" direction="BOURGET" duree="2" nbTroncon="442">65</deplacement>
-<deplacement arrivee="EGLISE ST-SERVAIS" attenteMoyenne="0" depart="ROBIANO" direction="SCHAERBEEK GARE" duree="3" nbTroncon="443">92</deplacement>
-<deplacement arrivee="LIEDTS" attenteMoyenne="0" depart="LEFRANCQ" direction="STADE" duree="2" nbTroncon="444">93</deplacement>
-<deplacement arrivee="COTEAUX" attenteMoyenne="0" depart="BIENFAITEURS" direction="GARE CENTRALE" duree="2" nbTroncon="445">65</deplacement>
-<deplacement arrivee="MOONENS" attenteMoyenne="0" depart="SAINTE-FAMILLE" direction="GARE DU MIDI" duree="1" nbTroncon="446">27</deplacement>
-<deplacement arrivee="ARIANE" attenteMoyenne="0" depart="GULLEDELLE" direction="ROODEBEEK" duree="1" nbTroncon="447">45</deplacement>
-<deplacement arrivee="SAINTE-FAMILLE" attenteMoyenne="0" depart="ANDROMEDE" direction="GARE DU MIDI" duree="2" nbTroncon="448">27</deplacement>
-<deplacement arrivee="MARCEL THIRY" attenteMoyenne="0" depart="ARIANE" direction="ROODEBEEK" duree="2" nbTroncon="449">45</deplacement>
-<deplacement arrivee="SAINTE-FAMILLE" attenteMoyenne="0" depart="MOONENS" direction="ANDROMEDE" duree="1" nbTroncon="450">27</deplacement>
-<deplacement arrivee="HYMANS" attenteMoyenne="0" depart="MOONENS" direction="HOF TEN BERG" duree="2" nbTroncon="451">29</deplacement>
-<deplacement arrivee="MOONENS" attenteMoyenne="0" depart="VERHEYLEWEGHEN" direction="KRAAINEM" duree="1" nbTroncon="452">N05</deplacement>
-<deplacement arrivee="SLEGERS" attenteMoyenne="0" depart="MELARD" direction="KONKEL" duree="1" nbTroncon="453">28</deplacement>
-<deplacement arrivee="CHARMILLE" attenteMoyenne="0" depart="ROODEBEEK" direction="HOF TEN BERG" duree="2" nbTroncon="454">29</deplacement>
-<deplacement arrivee="WOLUWE SHOPPING" attenteMoyenne="0" depart="ROODEBEEK" direction="LOUISE" duree="2" nbTroncon="455">8</deplacement>
-<deplacement arrivee="VANDERVELDE" attenteMoyenne="0" depart="ROODEBEEK" direction="STOCKEL" duree="2" nbTroncon="456">1</deplacement>
-<deplacement arrivee="KLAKKEDELLE" attenteMoyenne="0" depart="ROODEBEEK" direction="KRAAINEM" duree="2" nbTroncon="457">N05</deplacement>
-<deplacement arrivee="DEMOLDER" attenteMoyenne="0" depart="HOP. PAUL BRIEN" direction="HEYSEL" duree="2" nbTroncon="458">7</deplacement>
-<deplacement arrivee="EENENS" attenteMoyenne="0" depart="ERNEST LAUDE" direction="BORDET STATION" duree="2" nbTroncon="459">59</deplacement>
-<deplacement arrivee="LATINIS" attenteMoyenne="0" depart="LOUIS BERTRAND" direction="PEAGE" duree="1" nbTroncon="460">66</deplacement>
-<deplacement arrivee="CROSSING" attenteMoyenne="0" depart="LOUIS BERTRAND" direction="DE BROUCKERE" duree="2" nbTroncon="461">66</deplacement>
-<deplacement arrivee="HOP. PAUL BRIEN" attenteMoyenne="0" depart="LOUIS BERTRAND" direction="HEYSEL" duree="1" nbTroncon="462">7</deplacement>
-<deplacement arrivee="TILLEUL" attenteMoyenne="0" depart="PAIX" direction="ROGIER" duree="2" nbTroncon="463">55</deplacement>
-<deplacement arrivee="PICARDIE" attenteMoyenne="0" depart="SAINT-VINCENT" direction="HOPITAL ETTERBEEK-IXELLES" duree="1" nbTroncon="464">59</deplacement>
-<deplacement arrivee="HELMET" attenteMoyenne="0" depart="TILLEUL" direction="ROGIER" duree="2" nbTroncon="465">55</deplacement>
-<deplacement arrivee="CORTENBACH" attenteMoyenne="0" depart="HAREN-SUD" direction="MACHELEN" duree="2" nbTroncon="466">64</deplacement>
-<deplacement arrivee="CARLI" attenteMoyenne="0" depart="PICARDIE" direction="SCHAERBEEK GARE" duree="1" nbTroncon="467">69</deplacement>
-<deplacement arrivee="AERODROME" attenteMoyenne="0" depart="MAES" direction="PORTE DE NAMUR" duree="1" nbTroncon="468">80</deplacement>
-<deplacement arrivee="PEAGE" attenteMoyenne="0" depart="VILLON" direction="PEAGE" duree="1" nbTroncon="469">66</deplacement>
-<deplacement arrivee="HAREN-SUD" attenteMoyenne="0" depart="BIPLAN" direction="MACHELEN" duree="2" nbTroncon="470">64</deplacement>
-<deplacement arrivee="MAES" attenteMoyenne="0" depart="MIDDELWEG" direction="MAES" duree="2" nbTroncon="471">80</deplacement>
-<deplacement arrivee="MERTENS" attenteMoyenne="0" depart="KELLE" direction="KONKEL" duree="2" nbTroncon="472">36</deplacement>
-<deplacement arrivee="ROND-PT SOUVERAIN" attenteMoyenne="0" depart="EMPAIN" direction="LOUISE" duree="2" nbTroncon="473">8</deplacement>
-<deplacement arrivee="VOOT" attenteMoyenne="0" depart="PARC DES SOURCES" direction="ROODEBEEK" duree="2" nbTroncon="474">8</deplacement>
-<deplacement arrivee="MADOUX" attenteMoyenne="0" depart="DE VILLALOBAR" direction="TERVUREN STATION" duree="1" nbTroncon="475">44</deplacement>
-<deplacement arrivee="RUE AU BOIS" attenteMoyenne="0" depart="MAREYDE" direction="KONKEL" duree="2" nbTroncon="476">36</deplacement>
-<deplacement arrivee="EMPAIN" attenteMoyenne="0" depart="MUSEE DU TRAM" direction="LOUISE" duree="3" nbTroncon="478">8</deplacement>
-<deplacement arrivee="PARC DES SOURCES" attenteMoyenne="0" depart="MUSEE DU TRAM" direction="ROODEBEEK" duree="2" nbTroncon="479">8</deplacement>
-<deplacement arrivee="DE VILLALOBAR" attenteMoyenne="0" depart="MUSEE DU TRAM" direction="TERVUREN STATION" duree="3" nbTroncon="480">44</deplacement>
-<deplacement arrivee="MAREYDE" attenteMoyenne="0" depart="MUSEE DU TRAM" direction="KONKEL" duree="7" nbTroncon="481">36</deplacement>
-<deplacement arrivee="VOOT" attenteMoyenne="0" depart="SLEGERS" direction="KONKEL" duree="1" nbTroncon="482">28</deplacement>
-<deplacement arrivee="PEUPLIERS" attenteMoyenne="0" depart="CHARMILLE" direction="HOF TEN BERG" duree="1" nbTroncon="483">29</deplacement>
-<deplacement arrivee="ALMA" attenteMoyenne="0" depart="VANDERVELDE" direction="STOCKEL" duree="1" nbTroncon="484">1</deplacement>
-<deplacement arrivee="KLAKKEDELLE" attenteMoyenne="0" depart="VANDERVELDE" direction="GARE CENTRALE" duree="1" nbTroncon="485">N05</deplacement>
-<deplacement arrivee="VANDERVELDE" attenteMoyenne="0" depart="KLAKKEDELLE" direction="KRAAINEM" duree="2" nbTroncon="486">N05</deplacement>
-<deplacement arrivee="MOONENS" attenteMoyenne="0" depart="HYMANS" direction="DE BROUCKERE" duree="2" nbTroncon="487">29</deplacement>
-<deplacement arrivee="DUCHESSE BRABANT" attenteMoyenne="0" depart="DELACROIX" direction="BOCKSTAEL" duree="4" nbTroncon="488">89</deplacement>
-<deplacement arrivee="GARE DE L'OUEST" attenteMoyenne="0" depart="DELACROIX" direction="SIMONIS" duree="1" nbTroncon="489">2</deplacement>
-<deplacement arrivee="JACQUES BREL" attenteMoyenne="0" depart="DELACROIX" direction="WESTLAND SHOPPING" duree="2" nbTroncon="490">89</deplacement>
-<deplacement arrivee="CUREGHEM" attenteMoyenne="0" depart="ALBERT I" direction="MOORTEBEEK" duree="2" nbTroncon="491">46</deplacement>
-<deplacement arrivee="PLACE V. HORTA" attenteMoyenne="0" depart="VETERINAIRES" direction="GARE DU MIDI" duree="2" nbTroncon="492">78</deplacement>
-<deplacement arrivee="DEUX GARES" attenteMoyenne="0" depart="VETERINAIRES" direction="HUMANITE" duree="1" nbTroncon="493">78</deplacement>
-<deplacement arrivee="PORTE DE NINOVE" attenteMoyenne="0" depart="ARTS ET METIERS" direction="STADE" duree="2" nbTroncon="494">51</deplacement>
-<deplacement arrivee="TRIANGLE" attenteMoyenne="0" depart="ARTS ET METIERS" direction="BERCHEM STATION" duree="2" nbTroncon="495">82</deplacement>
-<deplacement arrivee="ELEPHANT" attenteMoyenne="0" depart="TRIANGLE" direction="BERCHEM STATION" duree="2" nbTroncon="496">N16</deplacement>
-<deplacement arrivee="QUATRE-VENTS" attenteMoyenne="0" depart="DUCHESSE BRABANT" direction="MACHTENS" duree="1" nbTroncon="497">86</deplacement>
-<deplacement arrivee="QUATRE-VENTS" attenteMoyenne="0" depart="GARE DE L'OUEST" direction="GARE CENTRALE" duree="2" nbTroncon="498">86</deplacement>
-<deplacement arrivee="GARE DE L'OUEST" attenteMoyenne="0" depart="GARE DE L'OUEST" direction="GARE CENTRALE" duree="1" nbTroncon="499">86</deplacement>
-<deplacement arrivee="JOSEPH BAECK" attenteMoyenne="0" depart="GARE DE L'OUEST" direction="BERCHEM STATION" duree="2" nbTroncon="500">82</deplacement>
-<deplacement arrivee="JACQUES BREL" attenteMoyenne="0" depart="GARE DE L'OUEST" direction="ERASME" duree="1" nbTroncon="501">5</deplacement>
-<deplacement arrivee="VETERANS COLON." attenteMoyenne="0" depart="JACQUES BREL" direction="WESTLAND SHOPPING" duree="2" nbTroncon="503">89</deplacement>
-<deplacement arrivee="DOUVRES" attenteMoyenne="0" depart="CUREGHEM" direction="MOORTEBEEK" duree="1" nbTroncon="504">46</deplacement>
-<deplacement arrivee="ORBAN" attenteMoyenne="0" depart="IMPRIMERIE" direction="DROGENBOS CHATEAU" duree="1" nbTroncon="505">32</deplacement>
-<deplacement arrivee="PETITE ILE" attenteMoyenne="0" depart="DEUX GARES" direction="HUMANITE" duree="2" nbTroncon="506">78</deplacement>
-<deplacement arrivee="AUDERGHEM-SHOP." attenteMoyenne="0" depart="VALDUC" direction="SAINTE-ANNE" duree="1" nbTroncon="507">34</deplacement>
-<deplacement arrivee="VIGNETTE" attenteMoyenne="0" depart="ROODENBERG" direction="ADEPS" duree="1" nbTroncon="508">72</deplacement>
-<deplacement arrivee="CHARROI" attenteMoyenne="0" depart="WIELS" direction="BOCKSTAEL" duree="1" nbTroncon="509">49</deplacement>
-<deplacement arrivee="UNION" attenteMoyenne="0" depart="WIELS" direction="STALLE P" duree="1" nbTroncon="510">N12</deplacement>
-<deplacement arrivee="ZEECRABBE" attenteMoyenne="0" depart="STATUAIRES" direction="OBSERVATOIRE" duree="2" nbTroncon="511">43</deplacement>
-<deplacement arrivee="MERCURE" attenteMoyenne="0" depart="OBSERVATOIRE" direction="UCCLE CALEVOET" duree="2" nbTroncon="512">60</deplacement>
-<deplacement arrivee="GARE DE SAINT-JOB" attenteMoyenne="0" depart="MERCURE" direction="GARE DE LINKEBEEK" duree="2" nbTroncon="513">37</deplacement>
-<deplacement arrivee="BERGOJE" attenteMoyenne="0" depart="AUDERGHEM-SHOP." direction="SAINTE-ANNE" duree="1" nbTroncon="514">34</deplacement>
-<deplacement arrivee="PECHERIES" attenteMoyenne="0" depart="VIGNETTE" direction="HEROS" duree="2" nbTroncon="515">41</deplacement>
-<deplacement arrivee="WIENER" attenteMoyenne="0" depart="MIRAVAL" direction="HEILIGENBORRE" duree="1" nbTroncon="516">17</deplacement>
-<deplacement arrivee="FAUCONNERIE" attenteMoyenne="0" depart="CERISAIE" direction="WIENER" duree="1" nbTroncon="517">95</deplacement>
-<deplacement arrivee="PECHERIES" attenteMoyenne="0" depart="TRITOMAS" direction="TRANSVAAL" duree="1" nbTroncon="518">41</deplacement>
-<deplacement arrivee="ROUGE-CLOITRE" attenteMoyenne="0" depart="JARDIN MASSART" direction="ADEPS" duree="2" nbTroncon="519">72</deplacement>
-<deplacement arrivee="SCHOONEJANS" attenteMoyenne="0" depart="HERRMANN-DEBROUX" direction="TRANSVAAL" duree="1" nbTroncon="521">41</deplacement>
-<deplacement arrivee="PARC SENY" attenteMoyenne="0" depart="HERRMANN-DEBROUX" direction="LOUISE" duree="1" nbTroncon="522">8</deplacement>
-<deplacement arrivee="SACRE-COEUR" attenteMoyenne="0" depart="SCHOONEJANS" direction="TRANSVAAL" duree="2" nbTroncon="523">41</deplacement>
-<deplacement arrivee="TENREUKEN" attenteMoyenne="0" depart="PARC SENY" direction="LOUISE" duree="1" nbTroncon="524">8</deplacement>
-<deplacement arrivee="DIABOLO" attenteMoyenne="0" depart="WIENER" direction="HEILIGENBORRE" duree="1" nbTroncon="525">17</deplacement>
-<deplacement arrivee="MIRAVAL" attenteMoyenne="0" depart="WIENER" direction="GARE CENTRALE" duree="1" nbTroncon="526">N08</deplacement>
-<deplacement arrivee="MIRAVAL" attenteMoyenne="0" depart="LES 3 TILLEULS" direction="HEILIGENBORRE" duree="1" nbTroncon="527">17</deplacement>
-<deplacement arrivee="CERISAIE" attenteMoyenne="0" depart="LES 3 TILLEULS" direction="HEILIGENBORRE" duree="2" nbTroncon="528">17</deplacement>
-<deplacement arrivee="TRITOMAS" attenteMoyenne="0" depart="ARCHIDUCS" direction="TRANSVAAL" duree="1" nbTroncon="529">41</deplacement>
-<deplacement arrivee="BERENSHEIDE" attenteMoyenne="0" depart="GARDON" direction="BEAULIEU" duree="1" nbTroncon="530">17</deplacement>
-<deplacement arrivee="WIENER" attenteMoyenne="0" depart="DELLEUR" direction="ROODEBEEK" duree="2" nbTroncon="531">8</deplacement>
-<deplacement arrivee="XAVIER DE BUE" attenteMoyenne="0" depart="BENS" direction="VAN HAELEN" duree="2" nbTroncon="532">51</deplacement>
-<deplacement arrivee="FORESTOISE" attenteMoyenne="0" depart="DOMAINE" direction="DECROLY" duree="2" nbTroncon="533">48</deplacement>
-<deplacement arrivee="FOREST-EST" attenteMoyenne="0" depart="FOREST NATIONAL" direction="FOREST (BERVOETS)" duree="2" nbTroncon="534">54</deplacement>
-<deplacement arrivee="DECROLY" attenteMoyenne="0" depart="FORESTOISE" direction="DECROLY" duree="1" nbTroncon="535">48</deplacement>
-<deplacement arrivee="SAINT-DENIS" attenteMoyenne="0" depart="FOREST-EST" direction="FOREST (BERVOETS)" duree="1" nbTroncon="536">54</deplacement>
-<deplacement arrivee="ILE SAINTE-HELENE" attenteMoyenne="0" depart="CHARROI" direction="BOCKSTAEL" duree="1" nbTroncon="537">49</deplacement>
-<deplacement arrivee="BERVOETS" attenteMoyenne="0" depart="CHARROI" direction="LOT STATION" duree="2" nbTroncon="538">50</deplacement>
-<deplacement arrivee="CHATAIGNES" attenteMoyenne="0" depart="UNION" direction="DROGENBOS CHATEAU" duree="1" nbTroncon="539">82</deplacement>
-<deplacement arrivee="TROIS ARBRES" attenteMoyenne="0" depart="RITTWEGER" direction="HOMBORCH" duree="2" nbTroncon="540">N11</deplacement>
-<deplacement arrivee="WOLVENDAEL" attenteMoyenne="0" depart="MARLOW" direction="FORT-JACO" duree="2" nbTroncon="541">92</deplacement>
-<deplacement arrivee="EGIDE VAN OPHEM" attenteMoyenne="0" depart="WAGON" direction="CERIA" duree="1" nbTroncon="542">98</deplacement>
-<deplacement arrivee="RITTWEGER" attenteMoyenne="0" depart="GLOBE" direction="VIVIER D'OIE" duree="2" nbTroncon="543">43</deplacement>
-<deplacement arrivee="WAGON" attenteMoyenne="0" depart="GLOBE" direction="LOUISE" duree="3" nbTroncon="544">97</deplacement>
-<deplacement arrivee="DIEWEG" attenteMoyenne="0" depart="WOLVENDAEL" direction="DIEWEG" duree="2" nbTroncon="545">97</deplacement>
-<deplacement arrivee="TOUR ET TAXIS" attenteMoyenne="0" depart="WILLEBROEK" direction="HEYSEL" duree="2" nbTroncon="546">88</deplacement>
-<deplacement arrivee="DESTOUVELLES" attenteMoyenne="0" depart="GLIBERT" direction="VILVOORDE STATION" duree="2" nbTroncon="547">58</deplacement>
-<deplacement arrivee="PAVILLON" attenteMoyenne="0" depart="LIEDTS" direction="DA VINCI" duree="3" nbTroncon="548">32</deplacement>
-<deplacement arrivee="JULES DE TROOZ" attenteMoyenne="0" depart="MASUI" direction="CIMETIERE DE JETTE" duree="2" nbTroncon="549">62</deplacement>
-<deplacement arrivee="STEPHENSON" attenteMoyenne="0" depart="MASUI" direction="VILVOORDE STATION" duree="2" nbTroncon="550">58</deplacement>
-<deplacement arrivee="ESCAUT" attenteMoyenne="0" depart="PICARD" direction="BOCKSTAEL" duree="3" nbTroncon="551">89</deplacement>
-<deplacement arrivee="VANDERSTICHELEN" attenteMoyenne="0" depart="PICARD" direction="UZ-VUB" duree="3" nbTroncon="552">14</deplacement>
-<deplacement arrivee="VANDERSTICHELEN" attenteMoyenne="0" depart="JUBILE" direction="STADE" duree="3" nbTroncon="553">51</deplacement>
-<deplacement arrivee="POGGE" attenteMoyenne="0" depart="EGLISE ST-SERVAIS" direction="SCHAERBEEK GARE" duree="2" nbTroncon="554">92</deplacement>
-<deplacement arrivee="DEPOT SCHAERBEEK" attenteMoyenne="0" depart="EGLISE ST-SERVAIS" direction="SCHAERBEEK GARE" duree="1" nbTroncon="555">T92</deplacement>
-<deplacement arrivee="OSSEGHEM" attenteMoyenne="0" depart="BEEKKANT" direction="ROI BAUDOUIN" duree="1" nbTroncon="556">6</deplacement>
-<deplacement arrivee="VANHUFFEL" attenteMoyenne="0" depart="AUTRIQUE" direction="BERCHEM STATION" duree="1" nbTroncon="557">N16</deplacement>
-<deplacement arrivee="SAVONNERIE" attenteMoyenne="0" depart="BORNE" direction="WESTLAND SHOPPING" duree="2" nbTroncon="558">89</deplacement>
-<deplacement arrivee="SIMONIS" attenteMoyenne="0" depart="OSSEGHEM" direction="SIMONIS" duree="2" nbTroncon="559">2</deplacement>
-<deplacement arrivee="DUBOIS" attenteMoyenne="0" depart="JOSEPH BAECK" direction="MACHTENS" duree="1" nbTroncon="560">86</deplacement>
-<deplacement arrivee="MENNEKENS" attenteMoyenne="0" depart="JOSEPH BAECK" direction="BERCHEM STATION" duree="2" nbTroncon="561">82</deplacement>
-<deplacement arrivee="STEAMERS" attenteMoyenne="0" depart="TOUR ET TAXIS" direction="HEYSEL" duree="1" nbTroncon="562">88</deplacement>
-<deplacement arrivee="POUCHKINE" attenteMoyenne="0" depart="ESCAUT" direction="BOCKSTAEL" duree="1" nbTroncon="563">89</deplacement>
-<deplacement arrivee="BELGICA" attenteMoyenne="0" depart="VANDERSTICHELEN" direction="STADE" duree="2" nbTroncon="564">51</deplacement>
-<deplacement arrivee="OUTRE-PONTS" attenteMoyenne="0" depart="JULES DE TROOZ" direction="CIMETIERE DE JETTE" duree="2" nbTroncon="565">62</deplacement>
-<deplacement arrivee="MABRU" attenteMoyenne="0" depart="JULES DE TROOZ" direction="ESPLANADE" duree="1" nbTroncon="566">3</deplacement>
-<deplacement arrivee="EENENS" attenteMoyenne="0" depart="POGGE" direction="SCHAERBEEK GARE" duree="1" nbTroncon="567">T92</deplacement>
-<deplacement arrivee="VERBOEKHOVEN" attenteMoyenne="0" depart="PAVILLON" direction="DA VINCI" duree="2" nbTroncon="569">55</deplacement>
-<deplacement arrivee="RUBENS" attenteMoyenne="0" depart="PAVILLON" direction="DROGENBOS CHATEAU" duree="2" nbTroncon="570">32</deplacement>
-<deplacement arrivee="ERNEST LAUDE" attenteMoyenne="0" depart="HERMAN" direction="BORDET STATION" duree="1" nbTroncon="571">59</deplacement>
-<deplacement arrivee="CROSSING" attenteMoyenne="0" depart="AZALEES" direction="PEAGE" duree="1" nbTroncon="572">66</deplacement>
-<deplacement arrivee="JESPERS" attenteMoyenne="0" depart="MARCEL THIRY" direction="HOF TEN BERG" duree="1" nbTroncon="573">29</deplacement>
-<deplacement arrivee="THIRY-WOLUWE" attenteMoyenne="0" depart="MARCEL THIRY" direction="KRAAINEM" duree="2" nbTroncon="574">79</deplacement>
-<deplacement arrivee="CHARMILLE" attenteMoyenne="0" depart="PEUPLIERS" direction="ROODEBEEK" duree="1" nbTroncon="575">42</deplacement>
-<deplacement arrivee="HOF TEN BERG" attenteMoyenne="0" depart="JESPERS" direction="HOF TEN BERG" duree="2" nbTroncon="576">29</deplacement>
-<deplacement arrivee="HOF TER MUSSCHEN" attenteMoyenne="0" depart="THIRY-WOLUWE" direction="KRAAINEM" duree="1" nbTroncon="577">79</deplacement>
-<deplacement arrivee="DEPORTES" attenteMoyenne="0" depart="VOOT" direction="KONKEL" duree="1" nbTroncon="578">28</deplacement>
-<deplacement arrivee="DOCKS BRUXSEL" attenteMoyenne="0" depart="PRINC. ELISABETH" direction="HEYSEL" duree="4" nbTroncon="579">7</deplacement>
-<deplacement arrivee="SCHAERBEEK GARE" attenteMoyenne="0" depart="PRINC. ELISABETH" direction="SCHAERBEEK GARE" duree="3" nbTroncon="580">92</deplacement>
-<deplacement arrivee="PRINC. ELISABETH" attenteMoyenne="0" depart="DEMOLDER" direction="HEYSEL" duree="1" nbTroncon="581">7</deplacement>
-<deplacement arrivee="FOYER SCHAERBEEK." attenteMoyenne="0" depart="HELMET" direction="ROGIER" duree="1" nbTroncon="582">55</deplacement>
-<deplacement arrivee="CHAUMONTEL" attenteMoyenne="0" depart="CARLI" direction="HOPITAL ETTERBEEK-IXELLES" duree="1" nbTroncon="583">59</deplacement>
-<deplacement arrivee="WAELHEM" attenteMoyenne="0" depart="FOYER SCHAERBEEK." direction="DROGENBOS CHATEAU" duree="1" nbTroncon="584">32</deplacement>
-<deplacement arrivee="OMNISPORTS HAREN" attenteMoyenne="0" depart="TWYENINCK" direction="MACHELEN" duree="2" nbTroncon="585">64</deplacement>
-<deplacement arrivee="WITLOOF" attenteMoyenne="0" depart="TWYENINCK" direction="MACHELEN" duree="2" nbTroncon="586">64</deplacement>
-<deplacement arrivee="ANATOLE FRANCE" attenteMoyenne="0" depart="CHAUMONTEL" direction="HOPITAL ETTERBEEK-IXELLES" duree="1" nbTroncon="587">59</deplacement>
-<deplacement arrivee="ZENOBE GRAMME" attenteMoyenne="0" depart="CHAUMONTEL" direction="SCHAERBEEK GARE" duree="2" nbTroncon="588">69</deplacement>
-<deplacement arrivee="TWYENINCK" attenteMoyenne="0" depart="CORTENBACH" direction="MACHELEN" duree="2" nbTroncon="589">64</deplacement>
-<deplacement arrivee="AUDERGHEM-FORET" attenteMoyenne="0" depart="TROIS COULEURS" direction="TERVUREN STATION" duree="1" nbTroncon="590">44</deplacement>
-<deplacement arrivee="AVIATION" attenteMoyenne="0" depart="RUE AU BOIS" direction="BAN-EIK" duree="2" nbTroncon="591">39</deplacement>
-<deplacement arrivee="MANOIR D'ANJOU" attenteMoyenne="0" depart="RUE AU BOIS" direction="KONKEL" duree="2" nbTroncon="592">36</deplacement>
-<deplacement arrivee="ESCRIME" attenteMoyenne="0" depart="AVIATION" direction="BAN-EIK" duree="2" nbTroncon="593">39</deplacement>
-<deplacement arrivee="VANDER MEERSCHEN" attenteMoyenne="0" depart="MANOIR D'ANJOU" direction="KONKEL" duree="1" nbTroncon="594">36</deplacement>
-<deplacement arrivee="TROIS COULEURS" attenteMoyenne="0" depart="MADOUX" direction="TERVUREN STATION" duree="1" nbTroncon="595">44</deplacement>
-<deplacement arrivee="PARC MALOU" attenteMoyenne="0" depart="DEPORTES" direction="KONKEL" duree="1" nbTroncon="596">28</deplacement>
-<deplacement arrivee="REINE ASTRID" attenteMoyenne="0" depart="KRAAINEM" direction="OPPEM" duree="2" nbTroncon="597">76</deplacement>
-<deplacement arrivee="MOUNIER" attenteMoyenne="0" depart="KRAAINEM" direction="SCHUMAN" duree="2" nbTroncon="598">79</deplacement>
-<deplacement arrivee="STOCKEL" attenteMoyenne="0" depart="CRAINHEM" direction="STOCKEL" duree="2" nbTroncon="599">1</deplacement>
+<deplacement arrivee="DEFACQZ" attenteMoyenne="0" depart="STEPHANIE" direction="FORT-JACO" duree="3" nbTroncon="67">T92</deplacement>
+<deplacement arrivee="TRONE" attenteMoyenne="0" depart="ARTS-LOI" direction="SIMONIS" duree="2" nbTroncon="68">2</deplacement>
+<deplacement arrivee="GARE CENTRALE" attenteMoyenne="0" depart="ROYALE" direction="GARE CENTRALE" duree="2" nbTroncon="69">N11</deplacement>
+<deplacement arrivee="AMBIORIX" attenteMoyenne="0" depart="GUTENBERG" direction="KRAAINEM" duree="2" nbTroncon="70">N05</deplacement>
+<deplacement arrivee="JOSEPH.-CHARLOTTE" attenteMoyenne="0" depart="MONTGOMERY" direction="STOCKEL" duree="2" nbTroncon="71">1</deplacement>
+<deplacement arrivee="MERODE" attenteMoyenne="0" depart="PLACE ST-PIERRE" direction="MONTGOMERY" duree="1" nbTroncon="72">81</deplacement>
+<deplacement arrivee="WAPPERS" attenteMoyenne="0" depart="CHEVALERIE" direction="GARE DU NORD" duree="2" nbTroncon="73">61</deplacement>
+<deplacement arrivee="PETILLON" attenteMoyenne="0" depart="THIEFFRY" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="74">5</deplacement>
+<deplacement arrivee="JAMBLINNE DE MEUX" attenteMoyenne="0" depart="GUEUX" direction="MAES" duree="1" nbTroncon="75">80</deplacement>
+<deplacement arrivee="GUTENBERG" attenteMoyenne="0" depart="WATERLOO WILSON" direction="GARE CENTRALE" duree="1" nbTroncon="76">N05</deplacement>
+<deplacement arrivee="BRABANCONNE" attenteMoyenne="0" depart="LUTHER" direction="MACHELEN" duree="2" nbTroncon="77">64</deplacement>
+<deplacement arrivee="SCHUMAN" attenteMoyenne="0" depart="BREYDEL" direction="GARE CENTRALE" duree="1" nbTroncon="78">N06</deplacement>
+<deplacement arrivee="JAMBLINNE DE MEUX" attenteMoyenne="0" depart="VICTOR HUGO" direction="BRABANCONNE" duree="2" nbTroncon="79">28</deplacement>
+<deplacement arrivee="PATRIE" attenteMoyenne="0" depart="MEISER" direction="GARE CENTRALE" duree="1" nbTroncon="80">N04</deplacement>
+<deplacement arrivee="DIAMANT" attenteMoyenne="0" depart="VERGOTE" direction="GARE DU MIDI" duree="2" nbTroncon="81">27</deplacement>
+<deplacement arrivee="DIAMANT" attenteMoyenne="0" depart="LEVIE" direction="DE BROUCKERE" duree="3" nbTroncon="82">29</deplacement>
+<deplacement arrivee="CARENE" attenteMoyenne="0" depart="COLONEL BOURG" direction="MAES" duree="2" nbTroncon="83">80</deplacement>
+<deplacement arrivee="DIAMANT" attenteMoyenne="0" depart="OPALE" direction="KRAAINEM" duree="1" nbTroncon="84">N05</deplacement>
+<deplacement arrivee="DA VINCI" attenteMoyenne="0" depart="GENEVE" direction="BRUSSELS AIRPORT" duree="5" nbTroncon="85">12</deplacement>
+<deplacement arrivee="MONTGOMERY" attenteMoyenne="0" depart="GEORGES HENRI" direction="GARE DU MIDI" duree="4" nbTroncon="86">27</deplacement>
+<deplacement arrivee="PORTE DE HAL" attenteMoyenne="0" depart="HOTEL DES MONNAIES" direction="ROI BAUDOUIN" duree="1" nbTroncon="87">6</deplacement>
+<deplacement arrivee="PETIT SABLON" attenteMoyenne="0" depart="POELAERT" direction="DANSAERT" duree="1" nbTroncon="88">33</deplacement>
+<deplacement arrivee="ROYALE" attenteMoyenne="0" depart="PETIT SABLON" direction="LOUISE" duree="2" nbTroncon="89">33</deplacement>
+<deplacement arrivee="CIM. D'IXELLES" attenteMoyenne="0" depart="THYS" direction="GARE CENTRALE" duree="1" nbTroncon="90">N09</deplacement>
+<deplacement arrivee="ETTERBEEK GARE" attenteMoyenne="0" depart="VUB" direction="BOONDAEL GARE" duree="2" nbTroncon="91">25</deplacement>
+<deplacement arrivee="PETILLON" attenteMoyenne="0" depart="ARSENAL" direction="ROGIER" duree="2" nbTroncon="92">25</deplacement>
+<deplacement arrivee="ONZE NOVEMBRE" attenteMoyenne="0" depart="ROI VAINQUEUR" direction="SCHUMAN" duree="1" nbTroncon="93">36</deplacement>
+<deplacement arrivee="BUYL" attenteMoyenne="0" depart="JEANNE" direction="ROGIER" duree="3" nbTroncon="94">25</deplacement>
+<deplacement arrivee="MARIE-JOSE" attenteMoyenne="0" depart="SOLBOSCH" direction="TRANSVAAL" duree="2" nbTroncon="95">41</deplacement>
+<deplacement arrivee="FRAITEUR" attenteMoyenne="0" depart="CIM. D'IXELLES" direction="DELTA" duree="2" nbTroncon="96">71</deplacement>
+<deplacement arrivee="LONGCHAMP" attenteMoyenne="0" depart="BASCULE" direction="VANDERKINDERE" duree="2" nbTroncon="97">7</deplacement>
+<deplacement arrivee="LEPOUTRE" attenteMoyenne="0" depart="GEORGES BRUGMANN" direction="GARE CENTRALE" duree="2" nbTroncon="98">N10</deplacement>
+<deplacement arrivee="JANSON" attenteMoyenne="0" depart="FAIDER" direction="FORT-JACO" duree="2" nbTroncon="99">92</deplacement>
+<deplacement arrivee="LOMBARDIE" attenteMoyenne="0" depart="MORIS" direction="MARIUS RENARD" duree="1" nbTroncon="100">T81</deplacement>
+<deplacement arrivee="MA CAMPAGNE" attenteMoyenne="0" depart="DARWIN" direction="SCHAERBEEK GARE" duree="2" nbTroncon="101">92</deplacement>
+<deplacement arrivee="ALBERT" attenteMoyenne="0" depart="PRISON" direction="FOREST (BERVOETS)" duree="2" nbTroncon="102">54</deplacement>
+<deplacement arrivee="ARTS-LOI" attenteMoyenne="0" depart="MADOU" direction="FORT-JACO" duree="2" nbTroncon="103">T92</deplacement>
+<deplacement arrivee="CONGRES" attenteMoyenne="0" depart="PARC" direction="CIMETIERE DE BRUXELLES" duree="2" nbTroncon="104">N04</deplacement>
+<deplacement arrivee="PARC" attenteMoyenne="0" depart="GARE CENTRALE" direction="STOCKEL" duree="1" nbTroncon="105">1</deplacement>
+<deplacement arrivee="CHAPELLE" attenteMoyenne="0" depart="GRAND SABLON" direction="PORTE DE HAL" duree="2" nbTroncon="106">30</deplacement>
+<deplacement arrivee="ROYALE" attenteMoyenne="0" depart="PALAIS" direction="FORT-JACO" duree="2" nbTroncon="107">92</deplacement>
+<deplacement arrivee="GUTENBERG" attenteMoyenne="0" depart="SAINT-JOSSE" direction="CIMETIERE DE BRUXELLES" duree="1" nbTroncon="108">63</deplacement>
+<deplacement arrivee="WATERLOO WILSON" attenteMoyenne="0" depart="CLOVIS" direction="DE BROUCKERE" duree="2" nbTroncon="109">29</deplacement>
+<deplacement arrivee="MONTGOMERY" attenteMoyenne="0" depart="JOSEPH.-CHARLOTTE" direction="GARE DE L'OUEST" duree="1" nbTroncon="110">1</deplacement>
+<deplacement arrivee="THIEFFRY" attenteMoyenne="0" depart="BOILEAU" direction="SCHUMAN" duree="1" nbTroncon="111">36</deplacement>
+<deplacement arrivee="LEOPOLD II" attenteMoyenne="0" depart="GJ MARTIN" direction="BAN-EIK" duree="1" nbTroncon="112">39</deplacement>
+<deplacement arrivee="GEORGES HENRI" attenteMoyenne="0" depart="ICHEC" direction="ANDROMEDE" duree="2" nbTroncon="113">27</deplacement>
+<deplacement arrivee="MONTGOMERY" attenteMoyenne="0" depart="LEOPOLD II" direction="GARE CENTRALE" duree="2" nbTroncon="114">N06</deplacement>
+<deplacement arrivee="JAMBLINNE DE MEUX" attenteMoyenne="0" depart="WAPPERS" direction="GARE DU NORD" duree="2" nbTroncon="115">61</deplacement>
+<deplacement arrivee="THIEFFRY" attenteMoyenne="0" depart="PETILLON" direction="ERASME" duree="2" nbTroncon="116">5</deplacement>
+<deplacement arrivee="VICTOR HUGO" attenteMoyenne="0" depart="JAMBLINNE DE MEUX" direction="KRAAINEM" duree="2" nbTroncon="117">79</deplacement>
+<deplacement arrivee="AMBIORIX" attenteMoyenne="0" depart="MARGUERITE" direction="GARE CENTRALE" duree="1" nbTroncon="118">N05</deplacement>
+<deplacement arrivee="JAMBLINNE DE MEUX" attenteMoyenne="0" depart="CHASSEURS ARDEN." direction="KONKEL" duree="2" nbTroncon="119">28</deplacement>
+<deplacement arrivee="MEISER" attenteMoyenne="0" depart="PATRIE" direction="CIMETIERE DE BRUXELLES" duree="1" nbTroncon="121">N04</deplacement>
+<deplacement arrivee="MEISER" attenteMoyenne="0" depart="LEOPOLD III" direction="CIMETIERE DE JETTE" duree="2" nbTroncon="122">62</deplacement>
+<deplacement arrivee="OPALE" attenteMoyenne="0" depart="PLASKY" direction="HOF TEN BERG" duree="2" nbTroncon="123">29</deplacement>
+<deplacement arrivee="LEVIE" attenteMoyenne="0" depart="MAI" direction="DE BROUCKERE" duree="2" nbTroncon="124">29</deplacement>
+<deplacement arrivee="PADUWA" attenteMoyenne="0" depart="CARENE" direction="MAES" duree="3" nbTroncon="125">80</deplacement>
+<deplacement arrivee="DIAMANT" attenteMoyenne="0" depart="DIVIN SAUVEUR" direction="SCHUMAN" duree="2" nbTroncon="126">79</deplacement>
+<deplacement arrivee="COLONEL BOURG" attenteMoyenne="0" depart="FEVRIER" direction="MAES" duree="1" nbTroncon="127">80</deplacement>
+<deplacement arrivee="BORDET STATION" attenteMoyenne="0" depart="DA VINCI" direction="DROGENBOS CHATEAU" duree="1" nbTroncon="128">32</deplacement>
+<deplacement arrivee="FRANS COURTENS" attenteMoyenne="0" depart="PAUL LEDUC" direction="GARE CENTRALE" duree="1" nbTroncon="129">N04</deplacement>
+<deplacement arrivee="DUNANT" attenteMoyenne="0" depart="EVERE SHOPPING" direction="PEAGE" duree="3" nbTroncon="130">66</deplacement>
+<deplacement arrivee="MEUDON" attenteMoyenne="0" depart="DEGROOFF" direction="MAES" duree="2" nbTroncon="131">80</deplacement>
+<deplacement arrivee="PARVIS ST-GILLES" attenteMoyenne="0" depart="PORTE DE HAL" direction="DECROLY" duree="2" nbTroncon="132">48</deplacement>
+<deplacement arrivee="HANKAR" attenteMoyenne="0" depart="STRATEGIE" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="133">N09</deplacement>
+<deplacement arrivee="SOLBOSCH" attenteMoyenne="0" depart="MARIE-JOSE" direction="LOUISE" duree="2" nbTroncon="134">8</deplacement>
+<deplacement arrivee="CIM. D'IXELLES" attenteMoyenne="0" depart="FRAITEUR" direction="ULB" duree="2" nbTroncon="135">72</deplacement>
+<deplacement arrivee="ARCADES" attenteMoyenne="0" depart="RELAIS" direction="WIENER" duree="1" nbTroncon="136">95</deplacement>
+<deplacement arrivee="BASCULE" attenteMoyenne="0" depart="LONGCHAMP" direction="HEYSEL" duree="2" nbTroncon="137">T7</deplacement>
+<deplacement arrivee="CAVELL" attenteMoyenne="0" depart="STALLAERT" direction="UCCLE CALEVOET" duree="1" nbTroncon="138">60</deplacement>
+<deplacement arrivee="MORIS" attenteMoyenne="0" depart="LOMBARDIE" direction="LOUISE" duree="2" nbTroncon="139">97</deplacement>
+<deplacement arrivee="VANDERKINDERE" attenteMoyenne="0" depart="MOLIERE" direction="FORT-JACO" duree="2" nbTroncon="140">92</deplacement>
+<deplacement arrivee="TIMMERMANS" attenteMoyenne="0" depart="ALBERT" direction="HOMBORCH" duree="1" nbTroncon="141">N11</deplacement>
+<deplacement arrivee="MADOU" attenteMoyenne="0" depart="PRESSE" direction="KRAAINEM" duree="1" nbTroncon="142">N05</deplacement>
+<deplacement arrivee="MADOU" attenteMoyenne="0" depart="QUETELET" direction="GARE CENTRALE" duree="2" nbTroncon="143">65</deplacement>
+<deplacement arrivee="GILLON" attenteMoyenne="0" depart="BOTANIQUE" direction="SCHAERBEEK GARE" duree="1" nbTroncon="144">92</deplacement>
+<deplacement arrivee="BOTANIQUE" attenteMoyenne="0" depart="CONGRES" direction="STADE" duree="2" nbTroncon="145">93</deplacement>
+<deplacement arrivee="PARC" attenteMoyenne="0" depart="TREURENBERG" direction="GARE CENTRALE" duree="1" nbTroncon="146">N05</deplacement>
+<deplacement arrivee="GARE CENTRALE" attenteMoyenne="0" depart="ARENBERG" direction="HOF TEN BERG" duree="2" nbTroncon="147">29</deplacement>
+<deplacement arrivee="ROGIER" attenteMoyenne="0" depart="DE BROUCKERE" direction="ESPLANADE" duree="2" nbTroncon="148">3</deplacement>
+<deplacement arrivee="ROYALE" attenteMoyenne="0" depart="BOZAR" direction="DELTA" duree="1" nbTroncon="149">71</deplacement>
+<deplacement arrivee="GRAND SABLON" attenteMoyenne="0" depart="CHAPELLE" direction="ANDROMEDE" duree="1" nbTroncon="150">27</deplacement>
+<deplacement arrivee="BOURSE" attenteMoyenne="0" depart="GRAND-PLACE" direction="DANSAERT" duree="2" nbTroncon="151">33</deplacement>
+<deplacement arrivee="GEEFS" attenteMoyenne="0" depart="HOUWAERT" direction="BORDET STATION" duree="2" nbTroncon="152">59</deplacement>
+<deplacement arrivee="CLOVIS" attenteMoyenne="0" depart="VINCOTTE" direction="DE BROUCKERE" duree="2" nbTroncon="153">29</deplacement>
+<deplacement arrivee="TOMBERG" attenteMoyenne="0" depart="GRIBAUMONT" direction="STOCKEL" duree="1" nbTroncon="154">1</deplacement>
+<deplacement arrivee="BOILEAU" attenteMoyenne="0" depart="BARON DE CASTRO" direction="SCHUMAN" duree="2" nbTroncon="155">36</deplacement>
+<deplacement arrivee="CHIEN VERT" attenteMoyenne="0" depart="JULES CESAR" direction="TERVUREN STATION" duree="2" nbTroncon="156">44</deplacement>
+<deplacement arrivee="DELTA" attenteMoyenne="0" depart="HANKAR" direction="HERRMANN-DEBROUX" duree="1" nbTroncon="157">5</deplacement>
+<deplacement arrivee="BRABANCONNE" attenteMoyenne="0" depart="DAILLY" direction="PORTE DE NAMUR" duree="1" nbTroncon="158">64</deplacement>
+<deplacement arrivee="PATRIE" attenteMoyenne="0" depart="BIENFAITEURS" direction="EUROCONTROL" duree="2" nbTroncon="159">62</deplacement>
+<deplacement arrivee="HELIOTROPES" attenteMoyenne="0" depart="CHAZAL" direction="HEYSEL" duree="2" nbTroncon="160">7</deplacement>
+<deplacement arrivee="LEOPOLD III" attenteMoyenne="0" depart="FRANS COURTENS" direction="GARE CENTRALE" duree="1" nbTroncon="161">N04</deplacement>
+<deplacement arrivee="EVERE SHOPPING" attenteMoyenne="0" depart="PENTATHLON" direction="EUROCONTROL" duree="2" nbTroncon="162">62</deplacement>
+<deplacement arrivee="MEISER" attenteMoyenne="0" depart="MAX-PLASKY" direction="CIMETIERE DE BRUXELLES" duree="2" nbTroncon="163">63</deplacement>
+<deplacement arrivee="PLASKY" attenteMoyenne="0" depart="RADIUM" direction="HOF TEN BERG" duree="1" nbTroncon="164">29</deplacement>
+<deplacement arrivee="MAI" attenteMoyenne="0" depart="HEYDENBERG" direction="GARE CENTRALE" duree="1" nbTroncon="165">N05</deplacement>
+<deplacement arrivee="CICERON" attenteMoyenne="0" depart="PADUWA" direction="ROODEBEEK" duree="1" nbTroncon="166">45</deplacement>
+<deplacement arrivee="CAPRICORNE" attenteMoyenne="0" depart="PLEIADES" direction="KRAAINEM" duree="1" nbTroncon="167">79</deplacement>
+<deplacement arrivee="RTL HOUSE" attenteMoyenne="0" depart="MOMMAERTS" direction="BRUSSELS AIRPORT" duree="1" nbTroncon="168">21</deplacement>
+<deplacement arrivee="VANDENHOVEN" attenteMoyenne="0" depart="BORDET STATION" direction="SAINT-VINCENT" duree="1" nbTroncon="169">45</deplacement>
+<deplacement arrivee="EUROCONTROL" attenteMoyenne="0" depart="BOURGET" direction="EUROCONTROL" duree="1" nbTroncon="170">62</deplacement>
+<deplacement arrivee="DA VINCI" attenteMoyenne="0" depart="JULES BORDET" direction="SCHAERBEEK GARE" duree="3" nbTroncon="171">69</deplacement>
+<deplacement arrivee="PERMEKE" attenteMoyenne="0" depart="LEKAERTS" direction="LUXEMBOURG" duree="1" nbTroncon="172">21</deplacement>
+<deplacement arrivee="BOURGET" attenteMoyenne="0" depart="FUSEE" direction="EUROCONTROL" duree="2" nbTroncon="173">62</deplacement>
+<deplacement arrivee="LEKAERTS" attenteMoyenne="0" depart="MATISSE" direction="GARE CENTRALE" duree="1" nbTroncon="174">65</deplacement>
+<deplacement arrivee="MOMMAERTS" attenteMoyenne="0" depart="RTL HOUSE" direction="LUXEMBOURG" duree="2" nbTroncon="175">21</deplacement>
+<deplacement arrivee="PAUL LEDUC" attenteMoyenne="0" depart="OPTIMISME" direction="GARE CENTRALE" duree="1" nbTroncon="176">N04</deplacement>
+<deplacement arrivee="LOISIRS" attenteMoyenne="0" depart="DUNANT" direction="SAINT-VINCENT" duree="1" nbTroncon="177">45</deplacement>
+<deplacement arrivee="EVERE SHOPPING" attenteMoyenne="0" depart="LOISIRS" direction="LUXEMBOURG" duree="1" nbTroncon="178">21</deplacement>
+<deplacement arrivee="NOTRE-DAME" attenteMoyenne="0" depart="CONSCIENCE" direction="BOURGET" duree="2" nbTroncon="179">65</deplacement>
+<deplacement arrivee="DEGROOFF" attenteMoyenne="0" depart="MEUDON" direction="GARE DU MIDI" duree="2" nbTroncon="180">27</deplacement>
+<deplacement arrivee="PORTE DE HAL" attenteMoyenne="0" depart="PARVIS ST-GILLES" direction="GRAND-PLACE" duree="2" nbTroncon="181">48</deplacement>
+<deplacement arrivee="JEU DE BALLE" attenteMoyenne="0" depart="HOP. SAINT-PIERRE" direction="GARE CENTRALE" duree="1" nbTroncon="182">N12</deplacement>
+<deplacement arrivee="LEMONNIER" attenteMoyenne="0" depart="GARE DU MIDI" direction="STADE" duree="3" nbTroncon="183">51</deplacement>
+<deplacement arrivee="PTE D'ANDERLECHT" attenteMoyenne="0" depart="LEMONNIER" direction="WESTLAND SHOPPING" duree="2" nbTroncon="184">N13</deplacement>
+<deplacement arrivee="HIPPOD. BOITSFORT" attenteMoyenne="0" depart="BRESIL" direction="HEROS" duree="4" nbTroncon="185">41</deplacement>
+<deplacement arrivee="FRAITEUR" attenteMoyenne="0" depart="CHIREC" direction="ULB" duree="1" nbTroncon="186">72</deplacement>
+<deplacement arrivee="KEYM" attenteMoyenne="0" depart="ARCADES" direction="WIENER" duree="2" nbTroncon="187">N08</deplacement>
+<deplacement arrivee="BRUNARD" attenteMoyenne="0" depart="CAVELL" direction="UCCLE CALEVOET" duree="2" nbTroncon="188">60</deplacement>
+<deplacement arrivee="LONGCHAMP" attenteMoyenne="0" depart="GOSSART" direction="GARE CENTRALE" duree="2" nbTroncon="189">38</deplacement>
+<deplacement arrivee="PARVIS ST-GILLES" attenteMoyenne="0" depart="BARRIERE" direction="GRAND-PLACE" duree="2" nbTroncon="190">48</deplacement>
+<deplacement arrivee="BERKENDAEL" attenteMoyenne="0" depart="VANDERKINDERE" direction="ESPLANADE" duree="2" nbTroncon="191">3</deplacement>
+<deplacement arrivee="ALBERT" attenteMoyenne="0" depart="TIMMERMANS" direction="ALBERT" duree="2" nbTroncon="192">37</deplacement>
+<deplacement arrivee="ALBERT" attenteMoyenne="0" depart="HORTA" direction="STALLE (P)" duree="2" nbTroncon="193">4</deplacement>
+<deplacement arrivee="LAINE" attenteMoyenne="0" depart="MONT KEMMEL" direction="GRAND-PLACE" duree="1" nbTroncon="194">48</deplacement>
+<deplacement arrivee="VANDERKINDERE" attenteMoyenne="0" depart="BERKENDAEL" direction="CHURCHILL" duree="2" nbTroncon="195">3</deplacement>
+<deplacement arrivee="ALTITUDE CENT" attenteMoyenne="0" depart="JUPITER" direction="VAN HAELEN" duree="1" nbTroncon="196">51</deplacement>
+<deplacement arrivee="MERIDIEN" attenteMoyenne="0" depart="RUE TRAVERSIERE" direction="BOURGET" duree="1" nbTroncon="197">65</deplacement>
+<deplacement arrivee="BOTANIQUE" attenteMoyenne="0" depart="GILLON" direction="GARE CENTRALE" duree="1" nbTroncon="198">N04</deplacement>
+<deplacement arrivee="YSER" attenteMoyenne="0" depart="ROGIER" direction="VILVOORDE STATION" duree="2" nbTroncon="199">47</deplacement>
+<deplacement arrivee="ANNEESSENS" attenteMoyenne="0" depart="BOURSE" direction="LOUISE" duree="3" nbTroncon="200">33</deplacement>
+<deplacement arrivee="DE BROUCKERE" attenteMoyenne="0" depart="SAINTE-CATHERINE" direction="STOCKEL" duree="1" nbTroncon="201">1</deplacement>
+<deplacement arrivee="YSER" attenteMoyenne="0" depart="BEGUINAGE" direction="HEYSEL" duree="2" nbTroncon="202">N18</deplacement>
+<deplacement arrivee="PORTE DE HAL" attenteMoyenne="0" depart="JEU DE BALLE" direction="PORTE DE HAL" duree="2" nbTroncon="203">30</deplacement>
+<deplacement arrivee="GARE CENTRALE" attenteMoyenne="0" depart="BIBLIOTHEQUE" direction="GARE CENTRALE" duree="1" nbTroncon="204">N16</deplacement>
+<deplacement arrivee="COTEAUX" attenteMoyenne="0" depart="GEEFS" direction="BORDET STATION" duree="2" nbTroncon="205">59</deplacement>
+<deplacement arrivee="FUSS" attenteMoyenne="0" depart="STEURS" direction="MONTGOMERY" duree="2" nbTroncon="206">61</deplacement>
+<deplacement arrivee="GUTENBERG" attenteMoyenne="0" depart="BRAEMT" direction="HOPITAL ETTERBEEK-IXELLES" duree="2" nbTroncon="207">59</deplacement>
+<deplacement arrivee="MELARD" attenteMoyenne="0" depart="TOMBERG" direction="KONKEL" duree="1" nbTroncon="208">28</deplacement>
+<deplacement arrivee="MOUETTES" attenteMoyenne="0" depart="DREVE DE NIVELLES" direction="KONKEL" duree="1" nbTroncon="209">36</deplacement>
+<deplacement arrivee="JULES CESAR" attenteMoyenne="0" depart="CHIEN VERT" direction="MONTGOMERY" duree="2" nbTroncon="210">44</deplacement>
+<deplacement arrivee="CHANT D'OISEAU" attenteMoyenne="0" depart="OCEAN ATLANTIQUE" direction="SCHUMAN" duree="2" nbTroncon="211">36</deplacement>
+<deplacement arrivee="BEAULIEU" attenteMoyenne="0" depart="DELTA" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="212">5</deplacement>
+<deplacement arrivee="HANKAR" attenteMoyenne="0" depart="EGLISE ST-JULIEN" direction="GARE CENTRALE" duree="1" nbTroncon="213">N09</deplacement>
+<deplacement arrivee="FUSS" attenteMoyenne="0" depart="CLAYS" direction="GARE DU NORD" duree="2" nbTroncon="214">61</deplacement>
+<deplacement arrivee="GEEFS" attenteMoyenne="0" depart="COTEAUX" direction="HOPITAL ETTERBEEK-IXELLES" duree="1" nbTroncon="215">59</deplacement>
+<deplacement arrivee="CHAZAL" attenteMoyenne="0" depart="HELIOTROPES" direction="VANDERKINDERE" duree="2" nbTroncon="216">7</deplacement>
+<deplacement arrivee="BICHON" attenteMoyenne="0" depart="JOSAPHAT" direction="BOURGET" duree="1" nbTroncon="217">65</deplacement>
+<deplacement arrivee="VERHEYLEWEGHEN" attenteMoyenne="0" depart="SPEECKAERT" direction="HOF TEN BERG" duree="2" nbTroncon="218">29</deplacement>
+<deplacement arrivee="DE LOMBAERDE" attenteMoyenne="0" depart="CICERON" direction="SAINT-VINCENT" duree="1" nbTroncon="219">45</deplacement>
+<deplacement arrivee="PADUWA" attenteMoyenne="0" depart="GUILLAUME" direction="PEAGE" duree="2" nbTroncon="220">66</deplacement>
+<deplacement arrivee="PADUWA" attenteMoyenne="0" depart="ARTEMIS" direction="GARE CENTRALE" duree="1" nbTroncon="221">N04</deplacement>
+<deplacement arrivee="PLEIADES" attenteMoyenne="0" depart="CAPRICORNE" direction="SCHUMAN" duree="1" nbTroncon="222">79</deplacement>
+<deplacement arrivee="BORDET STATION" attenteMoyenne="0" depart="VANDENHOVEN" direction="PORTE DE NAMUR" duree="1" nbTroncon="223">64</deplacement>
+<deplacement arrivee="PAIX" attenteMoyenne="0" depart="OUD KAPELLEKE" direction="MACHELEN" duree="3" nbTroncon="224">64</deplacement>
+<deplacement arrivee="MIDDELWEG" attenteMoyenne="0" depart="SABCA" direction="MAES" duree="1" nbTroncon="225">80</deplacement>
+<deplacement arrivee="BORDET STATION" attenteMoyenne="0" depart="VAN CUTSEM" direction="DA VINCI" duree="2" nbTroncon="226">55</deplacement>
+<deplacement arrivee="BORDET STATION" attenteMoyenne="0" depart="HAREN-ATELIER" direction="HOPITAL ETTERBEEK-IXELLES" duree="2" nbTroncon="227">59</deplacement>
+<deplacement arrivee="BOURGET" attenteMoyenne="0" depart="EUROCONTROL" direction="CIMETIERE DE JETTE" duree="1" nbTroncon="228">62</deplacement>
+<deplacement arrivee="BOURGET" attenteMoyenne="0" depart="BRUSSELS AIRPORT" direction="LUXEMBOURG" duree="7" nbTroncon="229">21</deplacement>
+<deplacement arrivee="CIM. DE BRUXELLES" attenteMoyenne="0" depart="DIABLOTINS" direction="CIMETIERE DE BRUXELLES" duree="1" nbTroncon="230">63</deplacement>
+<deplacement arrivee="LOISIRS" attenteMoyenne="0" depart="PERMEKE" direction="LUXEMBOURG" duree="1" nbTroncon="231">21</deplacement>
+<deplacement arrivee="DA VINCI" attenteMoyenne="0" depart="FERNAND LEGER" direction="BOURGET" duree="2" nbTroncon="232">65</deplacement>
+<deplacement arrivee="NOTRE-DAME" attenteMoyenne="0" depart="HOEDEMAEKERS" direction="GARE CENTRALE" duree="1" nbTroncon="233">65</deplacement>
+<deplacement arrivee="DA VINCI" attenteMoyenne="0" depart="BALE" direction="LUXEMBOURG" duree="1" nbTroncon="234">21</deplacement>
+<deplacement arrivee="CIM. DE BRUXELLES" attenteMoyenne="0" depart="ARBRE UNIQUE" direction="CIMETIERE DE BRUXELLES" duree="2" nbTroncon="235">63</deplacement>
+<deplacement arrivee="HOEDEMAEKERS" attenteMoyenne="0" depart="NOTRE-DAME" direction="BOURGET" duree="1" nbTroncon="236">65</deplacement>
+<deplacement arrivee="EVERE SHOPPING" attenteMoyenne="0" depart="EVERE GARE" direction="PEAGE" duree="2" nbTroncon="237">66</deplacement>
+<deplacement arrivee="CONSCIENCE" attenteMoyenne="0" depart="BICHON" direction="BOURGET" duree="2" nbTroncon="238">65</deplacement>
+<deplacement arrivee="KENNIS" attenteMoyenne="0" depart="KURTH" direction="DE BROUCKERE" duree="2" nbTroncon="239">66</deplacement>
+<deplacement arrivee="MEUDON" attenteMoyenne="0" depart="MONTALD" direction="BRABANCONNE" duree="2" nbTroncon="240">28</deplacement>
+<deplacement arrivee="MEUDON" attenteMoyenne="0" depart="ZEPHYR" direction="GARE DU MIDI" duree="2" nbTroncon="241">27</deplacement>
+<deplacement arrivee="AVENUE DU ROI" attenteMoyenne="0" depart="SUEDE" direction="BOCKSTAEL" duree="2" nbTroncon="242">49</deplacement>
+<deplacement arrivee="DELACROIX" attenteMoyenne="0" depart="CLEMENCEAU" direction="SIMONIS" duree="2" nbTroncon="243">2</deplacement>
+<deplacement arrivee="CLEMENCEAU" attenteMoyenne="0" depart="BARA" direction="MOORTEBEEK" duree="5" nbTroncon="244">46</deplacement>
+<deplacement arrivee="VETERINAIRES" attenteMoyenne="0" depart="ELOY" direction="HUMANITE" duree="2" nbTroncon="245">78</deplacement>
+<deplacement arrivee="ARTS ET METIERS" attenteMoyenne="0" depart="PTE D'ANDERLECHT" direction="BERCHEM STATION" duree="2" nbTroncon="246">82</deplacement>
+<deplacement arrivee="LEMONNIER" attenteMoyenne="0" depart="BODEGHEM" direction="DROGENBOS CHATEAU" duree="2" nbTroncon="247">82</deplacement>
+<deplacement arrivee="MANNEKEN-PIS" attenteMoyenne="0" depart="ANNEESSENS" direction="GRAND-PLACE" duree="2" nbTroncon="248">48</deplacement>
+<deplacement arrivee="RESERVOIR" attenteMoyenne="0" depart="HIPPOD. BOITSFORT" direction="HEROS" duree="2" nbTroncon="249">41</deplacement>
+<deplacement arrivee="BRESIL" attenteMoyenne="0" depart="BOONDAEL GARE" direction="ROGIER" duree="1" nbTroncon="250">25</deplacement>
+<deplacement arrivee="MONTANA" attenteMoyenne="0" depart="GENDARMES" direction="HEROS" duree="1" nbTroncon="251">41</deplacement>
+<deplacement arrivee="ARCADES" attenteMoyenne="0" depart="KEYM" direction="GRAND-PLACE" duree="2" nbTroncon="252">95</deplacement>
+<deplacement arrivee="LANGEVELD" attenteMoyenne="0" depart="BRUNARD" direction="FORT-JACO" duree="1" nbTroncon="253">N10</deplacement>
+<deplacement arrivee="CHURCHILL" attenteMoyenne="0" depart="CHURCHILL" direction="HEYSEL" duree="1" nbTroncon="254">7</deplacement>
+<deplacement arrivee="RENE GOBERT" attenteMoyenne="0" depart="MONTJOIE" direction="HEROS" duree="1" nbTroncon="255">38</deplacement>
+<deplacement arrivee="BARRIERE" attenteMoyenne="0" depart="COMBAZ" direction="GARE CENTRALE" duree="1" nbTroncon="256">N12</deplacement>
+<deplacement arrivee="BARRIERE" attenteMoyenne="0" depart="GUILLAUME TELL" direction="MONTGOMERY" duree="1" nbTroncon="257">81</deplacement>
+<deplacement arrivee="BOETENDAEL" attenteMoyenne="0" depart="MESSIDOR" direction="STALLE (P)" duree="2" nbTroncon="258">4</deplacement>
+<deplacement arrivee="ALTITUDE CENT" attenteMoyenne="0" depart="MOLIERE-LONGCHAMP" direction="DECROLY" duree="2" nbTroncon="259">48</deplacement>
+<deplacement arrivee="ROCHEFORT" attenteMoyenne="0" depart="LAINE" direction="GRAND-PLACE" duree="1" nbTroncon="260">48</deplacement>
+<deplacement arrivee="DUDEN" attenteMoyenne="0" depart="ALTITUDE CENT" direction="DECROLY" duree="1" nbTroncon="261">48</deplacement>
+<deplacement arrivee="DUDEN" attenteMoyenne="0" depart="TOURNOI" direction="FOREST (BERVOETS)" duree="1" nbTroncon="262">54</deplacement>
+<deplacement arrivee="ROBIANO" attenteMoyenne="0" depart="MERIDIEN" direction="BOURGET" duree="3" nbTroncon="263">65</deplacement>
+<deplacement arrivee="HOUWAERT" attenteMoyenne="0" depart="LIMITE" direction="MONTGOMERY" duree="2" nbTroncon="264">61</deplacement>
+<deplacement arrivee="ROBIANO" attenteMoyenne="0" depart="SAINTE-MARIE" direction="SCHAERBEEK GARE" duree="1" nbTroncon="265">T92</deplacement>
+<deplacement arrivee="RIBAUCOURT" attenteMoyenne="0" depart="YSER" direction="ELISABETH" duree="2" nbTroncon="266">6</deplacement>
+<deplacement arrivee="GARE DU NORD" attenteMoyenne="0" depart="GARE DU NORD" direction="HUNDERENVELD" duree="2" nbTroncon="267">20</deplacement>
+<deplacement arrivee="DE BERLAIMONT" attenteMoyenne="0" depart="SAINT-LOUIS" direction="null" duree="2" nbTroncon="268">73</deplacement>
+<deplacement arrivee="PORTE DE FLANDRE" attenteMoyenne="0" depart="DANSAERT" direction="BERCHEM STATION" duree="2" nbTroncon="269">N16</deplacement>
+<deplacement arrivee="DANSAERT" attenteMoyenne="0" depart="SAINT-GERY" direction="DANSAERT" duree="3" nbTroncon="270">33</deplacement>
+<deplacement arrivee="SAINTE-CATHERINE" attenteMoyenne="0" depart="COMTE DE FLANDRE" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="271">5</deplacement>
+<deplacement arrivee="RUE TRAVERSIERE" attenteMoyenne="0" depart="BOSSUET" direction="GARE DU NORD" duree="2" nbTroncon="272">61</deplacement>
+<deplacement arrivee="SLEGERS" attenteMoyenne="0" depart="MELARD" direction="KONKEL" duree="1" nbTroncon="274">28</deplacement>
+<deplacement arrivee="CHARMILLE" attenteMoyenne="0" depart="ROODEBEEK" direction="HOF TEN BERG" duree="2" nbTroncon="275">29</deplacement>
+<deplacement arrivee="DREVE DE NIVELLES" attenteMoyenne="0" depart="MOUETTES" direction="SCHUMAN" duree="1" nbTroncon="276">36</deplacement>
+<deplacement arrivee="CHIEN VERT" attenteMoyenne="0" depart="MUSEE DU TRAM" direction="MONTGOMERY" duree="2" nbTroncon="277">44</deplacement>
+<deplacement arrivee="OCEAN ATLANTIQUE" attenteMoyenne="0" depart="CHANT D'OISEAU" direction="KONKEL" duree="2" nbTroncon="278">36</deplacement>
+<deplacement arrivee="MICHIELS" attenteMoyenne="0" depart="BEAULIEU" direction="HEILIGENBORRE" duree="2" nbTroncon="280">17</deplacement>
+<deplacement arrivee="INVALIDES" attenteMoyenne="0" depart="CLESSE" direction="ULB" duree="2" nbTroncon="281">72</deplacement>
+<deplacement arrivee="VALDUC" attenteMoyenne="0" depart="VANDROMME" direction="SAINTE-ANNE" duree="2" nbTroncon="282">34</deplacement>
+<deplacement arrivee="MERIDIEN" attenteMoyenne="0" depart="ROBIANO" direction="FORT-JACO" duree="1" nbTroncon="283">T92</deplacement>
+<deplacement arrivee="ERNEST LAUDE" attenteMoyenne="0" depart="HERMAN" direction="BORDET STATION" duree="1" nbTroncon="284">59</deplacement>
+<deplacement arrivee="COTEAUX" attenteMoyenne="0" depart="AZALEES" direction="DE BROUCKERE" duree="2" nbTroncon="285">66</deplacement>
+<deplacement arrivee="HELIOTROPES" attenteMoyenne="0" depart="LOUIS BERTRAND" direction="VANDERKINDERE" duree="1" nbTroncon="286">7</deplacement>
+<deplacement arrivee="SPEECKAERT" attenteMoyenne="0" depart="VERHEYLEWEGHEN" direction="DE BROUCKERE" duree="2" nbTroncon="287">29</deplacement>
+<deplacement arrivee="PADUWA" attenteMoyenne="0" depart="DE LOMBAERDE" direction="SAINT-VINCENT" duree="1" nbTroncon="288">45</deplacement>
+<deplacement arrivee="ANDROMEDE" attenteMoyenne="0" depart="GULLEDELLE" direction="SCHUMAN" duree="1" nbTroncon="289">79</deplacement>
+<deplacement arrivee="DIABLOTINS" attenteMoyenne="0" depart="CIM. DE BRUXELLES" direction="CIMETIERE DE BRUXELLES" duree="1" nbTroncon="290">63</deplacement>
+<deplacement arrivee="GULLEDELLE" attenteMoyenne="0" depart="ANDROMEDE" direction="KRAAINEM" duree="1" nbTroncon="291">79</deplacement>
+<deplacement arrivee="SAINT-VINCENT" attenteMoyenne="0" depart="SAINT-VINCENT" direction="PORTE DE NAMUR" duree="1" nbTroncon="292">64</deplacement>
+<deplacement arrivee="VANDENHOVEN" attenteMoyenne="0" depart="BIPLAN" direction="PORTE DE NAMUR" duree="1" nbTroncon="293">64</deplacement>
+<deplacement arrivee="FONSON" attenteMoyenne="0" depart="PAIX" direction="DA VINCI" duree="2" nbTroncon="294">32</deplacement>
+<deplacement arrivee="SABCA" attenteMoyenne="0" depart="MIDDELWEG" direction="PORTE DE NAMUR" duree="1" nbTroncon="295">80</deplacement>
+<deplacement arrivee="PAIX" attenteMoyenne="0" depart="FONSON" direction="PORTE DE NAMUR" duree="1" nbTroncon="296">64</deplacement>
+<deplacement arrivee="BORDET STATION" attenteMoyenne="0" depart="HAREN-STIB" direction="HOPITAL ETTERBEEK-IXELLES" duree="2" nbTroncon="297">59</deplacement>
+<deplacement arrivee="PEAGE" attenteMoyenne="0" depart="VILLON" direction="PEAGE" duree="1" nbTroncon="298">66</deplacement>
+<deplacement arrivee="LATINIS" attenteMoyenne="0" depart="KENNIS" direction="DE BROUCKERE" duree="2" nbTroncon="299">66</deplacement>
+<deplacement arrivee="SUEDE" attenteMoyenne="0" depart="AVENUE DU ROI" direction="GARE DU MIDI" duree="2" nbTroncon="300">49</deplacement>
+<deplacement arrivee="SUEDE" attenteMoyenne="0" depart="GOUJONS" direction="MONTGOMERY" duree="4" nbTroncon="301">T81</deplacement>
+<deplacement arrivee="CLEMENCEAU" attenteMoyenne="0" depart="DELACROIX" direction="ELISABETH" duree="2" nbTroncon="302">2</deplacement>
+<deplacement arrivee="CLEMENCEAU" attenteMoyenne="0" depart="LIVERPOOL" direction="WESTLAND SHOPPING" duree="1" nbTroncon="303">N13</deplacement>
+<deplacement arrivee="CONSEIL" attenteMoyenne="0" depart="ALBERT I" direction="MONTGOMERY" duree="3" nbTroncon="304">81</deplacement>
+<deplacement arrivee="ALBERT I" attenteMoyenne="0" depart="CONSEIL" direction="MARIUS RENARD" duree="3" nbTroncon="305">81</deplacement>
+<deplacement arrivee="PLACE V. HORTA" attenteMoyenne="0" depart="VETERINAIRES" direction="GARE DU MIDI" duree="2" nbTroncon="306">78</deplacement>
+<deplacement arrivee="PTE D'ANDERLECHT" attenteMoyenne="0" depart="ARTS ET METIERS" direction="DROGENBOS CHATEAU" duree="2" nbTroncon="307">82</deplacement>
+<deplacement arrivee="ANNEESSENS" attenteMoyenne="0" depart="BUANDERIE" direction="ANNEESSENS" duree="3" nbTroncon="308">46</deplacement>
+<deplacement arrivee="GRAND-PLACE" attenteMoyenne="0" depart="MANNEKEN-PIS" direction="GRAND-PLACE" duree="2" nbTroncon="309">48</deplacement>
+<deplacement arrivee="GRAND SABLON" attenteMoyenne="0" depart="CESAR DE PAEPE" direction="HERRMANN-DEBROUX" duree="3" nbTroncon="310">N09</deplacement>
+<deplacement arrivee="GENDARMES" attenteMoyenne="0" depart="RESERVOIR" direction="HEROS" duree="1" nbTroncon="311">41</deplacement>
+<deplacement arrivee="BOITSFORT GARE" attenteMoyenne="0" depart="COCCINELLES" direction="ROODEBEEK" duree="2" nbTroncon="312">8</deplacement>
+<deplacement arrivee="DRIES" attenteMoyenne="0" depart="FUTAIE" direction="TRANSVAAL" duree="2" nbTroncon="313">41</deplacement>
+<deplacement arrivee="VERT CHASSEUR" attenteMoyenne="0" depart="MONTANA" direction="HEROS" duree="1" nbTroncon="314">41</deplacement>
+<deplacement arrivee="KEYM" attenteMoyenne="0" depart="VANDER ELST" direction="GRAND-PLACE" duree="2" nbTroncon="315">95</deplacement>
+<deplacement arrivee="TERCOIGNE" attenteMoyenne="0" depart="BRILLANT" direction="BEAULIEU" duree="1" nbTroncon="316">17</deplacement>
+<deplacement arrivee="HANNETONS" attenteMoyenne="0" depart="LOUTRIER" direction="TRANSVAAL" duree="1" nbTroncon="317">41</deplacement>
+<deplacement arrivee="BRUNARD" attenteMoyenne="0" depart="LANGEVELD" direction="AMBIORIX" duree="1" nbTroncon="319">60</deplacement>
+<deplacement arrivee="MONTJOIE" attenteMoyenne="0" depart="RENE GOBERT" direction="GARE CENTRALE" duree="2" nbTroncon="320">38</deplacement>
+<deplacement arrivee="BERTHELOT" attenteMoyenne="0" depart="ROCHEFORT" direction="CARREFOUR STALLE" duree="2" nbTroncon="321">N12</deplacement>
+<deplacement arrivee="AVENUE DU ROI" attenteMoyenne="0" depart="BETHLEEM" direction="MARIUS RENARD" duree="2" nbTroncon="322">81</deplacement>
+<deplacement arrivee="MESSIDOR" attenteMoyenne="0" depart="BOETENDAEL" direction="SCHAERBEEK GARE" duree="1" nbTroncon="323">92</deplacement>
+<deplacement arrivee="ROOSENDAEL" attenteMoyenne="0" depart="COGHEN" direction="HOMBORCH" duree="1" nbTroncon="324">N11</deplacement>
+<deplacement arrivee="MYSTERE" attenteMoyenne="0" depart="DUDEN" direction="DECROLY" duree="1" nbTroncon="325">48</deplacement>
+<deplacement arrivee="LIEDTS" attenteMoyenne="0" depart="LEFRANCQ" direction="SCHAERBEEK GARE" duree="1" nbTroncon="326">92</deplacement>
+<deplacement arrivee="MERCHTEM" attenteMoyenne="0" depart="RIBAUCOURT" direction="WESTLAND SHOPPING" duree="2" nbTroncon="327">89</deplacement>
+<deplacement arrivee="WTC" attenteMoyenne="0" depart="NICOLAY" direction="VILVOORDE STATION" duree="2" nbTroncon="328">47</deplacement>
+<deplacement arrivee="YSER" attenteMoyenne="0" depart="SAINCTELETTE" direction="VAN HAELEN" duree="2" nbTroncon="329">51</deplacement>
+<deplacement arrivee="YSER" attenteMoyenne="0" depart="YPRES" direction="STADE" duree="2" nbTroncon="330">51</deplacement>
+<deplacement arrivee="WILLEBROEK" attenteMoyenne="0" depart="WTC" direction="UZ-VUB" duree="2" nbTroncon="331">14</deplacement>
+<deplacement arrivee="MASUI" attenteMoyenne="0" depart="THOMAS" direction="CIMETIERE DE JETTE" duree="2" nbTroncon="332">62</deplacement>
+<deplacement arrivee="GARE CENTRALE" attenteMoyenne="0" depart="DE BERLAIMONT" direction="GARE CENTRALE" duree="2" nbTroncon="333">N18</deplacement>
+<deplacement arrivee="DANSAERT" attenteMoyenne="0" depart="PORTE DE FLANDRE" direction="GARE CENTRALE" duree="2" nbTroncon="334">N16</deplacement>
+<deplacement arrivee="MERCHTEM" attenteMoyenne="0" depart="ETANGS NOIRS" direction="GARE DU NORD" duree="3" nbTroncon="335">20</deplacement>
+<deplacement arrivee="VOOT" attenteMoyenne="0" depart="SLEGERS" direction="KONKEL" duree="1" nbTroncon="336">28</deplacement>
+<deplacement arrivee="PEUPLIERS" attenteMoyenne="0" depart="CHARMILLE" direction="VIADUC E40" duree="1" nbTroncon="337">42</deplacement>
+<deplacement arrivee="ROODEBEEK" attenteMoyenne="0" depart="HYMANS" direction="HOF TEN BERG" duree="2" nbTroncon="338">29</deplacement>
+<deplacement arrivee="KLAKKEDELLE" attenteMoyenne="0" depart="VANDERVELDE" direction="GARE CENTRALE" duree="1" nbTroncon="339">N05</deplacement>
+<deplacement arrivee="VOOT" attenteMoyenne="0" depart="WOLUWE SHOPPING" direction="LOUISE" duree="2" nbTroncon="340">8</deplacement>
+<deplacement arrivee="ROODEBEEK" attenteMoyenne="0" depart="KLAKKEDELLE" direction="GARE CENTRALE" duree="2" nbTroncon="341">N05</deplacement>
+<deplacement arrivee="MUSEE DU TRAM" attenteMoyenne="0" depart="EMPAIN" direction="ROODEBEEK" duree="3" nbTroncon="342">8</deplacement>
+<deplacement arrivee="MADOUX" attenteMoyenne="0" depart="DE VILLALOBAR" direction="BAN-EIK" duree="1" nbTroncon="343">39</deplacement>
+<deplacement arrivee="MUSEE DU TRAM" attenteMoyenne="0" depart="PARC DES SOURCES" direction="LOUISE" duree="2" nbTroncon="344">8</deplacement>
+<deplacement arrivee="RUE AU BOIS" attenteMoyenne="0" depart="MAREYDE" direction="KONKEL" duree="2" nbTroncon="345">36</deplacement>
+<deplacement arrivee="MERTENS" attenteMoyenne="0" depart="KELLE" direction="KONKEL" duree="2" nbTroncon="346">36</deplacement>
+<deplacement arrivee="BRILLANT" attenteMoyenne="0" depart="MICHIELS" direction="HEILIGENBORRE" duree="1" nbTroncon="347">17</deplacement>
+<deplacement arrivee="VIGNETTE" attenteMoyenne="0" depart="DEMEY" direction="HEROS" duree="1" nbTroncon="348">41</deplacement>
+<deplacement arrivee="DELTA" attenteMoyenne="0" depart="INVALIDES" direction="ULB" duree="1" nbTroncon="349">72</deplacement>
+<deplacement arrivee="VANDROMME" attenteMoyenne="0" depart="ROODENBERG" direction="PORTE DE NAMUR" duree="2" nbTroncon="350">34</deplacement>
+<deplacement arrivee="AUDERGHEM-SHOP." attenteMoyenne="0" depart="VALDUC" direction="HERRMANN-DEBROUX" duree="1" nbTroncon="351">N09</deplacement>
+<deplacement arrivee="ROBIANO" attenteMoyenne="0" depart="EGLISE ST-SERVAIS" direction="FORT-JACO" duree="2" nbTroncon="352">T92</deplacement>
+<deplacement arrivee="EENENS" attenteMoyenne="0" depart="ERNEST LAUDE" direction="BORDET STATION" duree="2" nbTroncon="353">59</deplacement>
+<deplacement arrivee="AZALEES" attenteMoyenne="0" depart="CROSSING" direction="DE BROUCKERE" duree="2" nbTroncon="354">66</deplacement>
+<deplacement arrivee="LOUIS BERTRAND" attenteMoyenne="0" depart="HOP. PAUL BRIEN" direction="VANDERKINDERE" duree="1" nbTroncon="356">7</deplacement>
+<deplacement arrivee="SAINTE-FAMILLE" attenteMoyenne="0" depart="MOONENS" direction="ANDROMEDE" duree="1" nbTroncon="357">27</deplacement>
+<deplacement arrivee="MARCEL THIRY" attenteMoyenne="0" depart="ARIANE" direction="ROODEBEEK" duree="2" nbTroncon="358">45</deplacement>
+<deplacement arrivee="ANDROMEDE" attenteMoyenne="0" depart="SAINTE-FAMILLE" direction="ANDROMEDE" duree="2" nbTroncon="359">27</deplacement>
+<deplacement arrivee="CARLI" attenteMoyenne="0" depart="PICARDIE" direction="SCHAERBEEK GARE" duree="1" nbTroncon="360">69</deplacement>
+<deplacement arrivee="CORTENBACH" attenteMoyenne="0" depart="HAREN-SUD" direction="MACHELEN" duree="2" nbTroncon="361">64</deplacement>
+<deplacement arrivee="PAIX" attenteMoyenne="0" depart="TILLEUL" direction="DA VINCI" duree="3" nbTroncon="362">55</deplacement>
+<deplacement arrivee="AERODROME" attenteMoyenne="0" depart="MAES" direction="PORTE DE NAMUR" duree="1" nbTroncon="363">80</deplacement>
+<deplacement arrivee="CIM. DE BRUXELLES" attenteMoyenne="0" depart="PEAGE" direction="DE BROUCKERE" duree="2" nbTroncon="364">66</deplacement>
+<deplacement arrivee="AVENUE DU ROI" attenteMoyenne="0" depart="IMPRIMERIE" direction="GARE DU MIDI" duree="1" nbTroncon="365">50</deplacement>
+<deplacement arrivee="DOUVRES" attenteMoyenne="0" depart="CUREGHEM" direction="WESTLAND SHOPPING" duree="1" nbTroncon="366">N13</deplacement>
+<deplacement arrivee="VETERANS COLON." attenteMoyenne="0" depart="JACQUES BREL" direction="WESTLAND SHOPPING" duree="2" nbTroncon="367">89</deplacement>
+<deplacement arrivee="GARE DE L'OUEST" attenteMoyenne="0" depart="GARE DE L'OUEST" direction="GARE CENTRALE" duree="1" nbTroncon="368">86</deplacement>
+<deplacement arrivee="TRIANGLE" attenteMoyenne="0" depart="DUCHESSE BRABANT" direction="GARE CENTRALE" duree="2" nbTroncon="369">86</deplacement>
+<deplacement arrivee="GARE DU MIDI" attenteMoyenne="0" depart="PLACE V. HORTA" direction="GARE DU MIDI" duree="3" nbTroncon="370">78</deplacement>
+<deplacement arrivee="TRIANGLE" attenteMoyenne="0" depart="PORTE DE NINOVE" direction="MACHTENS" duree="2" nbTroncon="372">86</deplacement>
+<deplacement arrivee="ARTS ET METIERS" attenteMoyenne="0" depart="TRIANGLE" direction="DROGENBOS CHATEAU" duree="2" nbTroncon="373">82</deplacement>
+<deplacement arrivee="COCCINELLES" attenteMoyenne="0" depart="BOITSFORT GARE" direction="LOUISE" duree="2" nbTroncon="374">8</deplacement>
+<deplacement arrivee="BIEN-FAIRE" attenteMoyenne="0" depart="DRIES" direction="TRANSVAAL" duree="1" nbTroncon="375">41</deplacement>
+<deplacement arrivee="HOP.STE-ELISABETH" attenteMoyenne="0" depart="VERT CHASSEUR" direction="HEROS" duree="3" nbTroncon="376">41</deplacement>
+<deplacement arrivee="LES 3 TILLEULS" attenteMoyenne="0" depart="CALYPSO 2000" direction="WIENER" duree="1" nbTroncon="377">95</deplacement>
+<deplacement arrivee="GARDON" attenteMoyenne="0" depart="TERCOIGNE" direction="BEAULIEU" duree="2" nbTroncon="378">17</deplacement>
+<deplacement arrivee="LOUTRIER" attenteMoyenne="0" depart="HANNETONS" direction="HEROS" duree="1" nbTroncon="379">41</deplacement>
+<deplacement arrivee="WATERMAEL GARE" attenteMoyenne="0" depart="BIEN-FAIRE" direction="TRANSVAAL" duree="2" nbTroncon="380">41</deplacement>
+<deplacement arrivee="OBSERVATOIRE" attenteMoyenne="0" depart="HOUZEAU" direction="FORT-JACO" duree="1" nbTroncon="381">N10</deplacement>
+<deplacement arrivee="HOUZEAU" attenteMoyenne="0" depart="FLORIDE" direction="HEROS" duree="1" nbTroncon="382">38</deplacement>
+<deplacement arrivee="ROCHEFORT" attenteMoyenne="0" depart="BERTHELOT" direction="GARE CENTRALE" duree="1" nbTroncon="383">N12</deplacement>
+<deplacement arrivee="COLLEGE ST-PIERRE" attenteMoyenne="0" depart="HEROS" direction="ALBERT" duree="2" nbTroncon="384">37</deplacement>
+<deplacement arrivee="BENS" attenteMoyenne="0" depart="ROOSENDAEL" direction="HOMBORCH" duree="1" nbTroncon="385">N11</deplacement>
+<deplacement arrivee="COGHEN" attenteMoyenne="0" depart="PEYO" direction="ALBERT" duree="2" nbTroncon="386">37</deplacement>
+<deplacement arrivee="FOREST NATIONAL" attenteMoyenne="0" depart="MYSTERE" direction="FOREST (BERVOETS)" duree="2" nbTroncon="387">54</deplacement>
+<deplacement arrivee="THOMAS" attenteMoyenne="0" depart="LIEDTS" direction="CIMETIERE DE JETTE" duree="2" nbTroncon="388">62</deplacement>
+<deplacement arrivee="ETANGS NOIRS" attenteMoyenne="0" depart="MERCHTEM" direction="HUNDERENVELD" duree="2" nbTroncon="389">20</deplacement>
+<deplacement arrivee="VANDERSTICHELEN" attenteMoyenne="0" depart="JUBILE" direction="STADE" duree="3" nbTroncon="390">51</deplacement>
+<deplacement arrivee="RIBAUCOURT" attenteMoyenne="0" depart="ELISABETH" direction="SIMONIS" duree="1" nbTroncon="391">2</deplacement>
+<deplacement arrivee="AVENUE DU PORT" attenteMoyenne="0" depart="PICARD" direction="GARE DU NORD" duree="2" nbTroncon="392">14</deplacement>
+<deplacement arrivee="TOUR ET TAXIS" attenteMoyenne="0" depart="AVENUE DU PORT" direction="GARE DU NORD" duree="2" nbTroncon="393">20</deplacement>
+<deplacement arrivee="WTC" attenteMoyenne="0" depart="WILLEBROEK" direction="DE BROUCKERE" duree="2" nbTroncon="394">88</deplacement>
+<deplacement arrivee="WTC" attenteMoyenne="0" depart="GLIBERT" direction="GARE CENTRALE" duree="1" nbTroncon="395">N18</deplacement>
+<deplacement arrivee="JULES DE TROOZ" attenteMoyenne="0" depart="MASUI" direction="STADE" duree="2" nbTroncon="396">93</deplacement>
+<deplacement arrivee="PORTE DE FLANDRE" attenteMoyenne="0" depart="BORNE" direction="GARE CENTRALE" duree="2" nbTroncon="397">N16</deplacement>
+<deplacement arrivee="VANHUFFEL" attenteMoyenne="0" depart="AUTRIQUE" direction="HUNDERENVELD" duree="1" nbTroncon="398">20</deplacement>
+<deplacement arrivee="GARE DE L'OUEST" attenteMoyenne="0" depart="BEEKKANT" direction="ERASME" duree="1" nbTroncon="399">5</deplacement>
+<deplacement arrivee="DEPORTES" attenteMoyenne="0" depart="VOOT" direction="KONKEL" duree="1" nbTroncon="400">28</deplacement>
+<deplacement arrivee="MARCEL THIRY" attenteMoyenne="0" depart="PEUPLIERS" direction="HOF TEN BERG" duree="1" nbTroncon="401">29</deplacement>
+<deplacement arrivee="KRAAINEM" attenteMoyenne="0" depart="ALMA" direction="KRAAINEM" duree="1" nbTroncon="402">N05</deplacement>
+<deplacement arrivee="EMPAIN" attenteMoyenne="0" depart="ROND-PT SOUVERAIN" direction="ROODEBEEK" duree="2" nbTroncon="403">8</deplacement>
+<deplacement arrivee="TROIS COULEURS" attenteMoyenne="0" depart="MADOUX" direction="TERVUREN STATION" duree="1" nbTroncon="404">44</deplacement>
+<deplacement arrivee="MAREYDE" attenteMoyenne="0" depart="RUE AU BOIS" direction="SCHUMAN" duree="2" nbTroncon="405">36</deplacement>
+<deplacement arrivee="DEMEY" attenteMoyenne="0" depart="VIGNETTE" direction="TRANSVAAL" duree="1" nbTroncon="407">41</deplacement>
+<deplacement arrivee="DEMEY" attenteMoyenne="0" depart="HERRMANN-DEBROUX" direction="ERASME" duree="1" nbTroncon="408">5</deplacement>
+<deplacement arrivee="HERRMANN-DEBROUX" attenteMoyenne="0" depart="AUDERGHEM-SHOP." direction="HERRMANN-DEBROUX" duree="2" nbTroncon="409">N09</deplacement>
+<deplacement arrivee="EENENS" attenteMoyenne="0" depart="POGGE" direction="SCHAERBEEK GARE" duree="1" nbTroncon="410">T92</deplacement>
+<deplacement arrivee="EGLISE ST-SERVAIS" attenteMoyenne="0" depart="DEPOT SCHAERBEEK" direction="FORT-JACO" duree="1" nbTroncon="411">T92</deplacement>
+<deplacement arrivee="ERNEST LAUDE" attenteMoyenne="0" depart="EENENS" direction="HOPITAL ETTERBEEK-IXELLES" duree="2" nbTroncon="412">59</deplacement>
+<deplacement arrivee="PRINC. ELISABETH" attenteMoyenne="0" depart="DEMOLDER" direction="HEYSEL" duree="1" nbTroncon="413">7</deplacement>
+<deplacement arrivee="THIRY-WOLUWE" attenteMoyenne="0" depart="MARCEL THIRY" direction="VIADUC E40" duree="2" nbTroncon="414">42</deplacement>
+<deplacement arrivee="CHAUMONTEL" attenteMoyenne="0" depart="CARLI" direction="SCHAERBEEK GARE" duree="1" nbTroncon="415">69</deplacement>
+<deplacement arrivee="TWYENINCK" attenteMoyenne="0" depart="CORTENBACH" direction="MACHELEN" duree="2" nbTroncon="416">64</deplacement>
+<deplacement arrivee="TILLEUL" attenteMoyenne="0" depart="HELMET" direction="DA VINCI" duree="2" nbTroncon="417">55</deplacement>
+<deplacement arrivee="MIDDELWEG" attenteMoyenne="0" depart="AERODROME" direction="PORTE DE NAMUR" duree="2" nbTroncon="418">80</deplacement>
+<deplacement arrivee="IMPRIMERIE" attenteMoyenne="0" depart="ORBAN" direction="DA VINCI" duree="2" nbTroncon="419">32</deplacement>
+<deplacement arrivee="RESISTANCE" attenteMoyenne="0" depart="DOUVRES" direction="MOORTEBEEK" duree="1" nbTroncon="420">46</deplacement>
+<deplacement arrivee="HENRI REY" attenteMoyenne="0" depart="VETERANS COLON." direction="WESTLAND SHOPPING" duree="3" nbTroncon="421">89</deplacement>
+<deplacement arrivee="SAINT-GUIDON" attenteMoyenne="0" depart="AUMALE" direction="ERASME" duree="2" nbTroncon="422">5</deplacement>
+<deplacement arrivee="MENNEKENS" attenteMoyenne="0" depart="JOSEPH BAECK" direction="BERCHEM STATION" duree="2" nbTroncon="423">82</deplacement>
+<deplacement arrivee="GROENINGHE" attenteMoyenne="0" depart="ELEPHANT" direction="BERCHEM STATION" duree="1" nbTroncon="425">N16</deplacement>
+<deplacement arrivee="DEUX GARES" attenteMoyenne="0" depart="PETITE ILE" direction="GARE DU MIDI" duree="2" nbTroncon="426">78</deplacement>
+<deplacement arrivee="BOITSFORT GARE" attenteMoyenne="0" depart="DELLEUR" direction="LOUISE" duree="2" nbTroncon="427">8</deplacement>
+<deplacement arrivee="VERT CHASSEUR" attenteMoyenne="0" depart="HOP.STE-ELISABETH" direction="TRANSVAAL" duree="2" nbTroncon="428">41</deplacement>
+<deplacement arrivee="CERISAIE" attenteMoyenne="0" depart="LES 3 TILLEULS" direction="HEILIGENBORRE" duree="2" nbTroncon="429">17</deplacement>
+<deplacement arrivee="BERENSHEIDE" attenteMoyenne="0" depart="GARDON" direction="BEAULIEU" duree="1" nbTroncon="430">17</deplacement>
+<deplacement arrivee="HANNETONS" attenteMoyenne="0" depart="ARCHIDUCS" direction="HEROS" duree="1" nbTroncon="431">41</deplacement>
+<deplacement arrivee="MERCURE" attenteMoyenne="0" depart="OBSERVATOIRE" direction="GARE DE LINKEBEEK" duree="2" nbTroncon="432">37</deplacement>
+<deplacement arrivee="ZEECRABBE" attenteMoyenne="0" depart="STATUAIRES" direction="TRANSVAAL" duree="1" nbTroncon="433">41</deplacement>
+<deplacement arrivee="BERTHELOT" attenteMoyenne="0" depart="WIELS" direction="GARE CENTRALE" duree="1" nbTroncon="434">N12</deplacement>
+<deplacement arrivee="HEROS" attenteMoyenne="0" depart="COLLEGE ST-PIERRE" direction="GARE DE LINKEBEEK" duree="1" nbTroncon="435">37</deplacement>
+<deplacement arrivee="HEROS" attenteMoyenne="0" depart="GLOBE" direction="OBSERVATOIRE" duree="2" nbTroncon="436">43</deplacement>
+<deplacement arrivee="HEROS" attenteMoyenne="0" depart="MARLOW" direction="SCHAERBEEK GARE" duree="2" nbTroncon="437">92</deplacement>
+<deplacement arrivee="ROOSENDAEL" attenteMoyenne="0" depart="BENS" direction="GARE CENTRALE" duree="1" nbTroncon="438">N11</deplacement>
+<deplacement arrivee="MYSTERE" attenteMoyenne="0" depart="FOREST NATIONAL" direction="TRONE" duree="2" nbTroncon="439">54</deplacement>
+<deplacement arrivee="FORESTOISE" attenteMoyenne="0" depart="DOMAINE" direction="DECROLY" duree="2" nbTroncon="440">48</deplacement>
+<deplacement arrivee="RUBENS" attenteMoyenne="0" depart="PAVILLON" direction="FORT-JACO" duree="1" nbTroncon="441">T92</deplacement>
+<deplacement arrivee="JUBILE" attenteMoyenne="0" depart="VANDERSTICHELEN" direction="null" duree="2" nbTroncon="442">73</deplacement>
+<deplacement arrivee="PICARD" attenteMoyenne="0" depart="ESCAUT" direction="WESTLAND SHOPPING" duree="3" nbTroncon="443">89</deplacement>
+<deplacement arrivee="STEAMERS" attenteMoyenne="0" depart="TOUR ET TAXIS" direction="HEYSEL" duree="1" nbTroncon="444">88</deplacement>
+<deplacement arrivee="JULES DE TROOZ" attenteMoyenne="0" depart="DESTOUVELLES" direction="HEYSEL" duree="3" nbTroncon="445">N18</deplacement>
+<deplacement arrivee="MASUI" attenteMoyenne="0" depart="JULES DE TROOZ" direction="EUROCONTROL" duree="1" nbTroncon="446">62</deplacement>
+<deplacement arrivee="PAVILLON" attenteMoyenne="0" depart="STEPHENSON" direction="VILVOORDE STATION" duree="1" nbTroncon="447">58</deplacement>
+<deplacement arrivee="DUCHESSE BRABANT" attenteMoyenne="0" depart="SAVONNERIE" direction="WESTLAND SHOPPING" duree="3" nbTroncon="448">89</deplacement>
+<deplacement arrivee="SIMONIS" attenteMoyenne="0" depart="VANHUFFEL" direction="BERCHEM STATION" duree="2" nbTroncon="449">N16</deplacement>
+<deplacement arrivee="SIMONIS" attenteMoyenne="0" depart="OSSEGHEM" direction="ROI BAUDOUIN" duree="2" nbTroncon="450">6</deplacement>
+<deplacement arrivee="VOOT" attenteMoyenne="0" depart="DEPORTES" direction="BRABANCONNE" duree="1" nbTroncon="451">28</deplacement>
+<deplacement arrivee="ALMA" attenteMoyenne="0" depart="KRAAINEM" direction="GARE CENTRALE" duree="1" nbTroncon="452">N05</deplacement>
+<deplacement arrivee="ALMA" attenteMoyenne="0" depart="CRAINHEM" direction="GARE DE L'OUEST" duree="1" nbTroncon="453">1</deplacement>
 </trajet>
