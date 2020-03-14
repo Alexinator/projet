@@ -75,21 +75,29 @@ public class Graph {
 	public void calculerCheminMinimisantTempsTransport(String stationDepart, String stationArrivee, String fichier) {
 		Map<String, Integer> dureesdefinitives = new HashMap<String, Integer>();
 		Map<String, Integer> dureestemps = new HashMap<String, Integer>();
-		Map<String, Troncon> chemin = new HashMap<String, Troncon>();
+		Map<String, List<Troncon>> chemin = new HashMap<String, List<Troncon>>();
 
 		dureestemps.put(stationDepart, 0);
 		String positionActuelle = stationDepart;
+		chemin.put(stationDepart, new ArrayList<Troncon>());
 
 		while (!positionActuelle.equals(stationArrivee)) {
 			int dureeTroncon = dureestemps.get(positionActuelle);
 			dureesdefinitives.put(positionActuelle, dureestemps.remove(positionActuelle));
 			
 			for (Troncon troncon : arcs.get(positionActuelle)) {
+				List<Troncon> tronconsParcourus = new ArrayList<Troncon>();
+				for(Troncon tr : chemin.get(positionActuelle)) {
+					tronconsParcourus.add(tr);
+				}
+				tronconsParcourus.add(troncon);
 				if (!dureestemps.containsKey((troncon.getArrivee()))) {
 					dureestemps.put(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
+					chemin.put(troncon.getArrivee(), tronconsParcourus);
 				}
 				else if(dureestemps.get(troncon.getArrivee()) > dureeTroncon+troncon.getDuree()) {
 					dureestemps.replace(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
+					chemin.replace(troncon.getArrivee(), tronconsParcourus);
 				}
 			}
 			
@@ -107,11 +115,13 @@ public class Graph {
 			}
 		}
 
-		for (String s : dureesdefinitives.keySet()) {
-			System.out.println(s+" : "+dureesdefinitives.get(s));
+		int duree = 0;
+		for(Troncon troncon : chemin.get(stationArrivee)) {
+			System.out.println(troncon);
+			duree += troncon.getDuree();
 		}
 		
-		System.out.println("duree pour aller jusqu'a alma: "+dureesdefinitives.get("ALMA"));
+		System.out.println("duree pour aller jusqu'a alma: "+duree);
 		// ecrireXML(troncons, fichier);
 
 	}
