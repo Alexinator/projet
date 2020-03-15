@@ -5,8 +5,8 @@ import javax.xml.parsers.SAXParserFactory;
 public class Main {
 	public static void main(String[] args) {
 		try {
-			//File inputFile = new File("stib.xml");
-			File inputFile = new File("stibattente0.xml");
+			File inputFile = new File("stib.xml");
+			//File inputFile = new File("stibattente0.xml");
 			SAXParserFactory factory = SAXParserFactory.newInstance();
 			SAXParser saxParser = factory.newSAXParser();
 			SAXHandler userhandler = new SAXHandler();

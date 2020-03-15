@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javax.swing.text.html.HTMLDocument.HTMLReader.PreAction;
+
 public class Graph {
 
 	private Map<String, Set<Troncon>> arcs;
@@ -117,7 +119,7 @@ public class Graph {
 		}
 
 		for(Troncon troncon : chemin.get(stationArrivee)) {
-			System.out.println(troncon);
+			//System.out.println(troncon);
 			pile.add(troncon);
 		}
 		ecrireXML(pile, fichier);
@@ -137,29 +139,33 @@ public class Graph {
 
 		int duree = 0;
 		int nbTroncons = pile.size();
-		Set<Ligne> lignes = new HashSet<Ligne>();
-		Ligne lignePrecedente = null;
 		int nbr = 1;
 		String body = "";
-		Troncon troncon = null;
+		Troncon troncon = pile.pop();
 
-		while (!pile.isEmpty()) {
+		while (true) {
+			String tronconDepart = troncon.getDepart();
+			String tronconArrivee = troncon.getArrivee();
+			while(troncon.getLigne().equals(pile.peek().getLigne())) {
+				duree+=troncon.getDuree();
+				nbr++;
+				troncon = pile.pop();
+				if(pile.isEmpty()) {
+					break;
+				}
+			}
+			duree+=troncon.getDuree();
+			tronconArrivee = troncon.getArrivee();
+			body += "<deplacement arrivee=\"" + tronconArrivee + "\" attenteMoyenne=\""
+					+ troncon.getLigne().getAttenteMoyenne() + "\"" + " depart=\"" + tronconDepart
+					+ "\" direction=\"" + troncon.getLigne().getDestination() + "\" duree=\"" + duree
+					+ "\" nbTroncon=\"" + nbr + "\">" + troncon.getLigne().getNom() + "</deplacement>\n";
+			if(pile.isEmpty()) {
+				break;
+			}
+			nbr = 1;
+			duree = 0;
 			troncon = pile.pop();
-			duree += troncon.getDuree();
-			if (!lignes.contains(troncon.getLigne())) {
-				lignes.add(troncon.getLigne());
-				duree += troncon.getLigne().getAttenteMoyenne();
-			}
-			if (!troncon.getLigne().equals(lignePrecedente)) {
-				body += "<deplacement arrivee=\"" + troncon.getArrivee() + "\" attenteMoyenne=\""
-						+ troncon.getLigne().getAttenteMoyenne() + "\"" + " depart=\"" + troncon.getDepart()
-						+ "\" direction=\"" + troncon.getLigne().getDestination() + "\" duree=\"" + troncon.getDuree()
-						+ "\" nbTroncon=\"" + nbr + "\">" + troncon.getLigne().getNom() + "</deplacement>\n";
-				nbr = 1;
-				duree = 0;
-			}
-			nbr++;
-			lignePrecedente = troncon.getLigne();
 		}
 
 		String header = "<trajet depart=\"" + depart + "\" destination=\"" + arrivee + "\" duree=\"" + duree
