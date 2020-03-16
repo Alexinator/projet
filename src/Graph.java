@@ -30,15 +30,12 @@ public class Graph {
 		this.arcs = new HashMap<String, Set<Troncon>>();
 	}
 	
-	public void ajouterTroncon(Set<Troncon> troncons) {
-		if (troncons == null)
+	public void ajouterTroncon(Troncon troncon) {
+		if (troncon == null)
 			throw new IllegalArgumentException();
-		for (Troncon troncon : troncons) {
-			if (!arcs.containsKey(troncon.getDepart())) {
-				arcs.put(troncon.getDepart(), new HashSet<Troncon>());
-			}
-			arcs.get(troncon.getDepart()).add(troncon);
-		}
+		if (!arcs.containsKey(troncon.getDepart()))
+			arcs.put(troncon.getDepart(), new HashSet<Troncon>());
+		arcs.get(troncon.getDepart()).add(troncon);
 	}
 
 	/**
@@ -47,8 +44,9 @@ public class Graph {
 	 * @param stationDepart:  la station de depart
 	 * @param stationArrivee: la station d'arrivee
 	 * @param fichier:        le chemin du fichier XML
+	 * @throws Exception :	  lance une exception s'il n'existe pas de chemin entre les deux stations
 	 */
-	public void calculerCheminMinimisantNombreTroncons(String stationDepart, String stationArrivee, String fichier) {
+	public void calculerCheminMinimisantNombreTroncons(String stationDepart, String stationArrivee, String fichier) throws Exception {
 		Deque<String> fileStations = new ArrayDeque<String>();
 		Set<String> sommets = new HashSet<String>();
 		Map<String, Troncon> chemin = new HashMap<String, Troncon>();
@@ -74,7 +72,7 @@ public class Graph {
 				}
 			}
 		}
-		throw new IllegalArgumentException("Le chemin entre les deux stations est impossible");
+		throw new Exception("Le chemin entre les deux stations est impossible");
 	}
 
 	/**
@@ -83,8 +81,9 @@ public class Graph {
 	 * @param stationDepart:  la station de depart
 	 * @param stationArrivee: la station d'arrivee
 	 * @param fichier:        le chemin du fichier XML
+	 * @throws Exception :	  lance une exception s'il n'existe pas de chemin entre les deux stations
 	 */
-	public void calculerCheminMinimisantTempsTransport(String stationDepart, String stationArrivee, String fichier) {
+	public void calculerCheminMinimisantTempsTransport(String stationDepart, String stationArrivee, String fichier) throws Exception {
 		Map<String, Integer> dureesDefinitives = new HashMap<String, Integer>();
 		Map<String, Integer> dureePossible = new HashMap<String, Integer>();
 		Map<String, List<Troncon>> chemin = new HashMap<String, List<Troncon>>();

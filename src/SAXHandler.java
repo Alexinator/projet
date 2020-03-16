@@ -16,7 +16,6 @@ import org.xml.sax.helpers.DefaultHandler;
 public class SAXHandler extends DefaultHandler {
 
 	private Graph graph;
-	private Set<Troncon> troncons;
 	private Map<String, String> stations;
 	private Set<Ligne> lignes;
 	private boolean estUneStation = false;
@@ -30,7 +29,6 @@ public class SAXHandler extends DefaultHandler {
 	public void startDocument() throws SAXException {
 		super.startDocument();
 		this.graph = new Graph();
-		this.troncons = new HashSet<Troncon>();
 		this.stations = new HashMap<String, String>();
 		this.lignes = new HashSet<Ligne>();
 	}
@@ -61,22 +59,13 @@ public class SAXHandler extends DefaultHandler {
 		} else if (qName.equalsIgnoreCase("station")) {
 			this.nomStation = attributes.getValue("nom");
 		} else if (qName.equalsIgnoreCase("troncon")) {
-			this.troncons.add(new Troncon(this.ligne, this.stations.get(attributes.getValue("depart")),
+			this.graph.ajouterTroncon(new Troncon(this.ligne, this.stations.get(attributes.getValue("depart")),
 					this.stations.get(attributes.getValue("arrivee")), Integer.parseInt(attributes.getValue("duree"))));
 		} else if (qName.equalsIgnoreCase("stop")) {
 			estUneStation = true;
 		}
 	}
 	
-	/**
-	 * remplit le graph en fin de document
-	 */
-	@Override
-	public void endDocument() throws SAXException {
-		super.endDocument();
-		this.graph.ajouterTroncon(troncons);
-	}
-
 	/**
 	 * getteur de graph
 	 * @return this.graph (Graph)
