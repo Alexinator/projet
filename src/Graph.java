@@ -1,3 +1,9 @@
+/**
+ * 
+ * @author Chapelle Alexandre && De Vos Olivier
+ *
+ */
+
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayDeque;
@@ -18,6 +24,10 @@ public class Graph {
 	// TODO rajouter des methodes pour ajouter des troncons et stations
 	// (appellees via le saxhandler)
 
+	/**
+	 * Constructeur qui génère une map (arcs) avec comme valeur le point de départ des tronçons
+	 * @param troncons un set de troncons
+	 */
 	public Graph(Set<Troncon> troncons) {
 		super();
 		this.arcs = new HashMap<String, Set<Troncon>>();
@@ -32,33 +42,32 @@ public class Graph {
 	/**
 	 * Calcule le chemin minimisant le nombre de troncons en fonction d'un point de
 	 * depart et d'une arrivee.
-	 * 
 	 * @param stationDepart:  la station de depart
 	 * @param stationArrivee: la station d'arrivee
 	 * @param fichier:        le chemin du fichier XML
 	 */
 	public void calculerCheminMinimisantNombreTroncons(String stationDepart, String stationArrivee, String fichier) {
-		Deque<String> bfsFile = new ArrayDeque<String>();
+		Deque<String> fileStations = new ArrayDeque<String>();
 		Set<String> sommets = new HashSet<String>();
 		Map<String, Troncon> chemin = new HashMap<String, Troncon>();
-		Deque<Troncon> pile = new ArrayDeque<Troncon>();
-		bfsFile.add(stationDepart);
+		Deque<Troncon> cheminDefinitif = new ArrayDeque<Troncon>();
+		fileStations.add(stationDepart);
 		sommets.add(stationDepart);
-		while (!bfsFile.isEmpty()) {
-			String station = bfsFile.remove();
+		while (!fileStations.isEmpty()) {
+			String station = fileStations.remove();
 			for (Troncon troncon : arcs.get(station)) {
 				if (!sommets.contains(troncon.getArrivee())) {
 					sommets.add(troncon.getArrivee());
-					bfsFile.add(troncon.getArrivee());
+					fileStations.add(troncon.getArrivee());
 					chemin.put(troncon.getArrivee(), troncon);
 				}
 				if (troncon.getArrivee().equals(stationArrivee)) {
 					Troncon dernier = chemin.get(stationArrivee);
 					while (dernier != null) {
-						pile.push(dernier);
+						cheminDefinitif.push(dernier);
 						dernier = chemin.get(dernier.getDepart());
 					}
-					ecrireXML(pile, fichier);
+					ecrireXML(cheminDefinitif, fichier);
 					return;
 				}
 			}
@@ -68,25 +77,24 @@ public class Graph {
 
 	/**
 	 * Calcule le chemin minimisant au maximum le temps passe dans les transports en
-	 * fonction d'un point de depart et d'un point d'arrivee.
-	 * 
+	 * fonction d'un point de depart et d'un point d'arrivee. 
 	 * @param stationDepart:  la station de depart
 	 * @param stationArrivee: la station d'arrivee
 	 * @param fichier:        le chemin du fichier XML
 	 */
 	public void calculerCheminMinimisantTempsTransport(String stationDepart, String stationArrivee, String fichier) {
-		Map<String, Integer> dureesdefinitives = new HashMap<String, Integer>();
-		Map<String, Integer> dureestemps = new HashMap<String, Integer>();
+		Map<String, Integer> dureesDefinitives = new HashMap<String, Integer>();
+		Map<String, Integer> dureePossible = new HashMap<String, Integer>();
 		Map<String, List<Troncon>> chemin = new HashMap<String, List<Troncon>>();
-		Deque<Troncon> pile = new ArrayDeque<Troncon>();
+		Deque<Troncon> cheminDefinitif = new ArrayDeque<Troncon>();
 
-		dureestemps.put(stationDepart, 0);
+		dureePossible.put(stationDepart, 0);
 		String positionActuelle = stationDepart;
 		chemin.put(stationDepart, new ArrayList<Troncon>());
 
 		while (!positionActuelle.equals(stationArrivee)) {
-			int dureeTroncon = dureestemps.get(positionActuelle);
-			dureesdefinitives.put(positionActuelle, dureestemps.remove(positionActuelle));
+			int dureeTroncon = dureePossible.get(positionActuelle);
+			dureesDefinitives.put(positionActuelle, dureePossible.remove(positionActuelle));
 			
 			for (Troncon troncon : arcs.get(positionActuelle)) {
 				List<Troncon> tronconsParcourus = new ArrayList<Troncon>();
@@ -94,41 +102,38 @@ public class Graph {
 					tronconsParcourus.add(tr);
 				}
 				tronconsParcourus.add(troncon);
-				if (!dureestemps.containsKey((troncon.getArrivee()))) {
-					dureestemps.put(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
+				if (!dureePossible.containsKey((troncon.getArrivee()))) {
+					dureePossible.put(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
 					chemin.put(troncon.getArrivee(), tronconsParcourus);
 				}
-				else if(dureestemps.get(troncon.getArrivee()) > dureeTroncon+troncon.getDuree()) {
-					dureestemps.replace(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
+				else if(dureePossible.get(troncon.getArrivee()) > dureeTroncon+troncon.getDuree()) {
+					dureePossible.replace(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
 					chemin.replace(troncon.getArrivee(), tronconsParcourus);
 				}
-			}
-			
+			}			
 			int dureeMin = Integer.MAX_VALUE;
-			for(String sommet : dureestemps.keySet()) {
-				if(dureestemps.get(sommet) < dureeMin) {
-					dureeMin = dureestemps.get(sommet);
+			for(String sommet : dureePossible.keySet()) {
+				if(dureePossible.get(sommet) < dureeMin) {
+					dureeMin = dureePossible.get(sommet);
 					positionActuelle = sommet;
 				}
 			}
 			if(positionActuelle.equals(stationArrivee)) {
-				dureeTroncon = dureestemps.remove(positionActuelle);
-				dureesdefinitives.put(positionActuelle, dureeTroncon);
+				dureeTroncon = dureePossible.remove(positionActuelle);
+				dureesDefinitives.put(positionActuelle, dureeTroncon);
 				break;
 			}
 		}
 
 		for(Troncon troncon : chemin.get(stationArrivee)) {
-			//System.out.println(troncon);
-			pile.add(troncon);
+			cheminDefinitif.add(troncon);
 		}
-		ecrireXML(pile, fichier);
+		ecrireXML(cheminDefinitif, fichier);
 
 	}
 
 	/**
-	 * Ecrit le fichier XML en fonction des troncons recus.
-	 * 
+	 * Ecrit le fichier XML en fonction d'une pile de troncons reçue. 
 	 * @param pile:    l'ensemble des troncons
 	 * @param fichier: le chemin du fichier XML
 	 */
@@ -138,8 +143,8 @@ public class Graph {
 		String debut = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n";
 
 		int duree = 0;
-		int nbTroncons = pile.size();
-		int nbr = 1;
+		int taillePile = pile.size();
+		int nombreTroncons = 1;
 		String body = "";
 		Troncon troncon = pile.pop();
 
@@ -148,7 +153,7 @@ public class Graph {
 			String tronconArrivee = troncon.getArrivee();
 			while(troncon.getLigne().equals(pile.peek().getLigne())) {
 				duree+=troncon.getDuree();
-				nbr++;
+				nombreTroncons++;
 				troncon = pile.pop();
 				if(pile.isEmpty()) {
 					break;
@@ -159,17 +164,17 @@ public class Graph {
 			body += "<deplacement arrivee=\"" + tronconArrivee + "\" attenteMoyenne=\""
 					+ troncon.getLigne().getAttenteMoyenne() + "\"" + " depart=\"" + tronconDepart
 					+ "\" direction=\"" + troncon.getLigne().getDestination() + "\" duree=\"" + duree
-					+ "\" nbTroncon=\"" + nbr + "\">" + troncon.getLigne().getNom() + "</deplacement>\n";
+					+ "\" nbTroncon=\"" + nombreTroncons + "\">" + troncon.getLigne().getNom() + "</deplacement>\n";
 			if(pile.isEmpty()) {
 				break;
 			}
-			nbr = 1;
+			nombreTroncons = 1;
 			duree = 0;
 			troncon = pile.pop();
 		}
 
 		String header = "<trajet depart=\"" + depart + "\" destination=\"" + arrivee + "\" duree=\"" + duree
-				+ "\" nbTroncons=\"" + nbTroncons + "\">\n";
+				+ "\" nbTroncons=\"" + taillePile + "\">\n";
 		String fin = "</trajet>";
 		try {
 			PrintWriter writer = new PrintWriter(fichier);

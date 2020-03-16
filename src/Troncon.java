@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author Chapelle Alexandre && De Vos Olivier
+ *
+ */
 public class Troncon {
 
 	private Ligne ligne;
@@ -6,6 +10,13 @@ public class Troncon {
 	private String arrivee;
 	private int duree;
 	
+	/**
+	 * Constructeur
+	 * @param ligne = la ligne dont le troncon fait partie
+	 * @param depart = le sommet de départ
+	 * @param arrivee = le sommet d'arrivée
+	 * @param duree = la durée passée sur le troncon
+	 */
 	public Troncon(Ligne ligne, String depart, String arrivee, int duree) {
 		super();
 		this.ligne = ligne;
@@ -13,15 +24,31 @@ public class Troncon {
 		this.arrivee = arrivee;
 		this.duree = duree;
 	}
+	/**
+	 * getter de la ligne
+	 * @return this.ligne (Ligne)
+	 */
 	public Ligne getLigne() {
-		return ligne;
+		return this.ligne;
 	}
+	/**
+	 * getter du sommet de départ
+	 * @return this.depart (String)
+	 */
 	public String getDepart() {
-		return depart;
+		return this.depart;
 	}
+	/**
+	 * getter du sommet d'arrivée
+	 * @return this.arrivee (String)
+	 */
 	public String getArrivee() {
-		return arrivee;
+		return this.arrivee;
 	}
+	/**
+	 * getter de la durée
+	 * @return this.duree (int)
+	 */
 	public int getDuree() {
 		return duree;
 	}

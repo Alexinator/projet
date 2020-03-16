@@ -1,3 +1,9 @@
+/**
+ * 
+ * @author Chapelle Alexandre && De Vos Olivier
+ *
+ */
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -10,42 +16,40 @@ import org.xml.sax.helpers.DefaultHandler;
 public class SAXHandler extends DefaultHandler {
 
 	private Set<Troncon> troncons;
-	private Map<String, String> stops;
+	private Map<String, String> stations;
 	private Set<Ligne> lignes;
-
-	private boolean isStop = false;
-
-	private String stationName;
+	private boolean estUneStation = false;
+	private String nomStation;
 	private Ligne ligne;
 
-	@Override
-	public void endDocument() throws SAXException {
-		// TODO Auto-generated method stub
-		super.endDocument();
-	}
-
+	/**
+	 * sert de constructeur
+	 */
 	@Override
 	public void startDocument() throws SAXException {
-		// TODO Auto-generated method stub
 		super.startDocument();
 		this.troncons = new HashSet<Troncon>();
-		this.stops = new HashMap<String, String>();
+		this.stations = new HashMap<String, String>();
 		this.lignes = new HashSet<Ligne>();
 	}
 
+	/**
+	 * Si l'élément est une station, enregistre le nom de la station
+	 */
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
-		// TODO Auto-generated method stub
 		super.characters(ch, start, length);
-		if (isStop) {
-			isStop = false;
-			this.stops.put(new String(ch, start, length), this.stationName);
+		if (estUneStation) {
+			estUneStation = false;
+			this.stations.put(new String(ch, start, length), this.nomStation);
 		}
 	}
 
+	/**
+	 * remplit les structures de données avec les éléments du XML
+	 */
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-		// TODO Auto-generated method stub
 		super.startElement(uri, localName, qName, attributes);
 		if (qName.equalsIgnoreCase("ligne")) {
 			this.ligne = new Ligne(attributes.getValue("nom"), attributes.getValue("source"),
@@ -53,21 +57,19 @@ public class SAXHandler extends DefaultHandler {
 					Integer.parseInt(attributes.getValue("attenteMoyenne")));
 			this.lignes.add(ligne);
 		} else if (qName.equalsIgnoreCase("station")) {
-			this.stationName = attributes.getValue("nom");
+			this.nomStation = attributes.getValue("nom");
 		} else if (qName.equalsIgnoreCase("troncon")) {
-			this.troncons.add(new Troncon(this.ligne, this.stops.get(attributes.getValue("depart")),
-					this.stops.get(attributes.getValue("arrivee")), Integer.parseInt(attributes.getValue("duree"))));
+			this.troncons.add(new Troncon(this.ligne, this.stations.get(attributes.getValue("depart")),
+					this.stations.get(attributes.getValue("arrivee")), Integer.parseInt(attributes.getValue("duree"))));
 		} else if (qName.equalsIgnoreCase("stop")) {
-			isStop = true;
+			estUneStation = true;
 		}
 	}
 
-	@Override
-	public void endElement(String uri, String localName, String qName) throws SAXException {
-		// TODO Auto-generated method stub
-		super.endElement(uri, localName, qName);
-	}
-
+	/**
+	 * Génère un graphe avec les troncons parsé depuis le fichier xml
+	 * @return un nouveau graph (Graph)
+	 */
 	public Graph getGraph() {
 		return new Graph(troncons);
 	}
