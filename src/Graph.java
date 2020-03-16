@@ -21,16 +21,18 @@ public class Graph {
 
 	private Map<String, Set<Troncon>> arcs;
 
-	// TODO rajouter des methodes pour ajouter des troncons et stations
-	// (appellees via le saxhandler)
-
 	/**
 	 * Constructeur qui génère une map (arcs) avec comme valeur le point de départ des tronçons
 	 * @param troncons un set de troncons
 	 */
-	public Graph(Set<Troncon> troncons) {
+	public Graph() {
 		super();
 		this.arcs = new HashMap<String, Set<Troncon>>();
+	}
+	
+	public void ajouterTroncon(Set<Troncon> troncons) {
+		if (troncons == null)
+			throw new IllegalArgumentException();
 		for (Troncon troncon : troncons) {
 			if (!arcs.containsKey(troncon.getDepart())) {
 				arcs.put(troncon.getDepart(), new HashSet<Troncon>());
@@ -124,12 +126,10 @@ public class Graph {
 				break;
 			}
 		}
-
 		for(Troncon troncon : chemin.get(stationArrivee)) {
 			cheminDefinitif.add(troncon);
 		}
 		ecrireXML(cheminDefinitif, fichier);
-
 	}
 
 	/**

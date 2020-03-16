@@ -15,6 +15,7 @@ import org.xml.sax.helpers.DefaultHandler;
 
 public class SAXHandler extends DefaultHandler {
 
+	private Graph graph;
 	private Set<Troncon> troncons;
 	private Map<String, String> stations;
 	private Set<Ligne> lignes;
@@ -28,6 +29,7 @@ public class SAXHandler extends DefaultHandler {
 	@Override
 	public void startDocument() throws SAXException {
 		super.startDocument();
+		this.graph = new Graph();
 		this.troncons = new HashSet<Troncon>();
 		this.stations = new HashMap<String, String>();
 		this.lignes = new HashSet<Ligne>();
@@ -65,13 +67,22 @@ public class SAXHandler extends DefaultHandler {
 			estUneStation = true;
 		}
 	}
+	
+	/**
+	 * remplit le graph en fin de document
+	 */
+	@Override
+	public void endDocument() throws SAXException {
+		super.endDocument();
+		this.graph.ajouterTroncon(troncons);
+	}
 
 	/**
-	 * Génère un graphe avec les troncons parsé depuis le fichier xml
-	 * @return un nouveau graph (Graph)
+	 * getteur de graph
+	 * @return this.graph (Graph)
 	 */
 	public Graph getGraph() {
-		return new Graph(troncons);
+		return this.graph;
 	}
 
 }
