@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-
 public class Graph {
 
 	private Map<String, Set<Troncon>> arcs;
@@ -29,6 +28,12 @@ public class Graph {
 		this.arcs = new HashMap<String, Set<Troncon>>();
 	}
 
+	/**
+	 * Ajoute un troncon dans la map d'arcs
+	 * 
+	 * @param troncon
+	 *            = le troncon à ajouter
+	 */
 	public void ajouterTroncon(Troncon troncon) {
 		if (troncon == null)
 			throw new IllegalArgumentException();
@@ -92,36 +97,47 @@ public class Graph {
 	 */
 	public void calculerCheminMinimisantTempsTransport(String stationDepart, String stationArrivee, String fichier)
 			throws Exception {
-		/*
-		 * Map<String, Integer> dureesDefinitives = new HashMap<String, Integer>();
-		 * Map<String, Integer> dureePossible = new HashMap<String, Integer>();
-		 * Map<String, Troncon> chemin = new HashMap<String, Troncon>();
-		 * 
-		 * dureePossible.put(stationDepart, 0); String positionActuelle = stationDepart;
-		 * chemin.put(stationDepart, null);
-		 * 
-		 * while (positionActuelle != null) { int dureeTroncon =
-		 * dureePossible.get(positionActuelle); dureesDefinitives.put(positionActuelle,
-		 * dureePossible.remove(positionActuelle));
-		 * 
-		 * for (Troncon troncon : arcs.get(positionActuelle)) { List<Troncon>
-		 * tronconsParcourus = new ArrayList<Troncon>(); tronconsParcourus.add(troncon);
-		 * if (!dureePossible.containsKey((troncon.getArrivee()))) {
-		 * dureePossible.put(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
-		 * chemin.put(troncon.getArrivee(), tronconsParcourus.get(0)); // a voir pour le
-		 * 0 } else if(dureePossible.get(troncon.getArrivee()) >
-		 * dureeTroncon+troncon.getDuree()) {
-		 * dureePossible.replace(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
-		 * chemin.put(troncon.getArrivee(), tronconsParcourus.get(0)); // a voir pour le
-		 * 0 } } int dureeMin = Integer.MAX_VALUE; for(String sommet :
-		 * dureePossible.keySet()) { if(dureePossible.get(sommet) < dureeMin) { dureeMin
-		 * = dureePossible.get(sommet); positionActuelle = sommet; } }
-		 * if(positionActuelle.equals(stationArrivee)) { dureeTroncon =
-		 * dureePossible.remove(positionActuelle);
-		 * dureesDefinitives.put(positionActuelle, dureeTroncon);
-		 * ecrireXML(stationDepart, stationArrivee, chemin, fichier); return; } } throw
-		 * new Exception("Le chemin entre les deux stations est impossible");
-		 */
+
+		Map<String, Integer> dureesDefinitives = new HashMap<String, Integer>();
+		Map<String, Integer> dureePossible = new HashMap<String, Integer>();
+		Map<String, Troncon> chemin = new HashMap<String, Troncon>();
+
+		dureePossible.put(stationDepart, 0);
+		String positionActuelle = stationDepart;
+
+		while (!positionActuelle.equals(stationArrivee)) {
+			int dureeTroncon = dureePossible.get(positionActuelle);
+			dureesDefinitives.put(positionActuelle, dureePossible.remove(positionActuelle));
+			
+			for (Troncon troncon : arcs.get(positionActuelle)) {
+				List<Troncon> tronconsParcourus = new ArrayList<Troncon>();
+				tronconsParcourus.add(troncon);
+				if (!dureePossible.containsKey((troncon.getArrivee()))) {
+					dureePossible.put(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
+					chemin.put(troncon.getArrivee(), troncon);
+				}
+				else if(dureePossible.get(troncon.getArrivee()) > dureeTroncon+troncon.getDuree()) {
+					dureePossible.replace(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
+					chemin.put(troncon.getArrivee(), troncon);
+				}
+			}			
+			int dureeMin = Integer.MAX_VALUE;
+			for(String sommet : dureePossible.keySet()) {
+				if(dureePossible.get(sommet) < dureeMin) {
+					dureeMin = dureePossible.get(sommet);
+					positionActuelle = sommet;
+				}
+			}
+			if(positionActuelle.equals(stationArrivee)) {
+				dureeTroncon = dureePossible.remove(positionActuelle);
+				dureesDefinitives.put(positionActuelle, dureeTroncon);
+				break;
+			}
+		}
+		System.out.println(chemin.size());
+		ecrireXML(stationDepart, stationArrivee, chemin, fichier);
+		//throw new Exception("Le chemin entre les deux stations est impossible");
+
 	}
 
 	/**
@@ -150,7 +166,7 @@ public class Graph {
 				nombreTroncons++;
 				troncon = chemin.get(troncon.getDepart());
 			}
-			if(dureeTroncon == 0) {
+			if (dureeTroncon == 0) {
 				dureeTroncon = precedent.getDuree();
 			}
 			tailleChemin += nombreTroncons;
@@ -165,14 +181,14 @@ public class Graph {
 			dureeTroncon = 0;
 			precedent = troncon;
 			troncon = chemin.get(troncon.getDepart());
-			if(troncon == null) {
+			if (troncon == null) {
 				String string = "<deplacement arrivee=\"" + precedent.getArrivee() + "\" attenteMoyenne=\""
 						+ precedent.getLigne().getAttenteMoyenne() + "\"" + " depart=\"" + precedent.getDepart()
-						+ "\" direction=\"" + precedent.getLigne().getDestination() + "\" duree=\"" + precedent.getDuree()
-						+ "\" nbTroncon=\"" + nombreTroncons + "\" type=\"" + precedent.getLigne().getType() + "\">"
-						+ precedent.getLigne().getNom() + "</deplacement>\n";
+						+ "\" direction=\"" + precedent.getLigne().getDestination() + "\" duree=\""
+						+ precedent.getDuree() + "\" nbTroncon=\"" + nombreTroncons + "\" type=\""
+						+ precedent.getLigne().getType() + "\">" + precedent.getLigne().getNom() + "</deplacement>\n";
 				body = string + body;
-				tailleChemin+=1;
+				tailleChemin += 1;
 			}
 		}
 		String header = "<trajet depart=\"" + depart + "\" destination=\"" + arrivee + "\" duree=\"" + dureeTotale
