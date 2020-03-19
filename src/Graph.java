@@ -173,8 +173,6 @@ public class Graph {
 			
 			System.out.println(dureeTroncon);
 			
-
-			
 			dureeTroncon = 0;
 			nombreTroncons = 0;
 			precedent = troncon;
