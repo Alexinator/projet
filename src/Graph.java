@@ -99,44 +99,41 @@ public class Graph {
 			throws Exception {
 
 		Map<String, Integer> dureesDefinitives = new HashMap<String, Integer>();
-		Map<String, Integer> dureePossible = new HashMap<String, Integer>();
+		Map<String, Integer> dureesPossibles = new HashMap<String, Integer>();
 		Map<String, Troncon> chemin = new HashMap<String, Troncon>();
 
-		dureePossible.put(stationDepart, 0);
+		dureesPossibles.put(stationDepart, 0);
 		String positionActuelle = stationDepart;
 
-		while (!positionActuelle.equals(stationArrivee)) {
-			int dureeTroncon = dureePossible.get(positionActuelle);
-			dureesDefinitives.put(positionActuelle, dureePossible.remove(positionActuelle));
-			
+		while (!dureesDefinitives.containsKey(positionActuelle)) {
+			int dureeTroncon = dureesPossibles.get(positionActuelle);
+			dureesDefinitives.put(positionActuelle, dureesPossibles.remove(positionActuelle));
 			for (Troncon troncon : arcs.get(positionActuelle)) {
-				List<Troncon> tronconsParcourus = new ArrayList<Troncon>();
-				tronconsParcourus.add(troncon);
-				if (!dureePossible.containsKey((troncon.getArrivee()))) {
-					dureePossible.put(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
-					chemin.put(troncon.getArrivee(), troncon);
+				if (!dureesDefinitives.containsKey(troncon.getArrivee())) {
+					if (!dureesPossibles.containsKey((troncon.getArrivee()))) {
+						dureesPossibles.put(troncon.getArrivee(), dureeTroncon + troncon.getDuree());
+						chemin.put(troncon.getArrivee(), troncon);
+					} else if (dureesPossibles.get(troncon.getArrivee()) > dureeTroncon + troncon.getDuree()) {
+						dureesPossibles.replace(troncon.getArrivee(), dureeTroncon + troncon.getDuree());
+						chemin.replace(troncon.getArrivee(), troncon);
+					}
 				}
-				else if(dureePossible.get(troncon.getArrivee()) > dureeTroncon+troncon.getDuree()) {
-					dureePossible.replace(troncon.getArrivee(), dureeTroncon+troncon.getDuree());
-					chemin.put(troncon.getArrivee(), troncon);
-				}
-			}			
+			}
 			int dureeMin = Integer.MAX_VALUE;
-			for(String sommet : dureePossible.keySet()) {
-				if(dureePossible.get(sommet) < dureeMin) {
-					dureeMin = dureePossible.get(sommet);
+			for (String sommet : dureesPossibles.keySet()) {
+				if (dureesPossibles.get(sommet) < dureeMin) {
+					dureeMin = dureesPossibles.get(sommet);
 					positionActuelle = sommet;
 				}
 			}
-			if(positionActuelle.equals(stationArrivee)) {
-				dureeTroncon = dureePossible.remove(positionActuelle);
+			if (positionActuelle.equals(stationArrivee)) {
+				dureeTroncon = dureesPossibles.remove(positionActuelle);
 				dureesDefinitives.put(positionActuelle, dureeTroncon);
-				break;
+				ecrireXML(stationDepart, stationArrivee, chemin, fichier);
+				return;
 			}
 		}
-		System.out.println(chemin.size());
-		ecrireXML(stationDepart, stationArrivee, chemin, fichier);
-		//throw new Exception("Le chemin entre les deux stations est impossible");
+		throw new Exception("Le chemin entre les deux stations est impossible");
 
 	}
 

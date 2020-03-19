@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<trajet depart="MALIBRAN" destination="ALMA" duree="9" nbTroncons="15">
-<deplacement arrivee="BLYCKAERTS" attenteMoyenne="32" depart="MALIBRAN" direction="GARE CENTRALE" duree="1" nbTroncon="1">N10</deplacement>
-<deplacement arrivee="VARIA" attenteMoyenne="6" depart="BLYCKAERTS" direction="AMBIORIX" duree="2" nbTroncon="1">60</deplacement>
-<deplacement arrivee="JOURDAN" attenteMoyenne="18" depart="VARIA" direction="AMBIORIX" duree="2" nbTroncon="1">60</deplacement>
-<deplacement arrivee="SCHUMAN" attenteMoyenne="33" depart="JOURDAN" direction="MUSEE DU TRAM" duree="2" nbTroncon="2">N06</deplacement>
-<deplacement arrivee="SCHUMAN" attenteMoyenne="4" depart="SCHUMAN" direction="KRAAINEM" duree="1" nbTroncon="1">79</deplacement>
-<deplacement arrivee="MERODE" attenteMoyenne="7" depart="SCHUMAN" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="1">5</deplacement>
-<deplacement arrivee="MONTGOMERY" attenteMoyenne="6" depart="MERODE" direction="MONTGOMERY" duree="2" nbTroncon="1">81</deplacement>
-<deplacement arrivee="MONTGOMERY" attenteMoyenne="6" depart="MONTGOMERY" direction="GARE DU NORD" duree="1" nbTroncon="1">61</deplacement>
-<deplacement arrivee="ALMA" attenteMoyenne="8" depart="MONTGOMERY" direction="STOCKEL" duree="9" nbTroncon="6">1</deplacement>
+<trajet depart="MALIBRAN" destination="ALMA" duree="120" nbTroncons="13">
+<deplacement arrivee="BLYCKAERTS" attenteMoyenne="32" depart="MALIBRAN" direction="GARE CENTRALE" duree="1" nbTroncon="1" type="bus">N10</deplacement>
+<deplacement arrivee="VARIA" attenteMoyenne="6" depart="BLYCKAERTS" direction="AMBIORIX" duree="2" nbTroncon="1" type="bus">60</deplacement>
+<deplacement arrivee="JOURDAN" attenteMoyenne="18" depart="VARIA" direction="AMBIORIX" duree="2" nbTroncon="1" type="bus">60</deplacement>
+<deplacement arrivee="SCHUMAN" attenteMoyenne="33" depart="JOURDAN" direction="MUSEE DU TRAM" duree="1" nbTroncon="2" type="bus">N06</deplacement>
+<deplacement arrivee="MERODE" attenteMoyenne="7" depart="SCHUMAN" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="1" type="metro">5</deplacement>
+<deplacement arrivee="MONTGOMERY" attenteMoyenne="6" depart="MERODE" direction="MONTGOMERY" duree="2" nbTroncon="1" type="tram">81</deplacement>
+<deplacement arrivee="ALMA" attenteMoyenne="8" depart="MONTGOMERY" direction="STOCKEL" duree="9" nbTroncon="6" type="metro">1</deplacement>
 </trajet>
