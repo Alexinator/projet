@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< Updated upstream
 <trajet depart="MALIBRAN" destination="ALMA" duree="24" nbTroncons="12">
 <deplacement arrivee="BLYCKAERTS" attenteMoyenne="0" depart="MALIBRAN" direction="GARE CENTRALE" duree="1" nbTroncon="1" type="bus">N09</deplacement>
 <deplacement arrivee="IDALIE" attenteMoyenne="0" depart="BLYCKAERTS" direction="GARE CENTRALE" duree="2" nbTroncon="1" type="bus">N10</deplacement>
@@ -8,4 +9,7 @@
 <deplacement arrivee="MONTGOMERY" attenteMoyenne="0" depart="MERODE" direction="MAES" duree="3" nbTroncon="1" type="bus">80</deplacement>
 <deplacement arrivee="VANDERVELDE" attenteMoyenne="0" depart="MONTGOMERY" direction="STOCKEL" duree="6" nbTroncon="5" type="metro">1</deplacement>
 <deplacement arrivee="ALMA" attenteMoyenne="0" depart="VANDERVELDE" direction="KRAAINEM" duree="2" nbTroncon="1" type="bus">N05</deplacement>
+=======
+<trajet depart="MALIBRAN" destination="ALMA" duree="117" nbTroncons="12">
+>>>>>>> Stashed changes
 </trajet>

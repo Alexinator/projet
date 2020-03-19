@@ -156,13 +156,47 @@ public class Graph {
 		Troncon troncon = chemin.get(stationArrivee);
 		Troncon precedent = chemin.get(stationArrivee);
 		while (troncon != null) {
+			
+			if(troncon.getLigne().equals(chemin.get(troncon.getDepart()).getLigne())) {
+				nombreTroncons++;
+				dureeTroncon+=troncon.getDuree();
+				troncon = chemin.get(troncon.getDepart());
+				continue;
+			}
+			else {
+				nombreTroncons++;
+				dureeTroncon+=troncon.getDuree();
+			}			
+			
+			dureeTotale+=dureeTroncon;
+			tailleChemin+=nombreTroncons;
+			
+			System.out.println(dureeTroncon);
+			
+
+			
+			dureeTroncon = 0;
+			nombreTroncons = 0;
+			precedent = troncon;
+			troncon = chemin.get(troncon.getDepart());
+			
+			if(chemin.get(troncon.getDepart()) == null) {
+				System.out.println(troncon.getDuree());
+				dureeTroncon+=troncon.getDuree();
+				nombreTroncons++;
+				dureeTotale += troncon.getDuree();
+				tailleChemin++;
+				System.out.println(dureeTotale+" "+tailleChemin);
+				break;
+			}
+			
+			
+			
+			/*
 			while (troncon.getLigne().equals(precedent.getLigne())) {
 				dureeTroncon += troncon.getDuree();
 				nombreTroncons++;
 				troncon = chemin.get(troncon.getDepart());
-			}
-			if (dureeTroncon == 0) {
-				dureeTroncon = precedent.getDuree();
 			}
 			tailleChemin += nombreTroncons;
 			String texte = "<deplacement arrivee=\"" + precedent.getArrivee() + "\" attenteMoyenne=\""
@@ -186,6 +220,7 @@ public class Graph {
 				dureeTotale += precedent.getDuree();
 				tailleChemin += 1;
 			}
+			*/
 		}
 		String header = "<trajet depart=\"" + depart + "\" destination=\"" + arrivee + "\" duree=\"" + dureeTotale
 				+ "\" nbTroncons=\"" + tailleChemin + "\">\n";
