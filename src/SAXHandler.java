@@ -6,10 +6,7 @@
  */
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
-
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -18,7 +15,6 @@ public class SAXHandler extends DefaultHandler {
 
 	private Graph graph;
 	private Map<String, String> stations;
-	private Set<Ligne> lignes; // Ca sert à quoi?
 	private boolean estUneStation = false;
 	private String nomStation;
 	private Ligne ligne;
@@ -31,7 +27,6 @@ public class SAXHandler extends DefaultHandler {
 		super.startDocument();
 		this.graph = new Graph();
 		this.stations = new HashMap<String, String>();
-		this.lignes = new HashSet<Ligne>();
 	}
 
 	/**
@@ -56,7 +51,6 @@ public class SAXHandler extends DefaultHandler {
 			this.ligne = new Ligne(attributes.getValue("nom"), attributes.getValue("source"),
 					attributes.getValue("destination"), attributes.getValue("type"),
 					Integer.parseInt(attributes.getValue("attenteMoyenne")));
-			this.lignes.add(ligne);
 		} else if (qName.equalsIgnoreCase("station")) {
 			this.nomStation = attributes.getValue("nom");
 		} else if (qName.equalsIgnoreCase("troncon")) {
