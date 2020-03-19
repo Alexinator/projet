@@ -8,11 +8,9 @@
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -32,7 +30,7 @@ public class Graph {
 	 * Ajoute un troncon dans la map d'arcs
 	 * 
 	 * @param troncon
-	 *            = le troncon � ajouter
+	 *            le troncon a ajouter
 	 */
 	public void ajouterTroncon(Troncon troncon) {
 		if (troncon == null)
@@ -46,14 +44,14 @@ public class Graph {
 	 * Calcule le chemin minimisant le nombre de troncons en fonction d'un point de
 	 * depart et d'une arrivee.
 	 * 
-	 * @param stationDepart:
+	 * @param stationDepart
 	 *            la station de depart
-	 * @param stationArrivee:
+	 * @param stationArrivee
 	 *            la station d'arrivee
-	 * @param fichier:
+	 * @param fichier
 	 *            le chemin du fichier XML
 	 * @throws Exception
-	 *             : lance une exception s'il n'existe pas de chemin entre les deux
+	 *             lance une exception s'il n'existe pas de chemin entre les deux
 	 *             stations
 	 */
 	public void calculerCheminMinimisantNombreTroncons(String stationDepart, String stationArrivee, String fichier)
@@ -85,14 +83,14 @@ public class Graph {
 	 * Calcule le chemin minimisant au maximum le temps passe dans les transports en
 	 * fonction d'un point de depart et d'un point d'arrivee.
 	 * 
-	 * @param stationDepart:
+	 * @param stationDepart
 	 *            la station de depart
-	 * @param stationArrivee:
+	 * @param stationArrivee
 	 *            la station d'arrivee
-	 * @param fichier:
+	 * @param fichier
 	 *            le chemin du fichier XML
 	 * @throws Exception
-	 *             : lance une exception s'il n'existe pas de chemin entre les deux
+	 *             lance une exception s'il n'existe pas de chemin entre les deux
 	 *             stations
 	 */
 	public void calculerCheminMinimisantTempsTransport(String stationDepart, String stationArrivee, String fichier)
@@ -138,11 +136,11 @@ public class Graph {
 	}
 
 	/**
-	 * Ecrit le fichier XML en fonction d'une pile de troncons re�ue.
+	 * Ecrit le fichier XML en fonction d'une pile de troncons recue.
 	 * 
-	 * @param pile:
+	 * @param pile
 	 *            l'ensemble des troncons
-	 * @param fichier:
+	 * @param fichier
 	 *            le chemin du fichier XML
 	 */
 	private void ecrireXML(String stationDepart, String stationArrivee, Map<String, Troncon> chemin, String fichier) {
@@ -185,7 +183,7 @@ public class Graph {
 						+ precedent.getDuree() + "\" nbTroncon=\"" + nombreTroncons + "\" type=\""
 						+ precedent.getLigne().getType() + "\">" + precedent.getLigne().getNom() + "</deplacement>\n";
 				body = string + body;
-				dureeTotale+= precedent.getDuree();
+				dureeTotale += precedent.getDuree();
 				tailleChemin += 1;
 			}
 		}

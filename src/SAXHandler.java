@@ -1,3 +1,4 @@
+
 /**
  * 
  * @author Chapelle Alexandre && De Vos Olivier
@@ -17,7 +18,7 @@ public class SAXHandler extends DefaultHandler {
 
 	private Graph graph;
 	private Map<String, String> stations;
-	private Set<Ligne> lignes;
+	private Set<Ligne> lignes; // Ca sert à quoi?
 	private boolean estUneStation = false;
 	private String nomStation;
 	private Ligne ligne;
@@ -65,9 +66,10 @@ public class SAXHandler extends DefaultHandler {
 			estUneStation = true;
 		}
 	}
-	
+
 	/**
 	 * getteur de graph
+	 * 
 	 * @return this.graph (Graph)
 	 */
 	public Graph getGraph() {
