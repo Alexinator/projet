@@ -32,7 +32,7 @@ public class Graph {
 	 * Ajoute un troncon dans la map d'arcs
 	 * 
 	 * @param troncon
-	 *            = le troncon à ajouter
+	 *            = le troncon ï¿½ ajouter
 	 */
 	public void ajouterTroncon(Troncon troncon) {
 		if (troncon == null)
@@ -138,7 +138,7 @@ public class Graph {
 	}
 
 	/**
-	 * Ecrit le fichier XML en fonction d'une pile de troncons reçue.
+	 * Ecrit le fichier XML en fonction d'une pile de troncons reï¿½ue.
 	 * 
 	 * @param pile:
 	 *            l'ensemble des troncons
@@ -185,6 +185,7 @@ public class Graph {
 						+ precedent.getDuree() + "\" nbTroncon=\"" + nombreTroncons + "\" type=\""
 						+ precedent.getLigne().getType() + "\">" + precedent.getLigne().getNom() + "</deplacement>\n";
 				body = string + body;
+				dureeTotale+= precedent.getDuree();
 				tailleChemin += 1;
 			}
 		}
