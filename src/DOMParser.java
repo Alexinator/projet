@@ -19,6 +19,12 @@ public class DOMParser {
 	private Map<String, String> mapStations;
 	private Ligne ligne;
 
+	/**
+	 * constructeur
+	 * 
+	 * @param doc
+	 *            le Document a parser
+	 */
 	public DOMParser(Document doc) {
 		this.doc = doc;
 		this.graph = new Graph();
@@ -26,19 +32,27 @@ public class DOMParser {
 		parcours();
 	}
 
+	/**
+	 * getteur du Graph
+	 * 
+	 * @return this.graph (Graph)
+	 */
 	public Graph getGraph() {
 		return this.graph;
 	}
 
+	/**
+	 * methode qui parcours l'arbre et ajoute de arcs au graph
+	 */
 	private void parcours() {
 		NodeList lignes = doc.getElementsByTagName("ligne");
 		NodeList stations = doc.getElementsByTagName("station");
-		
+
 		for (int i = 0; i < stations.getLength(); i++) {
 			Node nStation = stations.item(i);
-			Element eStation = (Element) nStation;	
+			Element eStation = (Element) nStation;
 			NodeList stops = eStation.getElementsByTagName("stop");
-			for (int j = 0; j < stops.getLength(); j++) {				
+			for (int j = 0; j < stops.getLength(); j++) {
 				Node nStops = stops.item(j);
 				Element eStops = (Element) nStops;
 				mapStations.put(eStops.getTextContent(), eStation.getAttribute("nom"));
@@ -46,13 +60,17 @@ public class DOMParser {
 		}
 		for (int i = 0; i < lignes.getLength(); i++) {
 			Node nLigne = lignes.item(i);
-			Element eLigne = (Element) nLigne;		
-			ligne = new Ligne(eLigne.getAttribute("nom"), eLigne.getAttribute("source"), eLigne.getAttribute("destination"), eLigne.getAttribute("type"), Integer.parseInt(eLigne.getAttribute("attenteMoyenne")));
+			Element eLigne = (Element) nLigne;
+			ligne = new Ligne(eLigne.getAttribute("nom"), eLigne.getAttribute("source"),
+					eLigne.getAttribute("destination"), eLigne.getAttribute("type"),
+					Integer.parseInt(eLigne.getAttribute("attenteMoyenne")));
 			NodeList troncons = eLigne.getElementsByTagName("troncon");
-			for(int j = 0; j < troncons.getLength(); j++) {
+			for (int j = 0; j < troncons.getLength(); j++) {
 				Node nTroncon = troncons.item(j);
 				Element eTroncon = (Element) nTroncon;
-				this.graph.ajouterTroncon(new Troncon(ligne, mapStations.get(eTroncon.getAttribute("depart")), mapStations.get(eTroncon.getAttribute("arrivee")), Integer.parseInt(eTroncon.getAttribute("duree"))));
+				this.graph.ajouterTroncon(new Troncon(ligne, mapStations.get(eTroncon.getAttribute("depart")),
+						mapStations.get(eTroncon.getAttribute("arrivee")),
+						Integer.parseInt(eTroncon.getAttribute("duree"))));
 			}
 		}
 	}

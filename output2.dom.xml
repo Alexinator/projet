@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<trajet depart="MALIBRAN" destination="ALMA" duree="20" nbTroncons="13">
+<trajet depart="MALIBRAN" destination="ALMA" duree="141" nbTroncons="13">
+<deplacement arrivee="BLYCKAERTS" attenteMoyenne="36" depart="MALIBRAN" direction="GARE CENTRALE" duree="1" nbTroncon="1" type="bus">N09</deplacement>
+<deplacement arrivee="VARIA" attenteMoyenne="6" depart="BLYCKAERTS" direction="AMBIORIX" duree="2" nbTroncon="1" type="bus">60</deplacement>
+<deplacement arrivee="JOURDAN" attenteMoyenne="18" depart="VARIA" direction="AMBIORIX" duree="2" nbTroncon="1" type="bus">60</deplacement>
+<deplacement arrivee="FROISSART" attenteMoyenne="33" depart="JOURDAN" direction="MUSEE DU TRAM" duree="1" nbTroncon="1" type="bus">N06</deplacement>
+<deplacement arrivee="SCHUMAN" attenteMoyenne="6" depart="FROISSART" direction="SCHUMAN" duree="1" nbTroncon="1" type="bus">36</deplacement>
+<deplacement arrivee="MERODE" attenteMoyenne="8" depart="SCHUMAN" direction="STOCKEL" duree="2" nbTroncon="1" type="metro">1</deplacement>
+<deplacement arrivee="MONTGOMERY" attenteMoyenne="6" depart="MERODE" direction="MONTGOMERY" duree="2" nbTroncon="1" type="tram">81</deplacement>
+<deplacement arrivee="ALMA" attenteMoyenne="8" depart="MONTGOMERY" direction="STOCKEL" duree="9" nbTroncon="6" type="metro">1</deplacement>
 </trajet>
