@@ -17,11 +17,11 @@ public class Troncon {
 	 * @param ligne
 	 *            la ligne dont le troncon fait partie
 	 * @param depart
-	 *            le sommet de départ
+	 *            le sommet de depart
 	 * @param arrivee
-	 *            le sommet d'arrivée
+	 *            le sommet d'arrivee
 	 * @param duree
-	 *            la durée passée sur le troncon
+	 *            la duree passee sur le troncon
 	 */
 	public Troncon(Ligne ligne, String depart, String arrivee, int duree) {
 		super();
@@ -32,7 +32,7 @@ public class Troncon {
 	}
 
 	/**
-	 * getter de la ligne
+	 * Getter de la ligne
 	 * 
 	 * @return this.ligne (Ligne)
 	 */
@@ -41,7 +41,7 @@ public class Troncon {
 	}
 
 	/**
-	 * getter du sommet de départ
+	 * Getter du sommet de depart
 	 * 
 	 * @return this.depart (String)
 	 */
@@ -50,7 +50,7 @@ public class Troncon {
 	}
 
 	/**
-	 * getter du sommet d'arrivée
+	 * Getter du sommet d'arrivee
 	 * 
 	 * @return this.arrivee (String)
 	 */
@@ -59,7 +59,7 @@ public class Troncon {
 	}
 
 	/**
-	 * getter de la durée
+	 * Getter de la duree
 	 * 
 	 * @return this.duree (int)
 	 */

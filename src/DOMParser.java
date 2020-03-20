@@ -19,7 +19,7 @@ public class DOMParser {
 	private Ligne ligne;
 
 	/**
-	 * constructeur
+	 * Constructeur
 	 * 
 	 * @param doc
 	 *            le Document a parser
@@ -32,7 +32,7 @@ public class DOMParser {
 	}
 
 	/**
-	 * methode qui parcours l'arbre et ajoute de arcs au graph
+	 * Methode qui parcours l'arbre et ajoute de arcs au graph
 	 */
 	private void parcours() {
 		NodeList lignes = doc.getElementsByTagName("ligne");
@@ -66,7 +66,7 @@ public class DOMParser {
 	}
 	
 	/**
-	 * getteur du Graph
+	 * Getteur du Graph
 	 * 
 	 * @return this.graph (Graph)
 	 */

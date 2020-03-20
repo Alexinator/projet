@@ -19,7 +19,7 @@ public class SAXHandler extends DefaultHandler {
 	private Ligne ligne;
 
 	/**
-	 * sert de constructeur
+	 * Sert de constructeur
 	 */
 	@Override
 	public void startDocument() throws SAXException {
@@ -29,7 +29,7 @@ public class SAXHandler extends DefaultHandler {
 	}
 
 	/**
-	 * si l'élément est une station, enregistre le nom de la station
+	 * Si l'element est une station, enregistre le nom de la station
 	 */
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
@@ -41,7 +41,7 @@ public class SAXHandler extends DefaultHandler {
 	}
 
 	/**
-	 * remplit les structures de données avec les éléments du XML
+	 * Remplit les structures de donnees avec les elements du XML
 	 */
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
@@ -61,7 +61,7 @@ public class SAXHandler extends DefaultHandler {
 	}
 
 	/**
-	 * getteur de graph
+	 * Getteur de graph
 	 * 
 	 * @return this.graph (Graph)
 	 */

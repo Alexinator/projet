@@ -1,4 +1,3 @@
-
 /**
  * 
  * @author Chapelle Alexandre && De Vos Olivier
@@ -6,6 +5,7 @@
  */
 
 public class Ligne {
+	
 	private String nom;
 	private String source;
 	private String destination;
@@ -16,15 +16,15 @@ public class Ligne {
 	 * Constructeur
 	 * 
 	 * @param nom
-	 *            le numéro de la ligne
+	 *            le numero de la ligne
 	 * @param source
-	 *            station de départ de la ligne
+	 *            station de depart de la ligne
 	 * @param destination
-	 *            station d'arrivée de la ligne
+	 *            station d'arrivee de la ligne
 	 * @param type
-	 *            bus, tram, métro
+	 *            bus, tram, metro
 	 * @param attenteMoyenne
-	 *            durée moyenne passée en station (une seule fois par ligne)
+	 *            duree moyenne passee en station (une seule fois par ligne)
 	 */
 	public Ligne(String nom, String source, String destination, String type, int attenteMoyenne) {
 		super();
@@ -36,7 +36,7 @@ public class Ligne {
 	}
 
 	/**
-	 * getter du numéro de la ligne
+	 * Getter du numero de la ligne
 	 * 
 	 * @return this.nom (String)
 	 */
@@ -45,7 +45,7 @@ public class Ligne {
 	}
 
 	/**
-	 * getter de la sation de départ de la ligne
+	 * Getter de la station de depart de la ligne
 	 * 
 	 * @return this.source (String)
 	 */
@@ -54,7 +54,7 @@ public class Ligne {
 	}
 
 	/**
-	 * getter de la station d'arrivée de la ligne
+	 * Getter de la station d'arrivee de la ligne
 	 * 
 	 * @return this.destination (String)
 	 */
@@ -63,7 +63,7 @@ public class Ligne {
 	}
 
 	/**
-	 * getter du type de la ligne (bus, tram, metro)
+	 * Getter du type de la ligne (bus, tram, metro)
 	 * 
 	 * @return this.type (String)
 	 */
@@ -72,7 +72,7 @@ public class Ligne {
 	}
 
 	/**
-	 * getter de l'attente moyenne sur la ligne
+	 * Getter de l'attente moyenne sur la ligne
 	 * 
 	 * @return this.attenteMoyenne (int)
 	 */
