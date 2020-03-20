@@ -32,7 +32,7 @@ public class DOMParser {
 	}
 
 	/**
-	 * Methode qui parcours l'arbre et ajoute de arcs au graph
+	 * Methode qui parcours l'arbre et ajoute des arcs au graph
 	 */
 	private void parcours() {
 		NodeList lignes = doc.getElementsByTagName("ligne");
