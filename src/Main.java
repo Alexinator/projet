@@ -29,7 +29,11 @@ public class Main {
 			DOMParser parser = new DOMParser(doc);
 			Graph graph = parser.getGraph();
 			graph.calculerCheminMinimisantNombreTroncons("MALIBRAN", "ALMA", "output.dom.xml");
+<<<<<<< Updated upstream
 			graph.calculerCheminMinimisantTempsTransport("MALIBRAN", "ALMA", "output2.dom.xml");
+=======
+			//graph.calculerCheminMinimisantTempsTransport("MALIBRAN", "ALMA", "output2.dom.xml");
+>>>>>>> Stashed changes
 
 		} catch (Exception e) {
 			e.printStackTrace();

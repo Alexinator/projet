@@ -130,13 +130,15 @@ public class Graph {
 				ecrireXML(stationDepart, stationArrivee, chemin, fichier);
 				return;
 			}
+			if(dureesDefinitives.size() == dureesPossibles.size()) {
+				throw new Exception("Le chemin entre les deux stations est impossible");
+			}
 		}
-		throw new Exception("Le chemin entre les deux stations est impossible");
 
 	}
 
 	/**
-	 * Ecrit le fichier XML en fonction d'une pile de troncons recue.
+	 * Ecrit le fichier XML en fonction d'une map de troncons recus.
 	 * 
 	 * @param pile
 	 *            l'ensemble des troncons
