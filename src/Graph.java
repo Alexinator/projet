@@ -153,6 +153,7 @@ public class Graph {
 		int tailleChemin = 0;
 		int nombreTroncons = 0;
 		String body = "";
+		String texte = "";
 		Troncon troncon = chemin.get(stationArrivee);
 		Troncon precedent = chemin.get(stationArrivee);
 		while (troncon != null) {
@@ -167,58 +168,33 @@ public class Graph {
 				nombreTroncons++;
 				dureeTroncon+=troncon.getDuree();
 			}			
-			
-			dureeTotale+=dureeTroncon;
-			tailleChemin+=nombreTroncons;
-			
-			System.out.println(dureeTroncon);
-			
-			dureeTroncon = 0;
-			nombreTroncons = 0;
-			precedent = troncon;
-			troncon = chemin.get(troncon.getDepart());
-			
-			if(chemin.get(troncon.getDepart()) == null) {
-				System.out.println(troncon.getDuree());
-				dureeTroncon+=troncon.getDuree();
-				nombreTroncons++;
-				dureeTotale += troncon.getDuree();
-				tailleChemin++;
-				System.out.println(dureeTotale+" "+tailleChemin);
-				break;
-			}
-			
-			
-			
-			/*
-			while (troncon.getLigne().equals(precedent.getLigne())) {
-				dureeTroncon += troncon.getDuree();
-				nombreTroncons++;
-				troncon = chemin.get(troncon.getDepart());
-			}
-			tailleChemin += nombreTroncons;
-			String texte = "<deplacement arrivee=\"" + precedent.getArrivee() + "\" attenteMoyenne=\""
-					+ precedent.getLigne().getAttenteMoyenne() + "\"" + " depart=\"" + troncon.getArrivee()
+			texte = "<deplacement arrivee=\"" + precedent.getArrivee() + "\" attenteMoyenne=\""
+					+ precedent.getLigne().getAttenteMoyenne() + "\"" + " depart=\"" + troncon.getDepart()
 					+ "\" direction=\"" + precedent.getLigne().getDestination() + "\" duree=\"" + dureeTroncon
 					+ "\" nbTroncon=\"" + nombreTroncons + "\" type=\"" + precedent.getLigne().getType() + "\">"
 					+ precedent.getLigne().getNom() + "</deplacement>\n";
 			body = texte + body;
-			dureeTotale += dureeTroncon + troncon.getLigne().getAttenteMoyenne();
-			nombreTroncons = 1;
+			
+			dureeTotale+=dureeTroncon;
+			tailleChemin+=nombreTroncons;
+			
 			dureeTroncon = 0;
-			precedent = troncon;
+			nombreTroncons = 0;
 			troncon = chemin.get(troncon.getDepart());
-			if (troncon == null) {
-				String string = "<deplacement arrivee=\"" + precedent.getArrivee() + "\" attenteMoyenne=\""
-						+ precedent.getLigne().getAttenteMoyenne() + "\"" + " depart=\"" + precedent.getDepart()
-						+ "\" direction=\"" + precedent.getLigne().getDestination() + "\" duree=\""
-						+ precedent.getDuree() + "\" nbTroncon=\"" + nombreTroncons + "\" type=\""
-						+ precedent.getLigne().getType() + "\">" + precedent.getLigne().getNom() + "</deplacement>\n";
-				body = string + body;
-				dureeTotale += precedent.getDuree();
-				tailleChemin += 1;
+			precedent = troncon;
+			if(chemin.get(troncon.getDepart()) == null) {
+				dureeTroncon+=troncon.getDuree();
+				nombreTroncons++;
+				dureeTotale += troncon.getDuree();
+				tailleChemin++;
+				texte = "<deplacement arrivee=\"" + precedent.getArrivee() + "\" attenteMoyenne=\""
+						+ precedent.getLigne().getAttenteMoyenne() + "\"" + " depart=\"" + troncon.getDepart()
+						+ "\" direction=\"" + precedent.getLigne().getDestination() + "\" duree=\"" + dureeTroncon
+						+ "\" nbTroncon=\"" + nombreTroncons + "\" type=\"" + precedent.getLigne().getType() + "\">"
+						+ precedent.getLigne().getNom() + "</deplacement>\n";
+				body = texte + body;
+				break;
 			}
-			*/
 		}
 		String header = "<trajet depart=\"" + depart + "\" destination=\"" + arrivee + "\" duree=\"" + dureeTotale
 				+ "\" nbTroncons=\"" + tailleChemin + "\">\n";

@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <trajet depart="MALIBRAN" destination="ALMA" duree="25" nbTroncons="12">
+<deplacement arrivee="BLYCKAERTS" attenteMoyenne="32" depart="MALIBRAN" direction="GARE CENTRALE" duree="1" nbTroncon="1" type="bus">N10</deplacement>
+<deplacement arrivee="IDALIE" attenteMoyenne="5" depart="BLYCKAERTS" direction="GARE CENTRALE" duree="3" nbTroncon="1" type="bus">38</deplacement>
+<deplacement arrivee="LUXEMBOURG" attenteMoyenne="5" depart="IDALIE" direction="PORTE DE NAMUR" duree="2" nbTroncon="1" type="bus">34</deplacement>
+<deplacement arrivee="SCHUMAN" attenteMoyenne="6" depart="LUXEMBOURG" direction="BRUSSELS AIRPORT" duree="6" nbTroncon="1" type="bus">12</deplacement>
+<deplacement arrivee="MERODE" attenteMoyenne="7" depart="SCHUMAN" direction="HERRMANN-DEBROUX" duree="2" nbTroncon="1" type="metro">5</deplacement>
+<deplacement arrivee="MONTGOMERY" attenteMoyenne="33" depart="MERODE" direction="MUSEE DU TRAM" duree="2" nbTroncon="1" type="bus">N06</deplacement>
+<deplacement arrivee="ALMA" attenteMoyenne="8" depart="MONTGOMERY" direction="STOCKEL" duree="9" nbTroncon="6" type="metro">1</deplacement>
 </trajet>
