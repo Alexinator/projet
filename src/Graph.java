@@ -102,7 +102,7 @@ public class Graph {
 		dureesPossibles.put(stationDepart, 0);
 		String positionActuelle = stationDepart;
 
-		while (!dureesDefinitives.containsKey(positionActuelle)) {
+		while (dureesDefinitives.size() != dureesPossibles.size()) {
 			int dureeTroncon = dureesPossibles.get(positionActuelle);
 			dureesDefinitives.put(positionActuelle, dureesPossibles.remove(positionActuelle));
 			for (Troncon troncon : arcs.get(positionActuelle)) {
@@ -128,12 +128,9 @@ public class Graph {
 				dureesDefinitives.put(positionActuelle, dureeTroncon);
 				ecrireXML(stationDepart, stationArrivee, chemin, fichier);
 				return;
-			}
-			if(dureesDefinitives.size() == dureesPossibles.size()) {
-				throw new Exception("Le chemin entre les deux stations est impossible");
-			}
+			}			
 		}
-
+		throw new Exception("Le chemin entre les deux stations est impossible");
 	}
 
 	/**
