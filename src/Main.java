@@ -24,7 +24,7 @@ public class Main {
 			saxParser.parse(inputFile, userhandler);
 			Graph g = userhandler.getGraph();
 			g.calculerCheminMinimisantNombreTroncons("MALIBRAN", "ALMA", "output.xml");
-			g.calculerCheminMinimisantTempsTransport("MALIBRAN", "ALMA", "output2.xml");
+			//g.calculerCheminMinimisantTempsTransport("MALIBRAN", "ALMA", "output2.xml");
 
 			//BONUS : DOMParser
 			File xmlFile = new File("stib.xml");
@@ -35,7 +35,7 @@ public class Main {
 			DOMParser parser = new DOMParser(doc);
 			Graph graph = parser.getGraph();
 			graph.calculerCheminMinimisantNombreTroncons("MALIBRAN", "ALMA", "output.dom.xml");
-			graph.calculerCheminMinimisantTempsTransport("MALIBRAN", "ALMA", "output2.dom.xml");
+			//graph.calculerCheminMinimisantTempsTransport("MALIBRAN", "ALMA", "output2.dom.xml");
 
 		} catch (Exception e) {
 			e.printStackTrace();
