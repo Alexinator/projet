@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<trajet depart="MALIBRAN" destination="ALMA" duree="25" nbTroncons="12">
+<trajet depart="MALIBRAN" destination="ALMA" duree="121" nbTroncons="12">
 <deplacement arrivee="BLYCKAERTS" attenteMoyenne="32" depart="MALIBRAN" direction="GARE CENTRALE" duree="1" nbTroncon="1" type="bus">N10</deplacement>
 <deplacement arrivee="IDALIE" attenteMoyenne="5" depart="BLYCKAERTS" direction="GARE CENTRALE" duree="3" nbTroncon="1" type="bus">38</deplacement>
 <deplacement arrivee="LUXEMBOURG" attenteMoyenne="5" depart="IDALIE" direction="PORTE DE NAMUR" duree="2" nbTroncon="1" type="bus">34</deplacement>
