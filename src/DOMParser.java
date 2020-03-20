@@ -1,4 +1,3 @@
-
 /**
  * 
  * @author Chapelle Alexandre && De Vos Olivier
@@ -33,15 +32,6 @@ public class DOMParser {
 	}
 
 	/**
-	 * getteur du Graph
-	 * 
-	 * @return this.graph (Graph)
-	 */
-	public Graph getGraph() {
-		return this.graph;
-	}
-
-	/**
 	 * methode qui parcours l'arbre et ajoute de arcs au graph
 	 */
 	private void parcours() {
@@ -73,5 +63,14 @@ public class DOMParser {
 						Integer.parseInt(eTroncon.getAttribute("duree"))));
 			}
 		}
+	}
+	
+	/**
+	 * getteur du Graph
+	 * 
+	 * @return this.graph (Graph)
+	 */
+	public Graph getGraph() {
+		return this.graph;
 	}
 }

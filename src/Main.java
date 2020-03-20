@@ -1,3 +1,9 @@
+/**
+ * 
+ * @author Chapelle Alexandre && De Vos Olivier
+ *
+ */
+
 import java.io.File;
 
 import javax.xml.parsers.DocumentBuilder;

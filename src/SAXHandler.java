@@ -1,4 +1,3 @@
-
 /**
  * 
  * @author Chapelle Alexandre && De Vos Olivier
@@ -30,7 +29,7 @@ public class SAXHandler extends DefaultHandler {
 	}
 
 	/**
-	 * Si l'élément est une station, enregistre le nom de la station
+	 * si l'élément est une station, enregistre le nom de la station
 	 */
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
